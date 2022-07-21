@@ -5,7 +5,7 @@ import 'package:travel_wallet_ui/travel_wallet_ui.dart';
 void main() {
   group('TravelWallet themeData', () {
     test('is defined for standard', () {
-      expect(TravelWalletTheme.standard, isA<ThemeData>());
+      expect(TravelWalletTheme.themeData, isA<ThemeData>());
     });
   });
 }

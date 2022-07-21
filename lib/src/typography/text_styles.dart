@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:travel_wallet_ui/src/colors.dart';
+import 'package:travel_wallet_ui/src/typography/fonts.dart';
 
 import 'font_weights.dart';
 
 class TravelWalletTextStyle {
   static const _baseHeaderStyle = TextStyle(
     package: 'travelwallet_ui',
-    fontFamily: 'DMSans',
+    fontFamily: Fonts.dmSans,
     color: TravelWalletColors.black,
     fontWeight: TravelWalletFontWeight.regular,
   );
 
   static const _baseTextStyle = TextStyle(
     package: 'travelwallet_ui',
-    fontFamily: 'Poppins',
+    fontFamily: Fonts.poppins,
     color: TravelWalletColors.black,
     fontWeight: TravelWalletFontWeight.regular,
   );
