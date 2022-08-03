@@ -1,90 +1,65 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:travel_wallet_ui/travel_wallet_ui.dart';
 
-class TravelWalletTheme {
-  static ThemeData get themeData {
-    return ThemeData(
-        // primarySwatch: Colors.cyan,
-        // primaryColor: TravelWalletColors.black,
-        // elevatedButtonTheme: _elevatedButtonTheme,
-        // outlinedButtonTheme: _outlinedButtonTheme,
-        // textButtonTheme: _textButtonTheme,
-        // textTheme: _textTheme,
-        // inputDecorationTheme: const InputDecorationTheme(
-        //   // enabledBorder: UnderlineInputBorder`(
-        //   //   borderSide: BorderSide(color: Colors.black),
-        //   // ),
-        //   // focusedBorder: UnderlineInputBorder(
-        //   //   borderSide: BorderSide(color: Colors.black),
-        //   // ),
-        //   border: UnderlineInputBorder(
-        //     borderSide: BorderSide(color: Colors.black),
-        //   ),
-        //   labelStyle: TextStyle(color: Colors.black),
-        // ),
-        // textSelectionTheme: TextSelectionThemeData(cursorColor: Colors.black),
-        // toggleableActiveColor: TravelWalletColors.black,
-        // switchTheme: _switchTheme,
-        // appBarTheme: const AppBarTheme(
-        //     backgroundColor: Colors.white, foregroundColor: Colors.black),
-        );
-  }
+class ThemeColor {
+  static ThemeData blacktheme = ThemeData(
+    primarySwatch: Palette.BlackThemeShades,
+    textTheme: _textTheme,
+  );
 
-  // static ElevatedButtonThemeData get _elevatedButtonTheme {
-  //   return ElevatedButtonThemeData(
-  //     style: ElevatedButton.styleFrom(
-  //       shape: const RoundedRectangleBorder(
-  //         borderRadius: BorderRadius.all(Radius.circular(16)),
-  //       ),
-  //       primary: TravelWalletColors.black,
-  //     ),
-  //   );
-  // }
+  static ThemeData bluetheme =
+      ThemeData(primarySwatch: Palette.BlueThemeShades, textTheme: _textTheme);
 
-  // static OutlinedButtonThemeData get _outlinedButtonTheme {
-  //   return OutlinedButtonThemeData(
-  //     style: OutlinedButton.styleFrom(
-  //       shape: const RoundedRectangleBorder(
-  //         borderRadius: BorderRadius.all(Radius.circular(16)),
-  //       ),
-  //       side: const BorderSide(color: TravelWalletColors.black, width: 1),
-  //       primary: TravelWalletColors.black,
-  //     ),
-  //   );
-  // }
+  static ThemeData greentheme =
+      ThemeData(primarySwatch: Palette.GreenThemeShades, textTheme: _textTheme);
 
-  // static TextButtonThemeData get _textButtonTheme {
-  //   return TextButtonThemeData(
-  //     style: TextButton.styleFrom(
-  //       primary: TravelWalletColors.black,
-  //     ),
-  //   );
-  // }
+  static ThemeData yellowtheme = ThemeData(
+      primarySwatch: Palette.YellowThemeShades, textTheme: _textTheme);
+
+  static ThemeData purpletheme = ThemeData(
+      primarySwatch: Palette.PurpleThemeShades, textTheme: _textTheme);
+
+  static ThemeData redtheme =
+      ThemeData(primarySwatch: Palette.RedThemeShades, textTheme: _textTheme);
+
+  static ThemeData blackandbluetheme = ThemeData(
+    textTheme: _textTheme,
+    appBarTheme: const AppBarTheme(
+      elevation: 1,
+    ),
+    secondaryHeaderColor: Color(0xFF03DAC6),
+    colorScheme: ColorScheme(
+      primary: Palette.BlackThemeShades,
+      primaryContainer: Palette.BlackThemeShades[900],
+      secondary: Color(0xFF16C8F7),
+      secondaryContainer: Color(0xFF0097C4),
+      background: Colors.white,
+      surface: Colors.white,
+      onBackground: Colors.black,
+      error: Color(0xFFB00020),
+      onError: Colors.white,
+      onPrimary: Colors.white,
+      onSecondary: Colors.black,
+      onSurface: Colors.black,
+      brightness: Brightness.light,
+    ),
+  );
 
   static TextTheme get _textTheme {
     return TextTheme(
-      headline1: TravelWalletTextStyle.headline1,
-      headline2: TravelWalletTextStyle.headline2,
-      headline3: TravelWalletTextStyle.headline3,
-      headline4: TravelWalletTextStyle.headline4,
-      headline5: TravelWalletTextStyle.headline5,
-      headline6: TravelWalletTextStyle.headline6,
-      subtitle1: TravelWalletTextStyle.subtitle1,
-      subtitle2: TravelWalletTextStyle.subtitle2,
-      bodyText1: TravelWalletTextStyle.bodyText1,
-      bodyText2: TravelWalletTextStyle.bodyText2,
-      caption: TravelWalletTextStyle.caption,
-      overline: TravelWalletTextStyle.overline,
-      button: TravelWalletTextStyle.button,
+      headline1: BaseTextStyle.headline1,
+      headline2: BaseTextStyle.headline2,
+      headline3: BaseTextStyle.headline3,
+      headline4: BaseTextStyle.headline4,
+      headline5: BaseTextStyle.headline5,
+      headline6: BaseTextStyle.headline6,
+      subtitle1: BaseTextStyle.subtitle1,
+      subtitle2: BaseTextStyle.subtitle2,
+      bodyText1: BaseTextStyle.bodyText1,
+      bodyText2: BaseTextStyle.bodyText2,
+      caption: BaseTextStyle.caption,
+      overline: BaseTextStyle.overline,
+      button: BaseTextStyle.button,
     );
   }
-
-  // static SwitchThemeData get _switchTheme {
-  //   return SwitchThemeData(
-  //     thumbColor: MaterialStateProperty.all<Color>(TravelWalletColors.black),
-  //     trackColor:
-  //         MaterialStateProperty.all(TravelWalletColors.black.withOpacity(.3)),
-  //   );
-  // }
 }

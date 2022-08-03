@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:travel_wallet_ui/travel_wallet_ui.dart';
 import 'package:travel_walllet/pages/buttons.dart';
@@ -15,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: TravelWalletTheme.themeData,
+      theme: ThemeColor.blacktheme,
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
@@ -32,6 +31,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   @override
+  bool isChecked = false;
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -52,8 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
             // // Buttons
             const ButtonWidgets(),
-            // // const Divider(),
-
+            const Divider(),
             const InputWidgets(),
 
             // AppbarWidgets(),

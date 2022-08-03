@@ -14,7 +14,7 @@ class ButtonWidgets extends StatelessWidget {
         const Text('Buttons'),
         PrimaryButton(
           onPressed: () {},
-          child: const Text(primaryButtonText),
+          label: primaryButtonText,
         ),
         const SizedBox(
           height: 8,
@@ -22,7 +22,7 @@ class ButtonWidgets extends StatelessWidget {
         PrimaryButton(
           onPressed: () {},
           size: PrimaryButtonSize.small,
-          child: const Text(primaryButtonText),
+          label: primaryButtonText,
         ),
         const SizedBox(
           height: 8,
@@ -30,7 +30,30 @@ class ButtonWidgets extends StatelessWidget {
         PrimaryButton(
           onPressed: () {},
           size: PrimaryButtonSize.extraSmall,
-          child: const Text(primaryButtonText),
+          label: primaryButtonText,
+        ),
+        const SizedBox(
+          height: 8,
+        ),
+        PrimaryButtonWithIcon(
+          onPressed: () {},
+          label: primaryButtonText,
+          icon: Icons.add,
+        ),
+        const SizedBox(
+          height: 8,
+        ),
+        SecondaryButton(
+          onPressed: () {},
+          label: 'ButtonText',
+        ),
+        const SizedBox(
+          height: 8,
+        ),
+        SecondaryButtonWithIcon(
+          onPressed: () {},
+          label: 'ButtonText',
+          icon: Icons.add,
         ),
       ],
     );

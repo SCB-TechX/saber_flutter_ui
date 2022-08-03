@@ -71,7 +71,7 @@ class _InputWidgets extends State<InputWidgets> {
           value: _dropdownValue,
           underline: Container(
             height: 1,
-            color: TravelWalletColors.tertiaryText,
+            color: SystemColors.disable,
           ),
           onChanged: (String? newValue) {
             setState(() {
