@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:travel_wallet_ui/travel_wallet_ui.dart';
 import 'package:travel_walllet/pages/buttons.dart';
 import 'package:travel_walllet/pages/inputs.dart';
+import 'package:travel_walllet/pages/appbars.dart';
+import 'package:travel_walllet/pages/cards.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,49 +33,26 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   @override
-  bool isChecked = false;
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: const Text('Home'),
+        centerTitle: true,
+        shadowColor: Colors.transparent,
       ),
-      body: Center(
-          child: SingleChildScrollView(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            // // Headers
-            // HeaderWidgets(),
-
-            // // const Divider(),
-
-            // // Body
-            // BodyWidgets(),
-
-            // // Buttons
-            const ButtonWidgets(),
-            const Divider(),
-            const InputWidgets(),
-
-            // AppbarWidgets(),
-          ],
+      body: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 8),
+        child: Expanded(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              // Appbars(),
+              Cards()
+              // Switch.adaptive(value: true, onChanged: (_) {})
+            ],
+          ),
         ),
-      )),
-    );
-  }
-}
-
-class AppbarWidgets extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        AppBar(
-          // backgroundColor: TravelWalletColors.black,
-          // centerTitle: true,
-          title: Text("HELLO"),
-        )
-      ],
+      ),
     );
   }
 }

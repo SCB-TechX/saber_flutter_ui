@@ -32,10 +32,10 @@ class SystemColors {
   static const Color success = Palette.SuccessShades;
 
   /// Success dark
-  static Color successDark = Palette.ErrorShades[400]!;
+  static Color successDark = Palette.SuccessShades[400]!;
 
   /// Success light
-  static Color successLight = Palette.ErrorShades[100]!;
+  static Color successLight = Palette.SuccessShades[100]!;
 
   /// Warning
   static const Color warning = Palette.WaringShades;

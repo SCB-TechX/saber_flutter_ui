@@ -14,7 +14,7 @@ class HyperLink extends StatelessWidget {
       child: Text(
         data,
         style: const TextStyle(
-            color: SystemColors.hyperlink,
+            // color: SystemColors.hyperlink,
             decoration: TextDecoration.underline),
       ),
     );
