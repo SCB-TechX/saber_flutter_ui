@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:travel_wallet_ui/travel_wallet_ui.dart';
 import 'package:travel_wallet_ui/src/colors.dart';
 import 'package:travel_walllet/pages/steppers.dart';
+import 'package:travel_walllet/pages/appbars.dart';
+import 'package:travel_walllet/pages/cards.dart';
 
 void main() {
   runApp(const MyApp());
@@ -34,14 +36,22 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: const Text('Home'),
+        centerTitle: true,
+        shadowColor: Colors.transparent,
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: const [
-          Expanded(child: StepperWidgets()),
-        ],
+      body: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 8),
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              // Appbars(),
+              Cards()
+              // Switch.adaptive(value: true, onChanged: (_) {})
+            ],
+          ),
+        ),
       ),
     );
   }

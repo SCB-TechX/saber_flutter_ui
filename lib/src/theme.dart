@@ -2,10 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:travel_wallet_ui/travel_wallet_ui.dart';
 
 class ThemeColor {
-  static ThemeData blacktheme = ThemeData(
-    primarySwatch: Palette.BlackThemeShades,
-    textTheme: _textTheme,
-  );
+  static ThemeData blacktheme =
+      ThemeData(primarySwatch: Palette.BlackThemeShades, textTheme: _textTheme);
 
   static ThemeData bluetheme =
       ThemeData(primarySwatch: Palette.BlueThemeShades, textTheme: _textTheme);

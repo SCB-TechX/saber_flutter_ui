@@ -11,49 +11,148 @@ class ButtonWidgets extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const Text('Buttons'),
-        PrimaryButton(
-          onPressed: () {},
-          label: primaryButtonText,
+        Text('Button'),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Column(
+              children: [
+                PrimaryButton(
+                  onPressed: () {},
+                  label: primaryButtonText,
+                ),
+                PrimaryButton(
+                  onPressed: () {},
+                  size: ButtonSize.small,
+                  label: primaryButtonText,
+                ),
+                PrimaryButton(
+                  onPressed: () {},
+                  size: ButtonSize.extraSmall,
+                  label: primaryButtonText,
+                ),
+              ],
+            ),
+            Column(
+              children: [
+                PrimaryButtonWithIcon(
+                  onPressed: () {},
+                  label: primaryButtonText,
+                  icon: Icons.add,
+                ),
+                PrimaryButtonWithIcon(
+                  onPressed: () {},
+                  size: ButtonSize.small,
+                  label: primaryButtonText,
+                  icon: Icons.add,
+                ),
+                PrimaryButtonWithIcon(
+                  onPressed: () {},
+                  size: ButtonSize.extraSmall,
+                  label: primaryButtonText,
+                  icon: Icons.add,
+                ),
+              ],
+            )
+          ],
         ),
-        const SizedBox(
-          height: 8,
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Column(
+              children: [
+                SecondaryButton(
+                  onPressed: () {},
+                  label: 'Secondary Text',
+                ),
+                SecondaryButton(
+                  onPressed: () {},
+                  size: ButtonSize.small,
+                  label: 'Secondary Text',
+                ),
+                SecondaryButton(
+                  onPressed: () {},
+                  size: ButtonSize.extraSmall,
+                  label: 'Secondary Text',
+                ),
+              ],
+            ),
+            Column(
+              children: [
+                SecondaryButtonWithIcon(
+                  onPressed: () {},
+                  label: 'Secondary Text',
+                  icon: Icons.add,
+                ),
+                SecondaryButtonWithIcon(
+                  onPressed: () {},
+                  size: ButtonSize.small,
+                  label: 'Secondary Text',
+                  icon: Icons.add,
+                ),
+                SecondaryButtonWithIcon(
+                  onPressed: () {},
+                  size: ButtonSize.extraSmall,
+                  label: 'Secondary Text',
+                  icon: Icons.add,
+                ),
+              ],
+            )
+          ],
         ),
-        PrimaryButton(
-          onPressed: () {},
-          size: PrimaryButtonSize.small,
-          label: primaryButtonText,
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            LinkButtonWith(
+              onPressed: () {},
+              label: 'Text Button',
+            ),
+            HyperLink('Text', onTap: () {}),
+            LinkButtonWithIcon(
+              onPressed: () {},
+              label: 'Text Button',
+              icon: Icons.add,
+            ),
+          ],
         ),
-        const SizedBox(
-          height: 8,
-        ),
-        PrimaryButton(
-          onPressed: () {},
-          size: PrimaryButtonSize.extraSmall,
-          label: primaryButtonText,
-        ),
-        const SizedBox(
-          height: 8,
-        ),
-        PrimaryButtonWithIcon(
-          onPressed: () {},
-          label: primaryButtonText,
-          icon: Icons.add,
-        ),
-        const SizedBox(
-          height: 8,
-        ),
-        SecondaryButton(
-          onPressed: () {},
-          label: 'ButtonText',
-        ),
-        const SizedBox(
-          height: 8,
-        ),
-        SecondaryButtonWithIcon(
-          onPressed: () {},
-          label: 'ButtonText',
-          icon: Icons.add,
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ShapeIconButton(
+              onPressed: () {},
+              icon: Icons.add,
+            ),
+            const SizedBox(
+              width: 8,
+            ),
+            ShapeIconButton(
+              onPressed: () {},
+              icon: Icons.add,
+              shape: ButtonShape.circle,
+              disabled: true,
+            ),
+            const SizedBox(
+              width: 8,
+            ),
+            ShapeIconButton(
+              onPressed: () {},
+              icon: Icons.add,
+              shape: ButtonShape.rectangle,
+            ),
+            ShapeIconButtonWithLabel(
+              onPressed: () {},
+              label: 'disabled',
+              icon: Icons.add,
+              shape: ButtonShape.circle,
+              disabled: true,
+            ),
+            ShapeIconButtonWithLabel(
+              onPressed: () {},
+              label: 'label',
+              icon: Icons.add,
+              shape: ButtonShape.rectangle,
+            ),
+          ],
         ),
       ],
     );

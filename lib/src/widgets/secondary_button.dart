@@ -1,34 +1,41 @@
 import 'package:flutter/material.dart';
 import 'package:travel_wallet_ui/src/typography/text_styles.dart';
-
-enum SecondaryButtonSize { small, normal, extraSmall }
+import 'package:travel_wallet_ui/travel_wallet_ui.dart';
 
 class SecondaryButton extends StatelessWidget {
   SecondaryButton(
-      {Key? key, required this.onPressed, required this.label, this.size})
+      {Key? key,
+      required this.onPressed,
+      required this.label,
+      this.size: ButtonSize.normal,
+      this.disabled = false})
       : super(key: key);
 
   final VoidCallback? onPressed;
   final String label;
-  final SecondaryButtonSize? size;
-
-  final TextStyle normalTextStyle = BaseTextStyle.button;
-  final TextStyle smallTextStyle = BaseTextStyle.button.copyWith(fontSize: 12);
-  final TextStyle extraSmallTextStyle =
-      BaseTextStyle.button.copyWith(fontSize: 11);
+  final ButtonSize size;
+  final bool disabled;
 
   @override
   Widget build(BuildContext context) {
     return OutlinedButton(
-        onPressed: onPressed,
+        onPressed: disabled ? null : onPressed,
         style: OutlinedButton.styleFrom(
           shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(24)),
           ),
-          side: BorderSide(width: 1, color: Theme.of(context).primaryColor),
-          padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 32),
+          side: BorderSide(
+              width: 1,
+              color: disabled
+                  ? SystemColors.disable
+                  : Theme.of(context).primaryColor),
+          minimumSize: Size.zero,
+          padding: buttonPadding(size),
         ),
-        child: Text(label));
+        child: Text(
+          label,
+          style: buttonSize(size),
+        ));
   }
 }
 
@@ -38,23 +45,20 @@ class SecondaryButtonWithIcon extends StatelessWidget {
       required this.onPressed,
       required this.label,
       required this.icon,
-      this.size})
+      this.size: ButtonSize.normal,
+      this.disabled = false})
       : super(key: key);
 
   final VoidCallback? onPressed;
   final String label;
   final IconData icon;
-  final SecondaryButtonSize? size;
-
-  final TextStyle normalTextStyle = BaseTextStyle.button;
-  final TextStyle smallTextStyle = BaseTextStyle.button.copyWith(fontSize: 12);
-  final TextStyle extraSmallTextStyle =
-      BaseTextStyle.button.copyWith(fontSize: 11);
+  final ButtonSize size;
+  final bool disabled;
 
   @override
   Widget build(BuildContext context) {
     return OutlinedButton.icon(
-      onPressed: onPressed,
+      onPressed: disabled ? null : onPressed,
       icon: Icon(
         icon,
         size: 16.0,
@@ -63,10 +67,18 @@ class SecondaryButtonWithIcon extends StatelessWidget {
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(24)),
         ),
-        side: BorderSide(width: 1, color: Theme.of(context).primaryColor),
-        padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 32),
+        side: BorderSide(
+            width: 1,
+            color: disabled
+                ? SystemColors.disable
+                : Theme.of(context).primaryColor),
+        minimumSize: Size.zero,
+        padding: buttonPadding(size),
       ),
-      label: Text(label),
+      label: Text(
+        label,
+        style: buttonSize(size),
+      ),
     );
   }
 }
