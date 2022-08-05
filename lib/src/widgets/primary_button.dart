@@ -30,11 +30,11 @@ EdgeInsets buttonPadding(ButtonSize size) {
 }
 
 class PrimaryButton extends StatelessWidget {
-  PrimaryButton(
+  const PrimaryButton(
       {Key? key,
       required this.onPressed,
       required this.label,
-      this.size: ButtonSize.normal,
+      this.size = ButtonSize.normal,
       this.disabled = false})
       : super(key: key);
 
@@ -63,12 +63,12 @@ class PrimaryButton extends StatelessWidget {
 }
 
 class PrimaryButtonWithIcon extends StatelessWidget {
-  PrimaryButtonWithIcon(
+  const PrimaryButtonWithIcon(
       {Key? key,
       required this.onPressed,
       required this.label,
       required this.icon,
-      this.size: ButtonSize.normal,
+      this.size = ButtonSize.normal,
       this.disabled = false})
       : super(key: key);
 

@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:travel_wallet_ui/travel_wallet_ui.dart';
 
@@ -11,7 +10,7 @@ class ButtonWidgets extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text('Button'),
+        const Text('Button'),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [

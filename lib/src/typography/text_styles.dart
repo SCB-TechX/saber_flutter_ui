@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:travel_wallet_ui/src/typography/fonts.dart';
 
 import '../../travel_wallet_ui.dart';
-import 'font_weights.dart';
 
 class BaseTextStyle {
   static const _baseHeaderStyle = TextStyle(

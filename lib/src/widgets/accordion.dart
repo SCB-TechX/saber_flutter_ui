@@ -9,7 +9,7 @@ class Accordion extends StatelessWidget {
     required this.title,
     this.subtitle,
     required this.expandedContent,
-    this.effect: true,
+    this.effect = true,
     this.textArrow,
   }) : super(key: key);
 
@@ -48,7 +48,7 @@ class Accordion extends StatelessWidget {
                   TextSpan(
                     children: [
                       TextSpan(text: textArrow),
-                      WidgetSpan(
+                      const WidgetSpan(
                         child: Icon(
                           Icons.expand_more,
                           size: 16,

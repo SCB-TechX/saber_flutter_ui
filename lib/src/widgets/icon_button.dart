@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:travel_wallet_ui/src/typography/text_styles.dart';
 import 'package:travel_wallet_ui/travel_wallet_ui.dart';
 
 enum ButtonShape { circle, rectangle }
 
 class ShapeIconButton extends StatelessWidget {
-  ShapeIconButton(
+  const ShapeIconButton(
       {Key? key,
       required this.onPressed,
       required this.icon,
       this.shape,
-      this.disabled: false})
+      this.disabled = false})
       : super(key: key);
 
   final VoidCallback? onPressed;
@@ -21,11 +20,11 @@ class ShapeIconButton extends StatelessWidget {
   ShapeBorder get buttonShape {
     switch (shape) {
       case ButtonShape.circle:
-        return CircleBorder();
+        return const CircleBorder();
       case ButtonShape.rectangle:
         return RoundedRectangleBorder(borderRadius: BorderRadius.circular(16));
       default:
-        return CircleBorder();
+        return const CircleBorder();
     }
   }
 
@@ -48,13 +47,13 @@ class ShapeIconButton extends StatelessWidget {
 }
 
 class ShapeIconButtonWithLabel extends StatelessWidget {
-  ShapeIconButtonWithLabel(
+  const ShapeIconButtonWithLabel(
       {Key? key,
       required this.onPressed,
       required this.icon,
       required this.label,
       this.shape,
-      this.disabled: false})
+      this.disabled = false})
       : super(key: key);
 
   final VoidCallback? onPressed;
@@ -66,11 +65,11 @@ class ShapeIconButtonWithLabel extends StatelessWidget {
   OutlinedBorder get buttonShape {
     switch (shape) {
       case ButtonShape.circle:
-        return CircleBorder();
+        return const CircleBorder();
       case ButtonShape.rectangle:
         return RoundedRectangleBorder(borderRadius: BorderRadius.circular(16));
       default:
-        return CircleBorder();
+        return const CircleBorder();
     }
   }
 

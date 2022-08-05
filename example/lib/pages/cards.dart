@@ -76,7 +76,7 @@ class Cards extends StatelessWidget {
                 ),
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.navigate_next,
                   ),
                 )
@@ -169,7 +169,7 @@ class Cards extends StatelessWidget {
                 ]),
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.navigate_next,
                   ),
                 )
@@ -214,8 +214,8 @@ class Cards extends StatelessWidget {
               color: Theme.of(context).primaryColorLight,
               padding: const EdgeInsets.all(80),
             ),
-            Padding(
-                padding: const EdgeInsets.all(16.0),
+            const Padding(
+                padding: EdgeInsets.all(16.0),
                 child: Text(
                     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor')),
             Padding(
@@ -271,7 +271,7 @@ class Cards extends StatelessWidget {
               padding: const EdgeInsets.all(80),
             ),
             const Padding(
-                padding: const EdgeInsets.all(16.0),
+                padding: EdgeInsets.all(16.0),
                 child: Text(
                     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur varius felis rutrum porta. Suspendisse vulputate leo ligula, non maximus neque mattis vel. Sed tempor, nunc vel dignissim congue, nisl nulla semper lectus, sit amet euismod ante ligula quis ligula. Vivamus faucibus nisi a justo dictum, quis scelerisque libero feugiat.',
                     textAlign: TextAlign.justify,
@@ -282,7 +282,7 @@ class Cards extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  TextButton(onPressed: () {}, child: Text('Enabled')),
+                  TextButton(onPressed: () {}, child: const Text('Enabled')),
                   const SizedBox(
                     width: 8,
                   ),

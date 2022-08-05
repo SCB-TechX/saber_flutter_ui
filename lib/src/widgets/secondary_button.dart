@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:travel_wallet_ui/src/typography/text_styles.dart';
 import 'package:travel_wallet_ui/travel_wallet_ui.dart';
 
 class SecondaryButton extends StatelessWidget {
-  SecondaryButton(
+  const SecondaryButton(
       {Key? key,
       required this.onPressed,
       required this.label,
-      this.size: ButtonSize.normal,
+      this.size = ButtonSize.normal,
       this.disabled = false})
       : super(key: key);
 
@@ -40,12 +39,12 @@ class SecondaryButton extends StatelessWidget {
 }
 
 class SecondaryButtonWithIcon extends StatelessWidget {
-  SecondaryButtonWithIcon(
+  const SecondaryButtonWithIcon(
       {Key? key,
       required this.onPressed,
       required this.label,
       required this.icon,
-      this.size: ButtonSize.normal,
+      this.size = ButtonSize.normal,
       this.disabled = false})
       : super(key: key);
 

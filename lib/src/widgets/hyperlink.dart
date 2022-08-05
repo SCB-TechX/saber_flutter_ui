@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:travel_wallet_ui/src/colors.dart';
 
 class HyperLink extends StatelessWidget {
   const HyperLink(this.data, {Key? key, required this.onTap}) : super(key: key);

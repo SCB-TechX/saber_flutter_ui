@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:travel_wallet_ui/src/colors.dart';
 
 class InputGroup extends StatelessWidget {
-  InputGroup(
+  const InputGroup(
       {Key? key,
       required this.label,
       required this.formField,
