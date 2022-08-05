@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:travel_wallet_ui/travel_wallet_ui.dart';
 import 'package:travel_wallet_ui/src/colors.dart';
-import 'package:travel_walllet/pages/steppers.dart';
-import 'package:travel_walllet/pages/appbars.dart';
-import 'package:travel_walllet/pages/cards.dart';
+import 'package:travel_wallet/pages/buttons.dart';
+import 'package:travel_wallet/pages/steppers.dart';
+import 'package:travel_wallet/pages/appbars.dart';
+import 'package:travel_wallet/pages/cards.dart';
 
 void main() {
   runApp(const MyApp());
@@ -41,13 +42,29 @@ class _MyHomePageState extends State<MyHomePage> {
         shadowColor: Colors.transparent,
       ),
       body: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 8),
+        padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
         child: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
+              TextFormField(
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: 'Enter a search term',
+                  errorText: "Message goes here",
+                ),
+              ),
+              TextFormField(
+                decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(28))),
+                    labelText: 'Enter a search term',
+                    errorText: "Message goes here",
+                    prefixIcon: Icon(Icons.search)),
+              )
               // Appbars(),
-              Cards()
+              // ButtonWidgets(),
+              // Cards(),
               // Switch.adaptive(value: true, onChanged: (_) {})
             ],
           ),

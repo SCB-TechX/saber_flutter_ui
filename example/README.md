@@ -1,4 +1,4 @@
-# travel_walllet
+# travel_wallet
 
 A new Flutter project.
 
