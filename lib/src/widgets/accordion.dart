@@ -39,7 +39,7 @@ class Accordion extends StatelessWidget {
           : null,
       child: Theme(
         data: ThemeData(
-          primarySwatch: Palette.BlackThemeShades,
+          primarySwatch: Palette.blackThemeShades,
         ).copyWith(dividerColor: effect ? Colors.transparent : null),
         child: ExpansionTile(
           trailing: textArrow == null

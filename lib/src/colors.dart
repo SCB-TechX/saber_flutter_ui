@@ -58,7 +58,7 @@ class SystemColors {
 
 class Palette {
   /// Black
-  static const MaterialColor BlackThemeShades = MaterialColor(
+  static const MaterialColor blackThemeShades = MaterialColor(
     0xff333132, // 0% comes in here, this will be color picked if no shade is selected when defining a Color property which doesn’t require a swatch.
     <int, Color>{
       50: Color(0xFFDEDEDE), //10%

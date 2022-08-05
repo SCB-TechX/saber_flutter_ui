@@ -2,33 +2,33 @@ import 'package:flutter/material.dart';
 import 'package:travel_wallet_ui/travel_wallet_ui.dart';
 
 class ThemeColor {
-  static ThemeData blacktheme =
-      ThemeData(primarySwatch: Palette.BlackThemeShades, textTheme: _textTheme);
+  static ThemeData blackTheme =
+      ThemeData(primarySwatch: Palette.blackThemeShades, textTheme: _textTheme);
 
-  static ThemeData bluetheme =
+  static ThemeData blueTheme =
       ThemeData(primarySwatch: Palette.BlueThemeShades, textTheme: _textTheme);
 
-  static ThemeData greentheme =
+  static ThemeData greenTheme =
       ThemeData(primarySwatch: Palette.GreenThemeShades, textTheme: _textTheme);
 
-  static ThemeData yellowtheme = ThemeData(
+  static ThemeData yellowTheme = ThemeData(
       primarySwatch: Palette.YellowThemeShades, textTheme: _textTheme);
 
-  static ThemeData purpletheme = ThemeData(
+  static ThemeData purpleTheme = ThemeData(
       primarySwatch: Palette.PurpleThemeShades, textTheme: _textTheme);
 
-  static ThemeData redtheme =
+  static ThemeData redTheme =
       ThemeData(primarySwatch: Palette.RedThemeShades, textTheme: _textTheme);
 
-  static ThemeData blackandbluetheme = ThemeData(
+  static ThemeData blackAndBlueTheme = ThemeData(
     textTheme: _textTheme,
     appBarTheme: const AppBarTheme(
       elevation: 1,
     ),
     secondaryHeaderColor: const Color(0xFF03DAC6),
     colorScheme: ColorScheme(
-      primary: Palette.BlackThemeShades,
-      primaryContainer: Palette.BlackThemeShades[900],
+      primary: Palette.blackThemeShades,
+      primaryContainer: Palette.blackThemeShades[900],
       secondary: const Color(0xFF16C8F7),
       secondaryContainer: const Color(0xFF0097C4),
       background: Colors.white,

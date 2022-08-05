@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeColor.blacktheme,
+      theme: ThemeColor.blackTheme,
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
