@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travel_wallet/pages/inputs.dart';
 import 'package:travel_wallet_ui/travel_wallet_ui.dart';
 
 void main() {
@@ -13,15 +14,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeColor.blackTheme,
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
-
-  final String title;
+  const MyHomePage({Key? key}) : super(key: key);
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
@@ -37,30 +36,15 @@ class _MyHomePageState extends State<MyHomePage> {
         shadowColor: Colors.transparent,
       ),
       body: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
+        padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
         child: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              TextFormField(
-                decoration: const InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: 'Enter a search term',
-                  errorText: "Message goes here",
-                ),
-              ),
-              TextFormField(
-                decoration: const InputDecoration(
-                    border: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(28))),
-                    labelText: 'Enter a search term',
-                    errorText: "Message goes here",
-                    prefixIcon: Icon(Icons.search)),
-              )
-              // Appbars(),
+              InputWidgets(),
               // ButtonWidgets(),
-              // Cards(),
-              // Switch.adaptive(value: true, onChanged: (_) {})
+              // Accordion(title: Text('text'), expandedContent: []),
+              // Cards()
             ],
           ),
         ),
