@@ -29,11 +29,11 @@ class SecondaryButton extends StatelessWidget {
                   ? SystemColors.disable
                   : Theme.of(context).primaryColor),
           minimumSize: Size.zero,
-          padding: buttonPadding(size),
+          padding: getPadding(size),
         ),
         child: Text(
           label,
-          style: buttonSize(size),
+          style: getTextStyle(size),
         ));
   }
 }
@@ -72,11 +72,11 @@ class SecondaryButtonWithIcon extends StatelessWidget {
                 ? SystemColors.disable
                 : Theme.of(context).primaryColor),
         minimumSize: Size.zero,
-        padding: buttonPadding(size),
+        padding: getPadding(size),
       ),
       label: Text(
         label,
-        style: buttonSize(size),
+        style: getTextStyle(size),
       ),
     );
   }

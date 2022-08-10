@@ -1,33 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:travel_wallet_ui/src/typography/text_styles.dart';
-
-enum ButtonSize { small, normal, extraSmall }
-
-TextStyle buttonSize(ButtonSize size) {
-  switch (size) {
-    case ButtonSize.normal:
-      return BaseTextStyle.button;
-    case ButtonSize.small:
-      return BaseTextStyle.button.copyWith(fontSize: 12);
-    case ButtonSize.extraSmall:
-      return BaseTextStyle.button.copyWith(fontSize: 11);
-    default:
-      return BaseTextStyle.button;
-  }
-}
-
-EdgeInsets buttonPadding(ButtonSize size) {
-  switch (size) {
-    case ButtonSize.normal:
-      return const EdgeInsets.symmetric(vertical: 10, horizontal: 32);
-    case ButtonSize.small:
-      return const EdgeInsets.symmetric(vertical: 8, horizontal: 24);
-    case ButtonSize.extraSmall:
-      return const EdgeInsets.symmetric(vertical: 6, horizontal: 16);
-    default:
-      return const EdgeInsets.symmetric(vertical: 8, horizontal: 32);
-  }
-}
+import 'package:travel_wallet_ui/src/widgets/button_style.dart';
 
 class PrimaryButton extends StatelessWidget {
   const PrimaryButton(
@@ -52,11 +24,11 @@ class PrimaryButton extends StatelessWidget {
           borderRadius: BorderRadius.all(Radius.circular(24)),
         ),
         minimumSize: Size.zero,
-        padding: buttonPadding(size),
+        padding: getPadding(size),
       ),
       child: Text(
         label,
-        style: buttonSize(size),
+        style: getTextStyle(size),
       ),
     );
   }
@@ -91,10 +63,10 @@ class PrimaryButtonWithIcon extends StatelessWidget {
             borderRadius: BorderRadius.all(Radius.circular(24)),
           ),
           minimumSize: Size.zero,
-          padding: buttonPadding(size)),
+          padding: getPadding(size)),
       label: Text(
         label,
-        style: buttonSize(size),
+        style: getTextStyle(size),
       ),
     );
   }
