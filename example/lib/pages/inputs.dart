@@ -12,14 +12,20 @@ class InputWidgets extends StatefulWidget {
 
 class _InputWidgets extends State<InputWidgets> {
   SingingCharacter? _character = SingingCharacter.lafayette;
-  String _dropdownValue = "One";
   bool _checkboxValue = false;
   FocusNode myFocusNode = new FocusNode();
   TextEditingController tempTextEditingController = TextEditingController();
   TextEditingController tempTextEditingController1 = TextEditingController();
 
+  /// Input
   TextEditingController _searchController = TextEditingController();
   TextEditingController _controller = TextEditingController();
+
+  /// Dropdown
+  final items = ['One', 'Two', 'Three', 'Four'];
+  String _dropdownValue = "One";
+
+  String? selectedValue = null;
 
   // This function is triggered when the clear buttion is pressed
   void _clearTextField() {
@@ -33,20 +39,6 @@ class _InputWidgets extends State<InputWidgets> {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        // OutlineBorderTextFormField(
-        //   labelText: "Enter a search term*",
-        //   myFocusNode: myFocusNode,
-        //   tempTextEditingController: tempTextEditingController1,
-        //   keyboardType: TextInputType.number,
-        //   textInputAction: TextInputAction.next,
-        //   autofocus: false,
-        //   checkOfErrorOnFocusChange: true,
-        //   validation: (textToValidate) {
-        //     print("Value Validated");
-        //     return "* Please enter valid IFSC Code";
-        //   },
-        // ),
-
         /// Search and clear text field
         TextFormField(
           controller: _searchController,
@@ -132,7 +124,7 @@ class _InputWidgets extends State<InputWidgets> {
             border: OutlineInputBorder(
                 borderRadius: BorderRadius.all(Radius.circular(8))),
             labelText: 'Outline Input Border',
-            helperText: 'Helper Text',
+            helperText: 'Message goes here',
           ),
         ),
 
@@ -186,64 +178,286 @@ class _InputWidgets extends State<InputWidgets> {
           height: 16,
         ),
 
-        //   // Radios
-        //   ListTile(
-        //     title: const Text("Lafayette"),
-        //     leading: Radio<SingingCharacter>(
-        //       value: SingingCharacter.lafayette,
-        //       groupValue: _character,
-        //       onChanged: (SingingCharacter? value) {
-        //         setState(() {
-        //           _character = value;
-        //         });
-        //       },
-        //     ),
-        //   ),
-        //   ListTile(
-        //     title: const Text("Thomas Jefferson"),
-        //     leading: Radio<SingingCharacter>(
-        //       value: SingingCharacter.jefferson,
-        //       groupValue: _character,
-        //       onChanged: (SingingCharacter? value) {
-        //         setState(() {
-        //           _character = value;
-        //         });
-        //       },
-        //     ),
-        //   ),
+        // Dropdown
+        Container(
+            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            decoration: BoxDecoration(
+                color: Colors.white, borderRadius: BorderRadius.circular(10)),
 
-        //   // Checkbox
-        //   CheckboxListTile(
-        //     title: const Text("title text"),
-        //     value: _checkboxValue,
-        //     onChanged: (v) {
-        //       setState(() {
-        //         _checkboxValue = v!;
-        //       });
-        //     },
-        //     controlAffinity: ListTileControlAffinity.leading,
-        //   ),
+            // dropdown below..
+            child: DropdownButton<String>(
+              value: _dropdownValue,
+              onChanged: (String? newValue) {
+                setState(() {
+                  _dropdownValue = newValue!;
+                });
+              },
+              items: items
+                  .map<DropdownMenuItem<String>>(
+                      (String value) => DropdownMenuItem<String>(
+                            value: value,
+                            child: Text(value),
+                          ))
+                  .toList(),
+              isExpanded: true, //make true to take width of parent widget
+              // underline: Container(), //empty line
+              underline: Container(
+                height: 1,
+                color: SystemColors.disable,
+              ),
+              icon: const Icon(
+                Icons.keyboard_arrow_down,
+              ),
+            )),
+        const SizedBox(
+          height: 16,
+        ),
+        DropdownButtonFormField(
+          decoration: InputDecoration(
+            labelText: 'Dropdown Label Text',
+          ),
+          value: selectedValue,
+          onChanged: (String? newValue) {
+            setState(() {
+              selectedValue = newValue!;
+            });
+          },
+          items: items
+              .map<DropdownMenuItem<String>>(
+                  (String value) => DropdownMenuItem<String>(
+                        value: value,
+                        child: Text(value),
+                      ))
+              .toList(),
+          icon: const Icon(
+            Icons.keyboard_arrow_down,
+          ),
+        ),
+        const SizedBox(
+          height: 16,
+        ),
+        DropdownButtonFormField(
+          decoration: const InputDecoration(
+            hintText: 'Dropdown Hint Text',
+            helperText: 'Message goes here',
+          ),
+          value: selectedValue,
+          onChanged: (String? newValue) {
+            setState(() {
+              selectedValue = newValue!;
+            });
+          },
+          items: items
+              .map<DropdownMenuItem<String>>(
+                  (String value) => DropdownMenuItem<String>(
+                        value: value,
+                        child: Text(value),
+                      ))
+              .toList(),
+          icon: const Icon(
+            Icons.keyboard_arrow_down,
+          ),
+        ),
+        const SizedBox(
+          height: 16,
+        ),
+        DropdownButtonFormField(
+          decoration: InputDecoration(
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(8),
+              ),
+              labelText: 'Outline Label Text'),
+          value: selectedValue,
+          onChanged: (String? newValue) {
+            setState(() {
+              selectedValue = newValue!;
+            });
+          },
+          items: items
+              .map<DropdownMenuItem<String>>(
+                  (String value) => DropdownMenuItem<String>(
+                        value: value,
+                        child: Text(value),
+                      ))
+              .toList(),
+          icon: const Icon(
+            Icons.keyboard_arrow_down,
+          ),
+        ),
+        const SizedBox(
+          height: 16,
+        ),
+        DropdownButtonFormField(
+          decoration: InputDecoration(
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(8),
+              ),
+              errorText: 'Message goes here',
+              labelText: 'Outline Label Text'),
+          value: selectedValue,
+          onChanged: (String? newValue) {
+            setState(() {
+              selectedValue = newValue!;
+            });
+          },
+          items: items
+              .map<DropdownMenuItem<String>>(
+                  (String value) => DropdownMenuItem<String>(
+                        value: value,
+                        child: Text(value),
+                      ))
+              .toList(),
+          icon: const Icon(
+            Icons.keyboard_arrow_down,
+          ),
+        ),
+        const SizedBox(
+          height: 16,
+        ),
+        DropdownButtonFormField(
+          decoration: InputDecoration(
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(8),
+              ),
+              hintText: 'Outline Hint Text'),
+          value: selectedValue,
+          onChanged: (String? newValue) {
+            setState(() {
+              selectedValue = newValue!;
+            });
+          },
+          items: items
+              .map<DropdownMenuItem<String>>(
+                  (String value) => DropdownMenuItem<String>(
+                        value: value,
+                        child: Text(value),
+                      ))
+              .toList(),
+          icon: const Icon(
+            Icons.keyboard_arrow_down,
+          ),
+        ),
+        // Radios
+        Row(
+          children: [
+            Radio<SingingCharacter>(
+              groupValue: _character,
+              value: SingingCharacter.lafayette,
+              onChanged: (SingingCharacter? value) {
+                setState(() {
+                  _character = value;
+                });
+              },
+            ),
+            Text(
+              'Lafayette',
+              style: Theme.of(context).textTheme.subtitle1,
+            ),
+          ],
+        ),
+        Row(
+          children: [
+            Radio<SingingCharacter>(
+              groupValue: _character,
+              value: SingingCharacter.jefferson,
+              onChanged: (SingingCharacter? value) {
+                setState(() {
+                  _character = value;
+                });
+              },
+            ),
+            Text(
+              'Thomas Jefferson',
+              style: Theme.of(context).textTheme.subtitle1,
+            ),
+          ],
+        ),
+        RadioListTile<SingingCharacter>(
+          contentPadding: const EdgeInsets.all(0.0),
+          title: const Text('Lafayette'),
+          value: SingingCharacter.lafayette,
+          groupValue: _character,
+          onChanged: (SingingCharacter? value) {
+            setState(() {
+              _character = value;
+            });
+          },
+        ),
+        RadioListTile<SingingCharacter>(
+          contentPadding: const EdgeInsets.all(0.0),
+          title: const Text('Thomas Jefferson'),
+          value: SingingCharacter.jefferson,
+          groupValue: _character,
+          onChanged: (SingingCharacter? value) {
+            setState(() {
+              _character = value;
+            });
+          },
+        ),
+        ListTile(
+          title: const Text("Lafayette"),
+          leading: Radio<SingingCharacter>(
+            value: SingingCharacter.lafayette,
+            groupValue: _character,
+            onChanged: (SingingCharacter? value) {
+              setState(() {
+                _character = value;
+              });
+            },
+          ),
+        ),
+        ListTile(
+          title: const Text("Thomas Jefferson"),
+          leading: Radio<SingingCharacter>(
+            value: SingingCharacter.jefferson,
+            groupValue: _character,
+            onChanged: (SingingCharacter? value) {
+              setState(() {
+                _character = value;
+              });
+            },
+          ),
+        ),
 
-        //   // Dropdown
-        //   DropdownButton<String>(
-        //     value: _dropdownValue,
-        //     underline: Container(
-        //       height: 1,
-        //       color: SystemColors.disable,
-        //     ),
-        //     onChanged: (String? newValue) {
-        //       setState(() {
-        //         _dropdownValue = newValue!;
-        //       });
-        //     },
-        //     items: <String>["One", "Two", "Free", "Four"]
-        //         .map<DropdownMenuItem<String>>((String value) {
-        //       return DropdownMenuItem<String>(
-        //         value: value,
-        //         child: Text(value),
-        //       );
-        //     }).toList(),
-        //   ),
+        // Checkbox
+        Row(
+          children: [
+            Checkbox(
+              value: _checkboxValue,
+              onChanged: (v) {
+                setState(() {
+                  _checkboxValue = v!;
+                });
+              },
+            ),
+            Text(
+              'Checkbox',
+              style: Theme.of(context).textTheme.subtitle1,
+            )
+          ],
+        ),
+        CheckboxListTile(
+          contentPadding: const EdgeInsets.all(0.0),
+          title: const Text("Checkbox ListTile"),
+          value: _checkboxValue,
+          onChanged: (v) {
+            setState(() {
+              _checkboxValue = v!;
+            });
+          },
+          controlAffinity: ListTileControlAffinity.leading,
+        ),
+        ListTile(
+          title: const Text("Checkbox"),
+          leading: Checkbox(
+            value: _checkboxValue,
+            onChanged: (v) {
+              setState(() {
+                _checkboxValue = v!;
+              });
+            },
+          ),
+        ),
       ],
     );
   }

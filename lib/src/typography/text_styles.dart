@@ -11,7 +11,7 @@ class BaseTextStyle {
   );
 
   static const _baseTextStyle = TextStyle(
-    package: 'travelwallet_ui',
+    package: 'travel_wallet_ui',
     fontFamily: Fonts.poppins,
     fontWeight: BaseFontWeight.regular,
   );
