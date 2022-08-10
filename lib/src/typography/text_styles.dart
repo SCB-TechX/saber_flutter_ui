@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-
-import '../../travel_wallet_ui.dart';
+import 'typography.dart';
+import '../colors.dart';
 
 class BaseTextStyle {
   static const _baseHeaderStyle = TextStyle(
-    package: 'travelwallet_ui',
+    package: 'travel_wallet_ui',
     fontFamily: Fonts.dmSans,
     fontWeight: BaseFontWeight.bold,
     color: SystemColors.black,
   );
 
   static const _baseTextStyle = TextStyle(
-    package: 'travelwallet_ui',
+    package: 'travel_wallet_ui',
     fontFamily: Fonts.poppins,
     fontWeight: BaseFontWeight.regular,
   );
