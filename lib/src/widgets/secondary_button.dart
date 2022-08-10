@@ -2,32 +2,30 @@ import 'package:flutter/material.dart';
 import 'package:travel_wallet_ui/travel_wallet_ui.dart';
 
 class SecondaryButton extends StatelessWidget {
-  const SecondaryButton(
-      {Key? key,
-      required this.onPressed,
-      required this.label,
-      this.size = ButtonSize.normal,
-      this.disabled = false})
-      : super(key: key);
+  const SecondaryButton({
+    Key? key,
+    required this.onPressed,
+    required this.label,
+    this.size = ButtonSize.normal,
+  }) : super(key: key);
 
   final VoidCallback? onPressed;
   final String label;
   final ButtonSize size;
-  final bool disabled;
 
   @override
   Widget build(BuildContext context) {
     return OutlinedButton(
-        onPressed: disabled ? null : onPressed,
+        onPressed: onPressed,
         style: OutlinedButton.styleFrom(
           shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(24)),
           ),
           side: BorderSide(
               width: 1,
-              color: disabled
-                  ? SystemColors.disable
-                  : Theme.of(context).primaryColor),
+              color: onPressed != null
+                  ? Theme.of(context).primaryColor
+                  : SystemColors.disable),
           minimumSize: Size.zero,
           padding: getPadding(size),
         ),
@@ -44,20 +42,18 @@ class SecondaryButtonWithIcon extends StatelessWidget {
       required this.onPressed,
       required this.label,
       required this.icon,
-      this.size = ButtonSize.normal,
-      this.disabled = false})
+      this.size = ButtonSize.normal})
       : super(key: key);
 
   final VoidCallback? onPressed;
   final String label;
   final IconData icon;
   final ButtonSize size;
-  final bool disabled;
 
   @override
   Widget build(BuildContext context) {
     return OutlinedButton.icon(
-      onPressed: disabled ? null : onPressed,
+      onPressed: onPressed,
       icon: Icon(
         icon,
         size: 16.0,
@@ -68,9 +64,9 @@ class SecondaryButtonWithIcon extends StatelessWidget {
         ),
         side: BorderSide(
             width: 1,
-            color: disabled
-                ? SystemColors.disable
-                : Theme.of(context).primaryColor),
+            color: onPressed != null
+                ? Theme.of(context).primaryColor
+                : SystemColors.disable),
         minimumSize: Size.zero,
         padding: getPadding(size),
       ),
