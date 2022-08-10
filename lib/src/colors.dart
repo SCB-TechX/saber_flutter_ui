@@ -8,52 +8,52 @@ class SystemColors {
   static const Color white = Color(0xFFFFFFFF);
 
   /// Hyperlink
-  static const Color hyperlink = Palette.InfoShades;
+  static const Color hyperlink = Palette.infoShades;
 
   /// Info
-  static const Color info = Palette.InfoShades;
+  static const Color info = Palette.infoShades;
 
   /// Info dark
-  static Color infoDark = Palette.InfoShades[400]!;
+  static Color infoDark = Palette.infoShades[400]!;
 
   /// Info light
-  static Color infoLight = Palette.InfoShades[100]!;
+  static Color infoLight = Palette.infoShades[100]!;
 
   /// Error
-  static const Color error = Palette.ErrorShades;
+  static const Color error = Palette.errorShades;
 
   /// Error dark
-  static Color errorDark = Palette.ErrorShades[400]!;
+  static Color errorDark = Palette.errorShades[400]!;
 
   /// Error light
-  static Color errorLight = Palette.ErrorShades[100]!;
+  static Color errorLight = Palette.errorShades[100]!;
 
   /// Success
-  static const Color success = Palette.SuccessShades;
+  static const Color success = Palette.successShades;
 
   /// Success dark
-  static Color successDark = Palette.SuccessShades[400]!;
+  static Color successDark = Palette.successShades[400]!;
 
   /// Success light
-  static Color successLight = Palette.SuccessShades[100]!;
+  static Color successLight = Palette.successShades[100]!;
 
   /// Warning
-  static const Color warning = Palette.WaringShades;
+  static const Color warning = Palette.waringShades;
 
   /// Warning dark
-  static Color warningDark = Palette.WaringShades[400]!;
+  static Color warningDark = Palette.waringShades[400]!;
 
   /// Warning light
-  static Color warningLight = Palette.WaringShades[100]!;
+  static Color warningLight = Palette.waringShades[100]!;
 
   /// Disable
-  static const Color disable = Palette.DisableShades;
+  static const Color disable = Palette.disableShades;
 
   /// Disable dark
-  static Color disableDark = Palette.DisableShades[400]!;
+  static Color disableDark = Palette.disableShades[400]!;
 
   /// Disable light
-  static Color disableLight = Palette.DisableShades[100]!;
+  static Color disableLight = Palette.disableShades[100]!;
 }
 
 class Palette {
@@ -75,7 +75,7 @@ class Palette {
   );
 
   /// Blue
-  static const MaterialColor BlueThemeShades = MaterialColor(
+  static const MaterialColor blueThemeShades = MaterialColor(
     0xFF008BFF, // 0% comes in here, this will be color picked if no shade is selected when defining a Color property which doesn’t require a swatch.
     <int, Color>{
       50: Color(0xFFE6EFFA), //10%
@@ -92,7 +92,7 @@ class Palette {
   );
 
   /// Green
-  static const MaterialColor GreenThemeShades = MaterialColor(
+  static const MaterialColor greenThemeShades = MaterialColor(
     0xFF3F7000, // 0% comes in here, this will be color picked if no shade is selected when defining a Color property which doesn’t require a swatch.
     <int, Color>{
       50: Color(0xFFE8EDE6), //10%
@@ -109,7 +109,7 @@ class Palette {
   );
 
   /// Yellow
-  static const MaterialColor YellowThemeShades = MaterialColor(
+  static const MaterialColor yellowThemeShades = MaterialColor(
     0xFFF9BD38, // 0% comes in here, this will be color picked if no shade is selected when defining a Color property which doesn’t require a swatch.
     <int, Color>{
       50: Color(0xFFFEF2D7), //10%
@@ -126,7 +126,7 @@ class Palette {
   );
 
   /// Purple
-  static const MaterialColor PurpleThemeShades = MaterialColor(
+  static const MaterialColor purpleThemeShades = MaterialColor(
     0xFF9373F9, // 0% comes in here, this will be color picked if no shade is selected when defining a Color property which doesn’t require a swatch.
     <int, Color>{
       50: Color(0xFFEFEDFA), //10%
@@ -143,7 +143,7 @@ class Palette {
   );
 
   /// Red
-  static const MaterialColor RedThemeShades = MaterialColor(
+  static const MaterialColor redThemeShades = MaterialColor(
     0xFFFF6D5E, // 0% comes in here, this will be color picked if no shade is selected when defining a Color property which doesn’t require a swatch.
     <int, Color>{
       50: Color(0xFFFAECEB), //10%
@@ -160,7 +160,7 @@ class Palette {
   );
 
   /// Error
-  static const MaterialColor ErrorShades = MaterialColor(
+  static const MaterialColor errorShades = MaterialColor(
     0xFFA53328, // 0% comes in here, this will be color picked if no shade is selected when defining a Color property which doesn’t require a swatch.
     <int, Color>{
       100: Color(0xFFFFE4E4), //10%
@@ -172,7 +172,7 @@ class Palette {
   );
 
   /// Waring
-  static const MaterialColor WaringShades = MaterialColor(
+  static const MaterialColor waringShades = MaterialColor(
     0xFFFFB72C, // 0% comes in here, this will be color picked if no shade is selected when defining a Color property which doesn’t require a swatch.
     <int, Color>{
       100: Color(0xFFFFE9BE), //10%
@@ -184,7 +184,7 @@ class Palette {
   );
 
   /// Success
-  static const MaterialColor SuccessShades = MaterialColor(
+  static const MaterialColor successShades = MaterialColor(
     0xFF7BC11F, // 0% comes in here, this will be color picked if no shade is selected when defining a Color property which doesn’t require a swatch.
     <int, Color>{
       100: Color(0xFFE0EDCD), //10%
@@ -196,7 +196,7 @@ class Palette {
   );
 
   /// Info
-  static const MaterialColor InfoShades = MaterialColor(
+  static const MaterialColor infoShades = MaterialColor(
     0xFF1678A9, // 0% comes in here, this will be color picked if no shade is selected when defining a Color property which doesn’t require a swatch.
     <int, Color>{
       100: Color(0xFFC7E8FF), //10%
@@ -208,7 +208,7 @@ class Palette {
   );
 
   /// Disable
-  static const MaterialColor DisableShades = MaterialColor(
+  static const MaterialColor disableShades = MaterialColor(
     0xFFC4C4C4, // 0% comes in here, this will be color picked if no shade is selected when defining a Color property which doesn’t require a swatch.
     <int, Color>{
       100: Color(0xFFF2F2F2), //10%

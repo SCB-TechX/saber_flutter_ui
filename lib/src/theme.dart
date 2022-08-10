@@ -6,19 +6,19 @@ class ThemeColor {
       ThemeData(primarySwatch: Palette.blackThemeShades, textTheme: _textTheme);
 
   static ThemeData blueTheme =
-      ThemeData(primarySwatch: Palette.BlueThemeShades, textTheme: _textTheme);
+      ThemeData(primarySwatch: Palette.blueThemeShades, textTheme: _textTheme);
 
   static ThemeData greenTheme =
-      ThemeData(primarySwatch: Palette.GreenThemeShades, textTheme: _textTheme);
+      ThemeData(primarySwatch: Palette.greenThemeShades, textTheme: _textTheme);
 
   static ThemeData yellowTheme = ThemeData(
-      primarySwatch: Palette.YellowThemeShades, textTheme: _textTheme);
+      primarySwatch: Palette.yellowThemeShades, textTheme: _textTheme);
 
   static ThemeData purpleTheme = ThemeData(
-      primarySwatch: Palette.PurpleThemeShades, textTheme: _textTheme);
+      primarySwatch: Palette.purpleThemeShades, textTheme: _textTheme);
 
   static ThemeData redTheme =
-      ThemeData(primarySwatch: Palette.RedThemeShades, textTheme: _textTheme);
+      ThemeData(primarySwatch: Palette.redThemeShades, textTheme: _textTheme);
 
   static ThemeData blackAndBlueTheme = ThemeData(
     textTheme: _textTheme,
