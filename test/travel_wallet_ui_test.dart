@@ -6,6 +6,11 @@ void main() {
   group('TravelWallet themeData', () {
     test('is defined for standard', () {
       expect(ThemeColor.blackTheme, isA<ThemeData>());
+      expect(ThemeColor.blueTheme, isA<ThemeData>());
+      expect(ThemeColor.greenTheme, isA<ThemeData>());
+      expect(ThemeColor.yellowTheme, isA<ThemeData>());
+      expect(ThemeColor.purpleTheme, isA<ThemeData>());
+      expect(ThemeColor.redTheme, isA<ThemeData>());
     });
   });
 }
