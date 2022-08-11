@@ -15,21 +15,17 @@ void main() {
     ButtonSize.small: getTextStyle(ButtonSize.small),
     ButtonSize.extraSmall: getTextStyle(ButtonSize.extraSmall),
   };
-  final buttonShape = RoundedRectangleBorder(
-    borderRadius: const BorderRadius.all(Radius.circular(24)),
-    side: BorderSide(
-      width: 1,
-      color: blackTheme.primaryColor,
-    ),
+  const buttonShape = RoundedRectangleBorder(
+    borderRadius: BorderRadius.all(Radius.circular(24)),
   );
 
-  testWidgets('renders SecondaryButton default styles',
+  testWidgets('renders PrimaryButton default styles',
       (WidgetTester tester) async {
     ButtonSize size = ButtonSize.normal;
     MaterialApp materialApp = MaterialApp(
       theme: blackTheme,
       home: Center(
-          child: SecondaryButton(
+          child: PrimaryButton(
         onPressed: () {},
         label: 'button',
         size: size,
@@ -39,17 +35,17 @@ void main() {
     await tester.pumpWidget(materialApp);
 
     Material buttonWidget = tester.widget<Material>(find.descendant(
-      of: find.byType(SecondaryButton),
+      of: find.byType(PrimaryButton),
       matching: find.byType(Material),
     ));
     Padding paddingWidget = tester.widget<Padding>(
       find.descendant(
-        of: find.byType(SecondaryButton),
+        of: find.byType(PrimaryButton),
         matching: find.byType(Padding),
       ),
     );
     Text textWidget = tester.widget<Text>(find.descendant(
-        of: find.byType(SecondaryButton), matching: find.byType(Text)));
+        of: find.byType(PrimaryButton), matching: find.byType(Text)));
     expect(buttonWidget.shape, buttonShape);
     expect(paddingWidget.padding, buttonStyle[size]);
     expect(textWidget.style!.fontFamily, textStyle[size]!.fontFamily);
@@ -61,7 +57,7 @@ void main() {
     materialApp = MaterialApp(
       theme: blackTheme,
       home: Center(
-          child: SecondaryButton(
+          child: PrimaryButton(
         onPressed: () {},
         label: 'button',
         size: size,
@@ -71,17 +67,17 @@ void main() {
     await tester.pumpWidget(materialApp);
 
     buttonWidget = tester.widget<Material>(find.descendant(
-      of: find.byType(SecondaryButton),
+      of: find.byType(PrimaryButton),
       matching: find.byType(Material),
     ));
     paddingWidget = tester.widget<Padding>(
       find.descendant(
-        of: find.byType(SecondaryButton),
+        of: find.byType(PrimaryButton),
         matching: find.byType(Padding),
       ),
     );
     textWidget = tester.widget<Text>(find.descendant(
-        of: find.byType(SecondaryButton), matching: find.byType(Text)));
+        of: find.byType(PrimaryButton), matching: find.byType(Text)));
     expect(buttonWidget.shape, buttonShape);
     expect(paddingWidget.padding, buttonStyle[size]);
     expect(textWidget.style!.fontFamily, textStyle[size]!.fontFamily);
@@ -93,7 +89,7 @@ void main() {
     materialApp = MaterialApp(
       theme: blackTheme,
       home: Center(
-          child: SecondaryButton(
+          child: PrimaryButton(
         onPressed: () {},
         label: 'button',
         size: size,
@@ -103,17 +99,17 @@ void main() {
     await tester.pumpWidget(materialApp);
 
     buttonWidget = tester.widget<Material>(find.descendant(
-      of: find.byType(SecondaryButton),
+      of: find.byType(PrimaryButton),
       matching: find.byType(Material),
     ));
     paddingWidget = tester.widget<Padding>(
       find.descendant(
-        of: find.byType(SecondaryButton),
+        of: find.byType(PrimaryButton),
         matching: find.byType(Padding),
       ),
     );
     textWidget = tester.widget<Text>(find.descendant(
-        of: find.byType(SecondaryButton), matching: find.byType(Text)));
+        of: find.byType(PrimaryButton), matching: find.byType(Text)));
     expect(buttonWidget.shape, buttonShape);
     expect(paddingWidget.padding, buttonStyle[size]);
     expect(textWidget.style!.fontFamily, textStyle[size]!.fontFamily);
@@ -121,14 +117,14 @@ void main() {
     expect(textWidget.style!.fontSize, textStyle[size]!.fontSize);
   });
 
-  testWidgets('renders SecondaryButtonWithIcon default styles',
+  testWidgets('renders PrimaryButtonWithIcon default styles',
       (WidgetTester tester) async {
     IconData iconData = Icons.abc;
     ButtonSize size = ButtonSize.normal;
     MaterialApp materialApp = MaterialApp(
       theme: blackTheme,
       home: Center(
-          child: SecondaryButtonWithIcon(
+          child: PrimaryButtonWithIcon(
         onPressed: () {},
         label: 'button',
         size: size,
@@ -139,19 +135,19 @@ void main() {
     await tester.pumpWidget(materialApp);
 
     Material buttonWidget = tester.widget<Material>(find.descendant(
-      of: find.byType(SecondaryButtonWithIcon),
+      of: find.byType(PrimaryButtonWithIcon),
       matching: find.byType(Material),
     ));
     Padding paddingWidget = tester.widget<Padding>(
       find.descendant(
-        of: find.byType(SecondaryButtonWithIcon),
+        of: find.byType(PrimaryButtonWithIcon),
         matching: find.byType(Padding),
       ),
     );
     Text textWidget = tester.widget<Text>(find.descendant(
-        of: find.byType(SecondaryButtonWithIcon), matching: find.byType(Text)));
+        of: find.byType(PrimaryButtonWithIcon), matching: find.byType(Text)));
     Icon iconWidget = tester.widget(find.descendant(
-        of: find.byType(SecondaryButtonWithIcon), matching: find.byType(Icon)));
+        of: find.byType(PrimaryButtonWithIcon), matching: find.byType(Icon)));
     expect(buttonWidget.shape, buttonShape);
     expect(paddingWidget.padding, buttonStyle[size]);
     expect(textWidget.style!.fontFamily, textStyle[size]!.fontFamily);
@@ -165,7 +161,7 @@ void main() {
     materialApp = MaterialApp(
       theme: blackTheme,
       home: Center(
-          child: SecondaryButtonWithIcon(
+          child: PrimaryButtonWithIcon(
         onPressed: () {},
         label: 'button',
         size: size,
@@ -176,19 +172,19 @@ void main() {
     await tester.pumpWidget(materialApp);
 
     buttonWidget = tester.widget<Material>(find.descendant(
-      of: find.byType(SecondaryButtonWithIcon),
+      of: find.byType(PrimaryButtonWithIcon),
       matching: find.byType(Material),
     ));
     paddingWidget = tester.widget<Padding>(
       find.descendant(
-        of: find.byType(SecondaryButtonWithIcon),
+        of: find.byType(PrimaryButtonWithIcon),
         matching: find.byType(Padding),
       ),
     );
     textWidget = tester.widget<Text>(find.descendant(
-        of: find.byType(SecondaryButtonWithIcon), matching: find.byType(Text)));
+        of: find.byType(PrimaryButtonWithIcon), matching: find.byType(Text)));
     iconWidget = tester.widget(find.descendant(
-        of: find.byType(SecondaryButtonWithIcon), matching: find.byType(Icon)));
+        of: find.byType(PrimaryButtonWithIcon), matching: find.byType(Icon)));
     expect(buttonWidget.shape, buttonShape);
     expect(paddingWidget.padding, buttonStyle[size]);
     expect(textWidget.style!.fontFamily, textStyle[size]!.fontFamily);
@@ -202,7 +198,7 @@ void main() {
     materialApp = MaterialApp(
       theme: blackTheme,
       home: Center(
-          child: SecondaryButtonWithIcon(
+          child: PrimaryButtonWithIcon(
         onPressed: () {},
         label: 'button',
         size: size,
@@ -213,19 +209,19 @@ void main() {
     await tester.pumpWidget(materialApp);
 
     buttonWidget = tester.widget<Material>(find.descendant(
-      of: find.byType(SecondaryButtonWithIcon),
+      of: find.byType(PrimaryButtonWithIcon),
       matching: find.byType(Material),
     ));
     paddingWidget = tester.widget<Padding>(
       find.descendant(
-        of: find.byType(SecondaryButtonWithIcon),
+        of: find.byType(PrimaryButtonWithIcon),
         matching: find.byType(Padding),
       ),
     );
     textWidget = tester.widget<Text>(find.descendant(
-        of: find.byType(SecondaryButtonWithIcon), matching: find.byType(Text)));
+        of: find.byType(PrimaryButtonWithIcon), matching: find.byType(Text)));
     iconWidget = tester.widget(find.descendant(
-        of: find.byType(SecondaryButtonWithIcon), matching: find.byType(Icon)));
+        of: find.byType(PrimaryButtonWithIcon), matching: find.byType(Icon)));
     expect(buttonWidget.shape, buttonShape);
     expect(paddingWidget.padding, buttonStyle[size]);
     expect(textWidget.style!.fontFamily, textStyle[size]!.fontFamily);
@@ -235,12 +231,12 @@ void main() {
     expect(iconWidget.size, 16.0);
   });
 
-  testWidgets('SecondaryButton onPressed', (WidgetTester tester) async {
+  testWidgets('PrimaryButton onPressed', (WidgetTester tester) async {
     bool wasPressed = false;
     MaterialApp materialApp = MaterialApp(
       theme: blackTheme,
       home: Center(
-          child: SecondaryButton(
+          child: PrimaryButton(
         onPressed: () {
           wasPressed = true;
         },
@@ -251,18 +247,18 @@ void main() {
     await tester.pumpWidget(materialApp);
 
     await tester.tap(find.descendant(
-      of: find.byType(SecondaryButton),
+      of: find.byType(PrimaryButton),
       matching: find.byType(Material),
     ));
     expect(wasPressed, true);
   });
 
-  testWidgets('SecondaryButtonWithIcon onPressed', (WidgetTester tester) async {
+  testWidgets('PrimaryButtonWithIcon onPressed', (WidgetTester tester) async {
     bool wasPressed = false;
     MaterialApp materialApp = MaterialApp(
       theme: blackTheme,
       home: Center(
-          child: SecondaryButtonWithIcon(
+          child: PrimaryButtonWithIcon(
         onPressed: () {
           wasPressed = true;
         },
@@ -274,7 +270,7 @@ void main() {
     await tester.pumpWidget(materialApp);
 
     await tester.tap(find.descendant(
-      of: find.byType(SecondaryButtonWithIcon),
+      of: find.byType(PrimaryButtonWithIcon),
       matching: find.byType(Material),
     ));
     expect(wasPressed, true);
