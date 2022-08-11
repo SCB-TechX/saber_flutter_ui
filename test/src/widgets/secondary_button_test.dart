@@ -234,4 +234,49 @@ void main() {
     expect(iconWidget.icon, iconData);
     expect(iconWidget.size, 16.0);
   });
+
+  testWidgets('SecondaryButton onPressed', (WidgetTester tester) async {
+    bool wasPressed = false;
+    MaterialApp materialApp = MaterialApp(
+      theme: blackTheme,
+      home: Center(
+          child: SecondaryButton(
+        onPressed: () {
+          wasPressed = true;
+        },
+        label: 'button',
+      )),
+    );
+
+    await tester.pumpWidget(materialApp);
+
+    await tester.tap(find.descendant(
+      of: find.byType(SecondaryButton),
+      matching: find.byType(Material),
+    ));
+    expect(wasPressed, true);
+  });
+
+  testWidgets('SecondaryButtonWithIcon onPressed', (WidgetTester tester) async {
+    bool wasPressed = false;
+    MaterialApp materialApp = MaterialApp(
+      theme: blackTheme,
+      home: Center(
+          child: SecondaryButtonWithIcon(
+        onPressed: () {
+          wasPressed = true;
+        },
+        label: 'button',
+        icon: Icons.abc,
+      )),
+    );
+
+    await tester.pumpWidget(materialApp);
+
+    await tester.tap(find.descendant(
+      of: find.byType(SecondaryButtonWithIcon),
+      matching: find.byType(Material),
+    ));
+    expect(wasPressed, true);
+  });
 }
