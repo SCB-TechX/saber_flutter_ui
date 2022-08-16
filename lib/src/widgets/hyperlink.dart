@@ -1,19 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:travel_wallet_ui/travel_wallet_ui.dart';
 
-class HyperLink extends StatelessWidget {
-  const HyperLink(this.data, {Key? key, required this.onTap}) : super(key: key);
+class Hyperlink extends StatelessWidget {
+  const Hyperlink({Key? key, required this.label, required this.onTap})
+      : super(key: key);
 
-  final VoidCallback onTap;
-  final String data;
+  final VoidCallback? onTap;
+  final String label;
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onTap,
       child: Text(
-        data,
+        label,
         style: const TextStyle(
-            // color: SystemColors.hyperlink,
+            color: SystemColors.hyperlink,
             decoration: TextDecoration.underline),
       ),
     );
