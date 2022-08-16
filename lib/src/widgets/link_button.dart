@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class LinkButtonWith extends StatelessWidget {
-  const LinkButtonWith({Key? key, required this.onPressed, required this.label})
+class LinkButton extends StatelessWidget {
+  const LinkButton({Key? key, required this.onPressed, required this.label})
       : super(key: key);
 
-  final VoidCallback onPressed;
+  final VoidCallback? onPressed;
   final String label;
 
   @override
@@ -24,7 +24,7 @@ class LinkButtonWithIcon extends StatelessWidget {
       required this.icon})
       : super(key: key);
 
-  final VoidCallback onPressed;
+  final VoidCallback? onPressed;
   final String label;
   final IconData icon;
 
