@@ -102,7 +102,7 @@ class ButtonWidgets extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            LinkButtonWith(
+            LinkButton(
               onPressed: () {},
               label: 'Text Button',
             ),
