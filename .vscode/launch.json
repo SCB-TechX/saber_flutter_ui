@@ -38,6 +38,14 @@
       "args": ["-d", "macos"]
     },
     {
+      "name": "example (iOS)",
+      "cwd": "example",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "args": ["-d", "0B5E5919-41F5-4217-9762-440F2576605D"]
+    },
+    {
       "name": "example (profile mode)",
       "cwd": "example",
       "request": "launch",
