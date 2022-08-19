@@ -83,11 +83,20 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Getting Started',
+                to: '/docs/getting-started/introduction',
               },
             ],
           },
+          {
+            title: 'Examples',
+            items: [
+              {
+                label: 'Example Pages',
+                to: '/docs/examples',
+              },
+            ],
+          }
         ],
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
