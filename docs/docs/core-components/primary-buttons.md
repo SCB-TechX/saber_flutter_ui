@@ -1,4 +1,4 @@
-# [WIP] PrimaryButtons
+# PrimaryButtons
 
 ![primary buttons overview](/img/docs/core-components/primary-buttons/primary-buttons-overview.png)
 
@@ -58,48 +58,53 @@ import 'package:travel_wallet_ui/travel_wallet_ui.dart';
 
 const primaryButtonText = 'Primary Button';
 
-class ButtonWidgets extends StatelessWidget {
-  const ButtonWidgets({Key? key}) : super(key: key);
+void main() => runApp(const MyApp());
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  static const String _title = 'PrimaryButtons Code Example';
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        const Text('Button'),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            ShapeIconButton(
-              onPressed: () {},
-              icon: Icons.add,
+    return MaterialApp(
+      home: Scaffold(
+          appBar: AppBar(title: const Text(_title)),
+          body: Center(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                PrimaryButton(
+                  onPressed: () {},
+                  label: primaryButtonText,
+                ),
+                PrimaryButton(
+                  onPressed: () {},
+                  size: ButtonSize.small,
+                  label: primaryButtonText,
+                ),
+                PrimaryButton(
+                  onPressed: () {},
+                  size: ButtonSize.extraSmall,
+                  label: primaryButtonText,
+                ),
+                const PrimaryButton(
+                  onPressed: null,
+                  label: primaryButtonText,
+                ),
+                const PrimaryButton(
+                  onPressed: null,
+                  size: ButtonSize.small,
+                  label: primaryButtonText,
+                ),
+                const PrimaryButton(
+                  onPressed: null,
+                  size: ButtonSize.extraSmall,
+                  label: primaryButtonText,
+                ),
+              ],
             ),
-            ShapeIconButton(
-              onPressed: () {},
-              icon: Icons.add,
-              shape: ButtonShape.circle,
-              disabled: true,
-            ),
-            ShapeIconButton(
-              onPressed: () {},
-              icon: Icons.add,
-              shape: ButtonShape.rectangle,
-            ),
-            ShapeIconButtonWithLabel(
-              onPressed: () {},
-              label: 'disabled',
-              icon: Icons.add,
-              shape: ButtonShape.circle,
-              disabled: true,
-            ),
-            ShapeIconButtonWithLabel(
-              onPressed: () {},
-              label: 'label',
-              icon: Icons.add,
-              shape: ButtonShape.rectangle,
-            ),
-          ],
-        ),
-      ],
+          )),
     );
   }
 }
@@ -108,5 +113,65 @@ class ButtonWidgets extends StatelessWidget {
 ### PrimaryButtonWithIcon
 
 ```dart
+import 'package:flutter/material.dart';
+import 'package:travel_wallet_ui/travel_wallet_ui.dart';
 
+const primaryButtonText = 'Primary Button';
+
+void main() => runApp(const MyApp());
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  static const String _title = 'PrimaryButtons Code Example';
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+          appBar: AppBar(title: const Text(_title)),
+          body: Center(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                PrimaryButtonWithIcon(
+                  onPressed: () {},
+                  label: primaryButtonText,
+                  icon: Icons.add,
+                ),
+                PrimaryButtonWithIcon(
+                  onPressed: () {},
+                  size: ButtonSize.small,
+                  label: primaryButtonText,
+                  icon: Icons.add,
+                ),
+                PrimaryButtonWithIcon(
+                  onPressed: () {},
+                  size: ButtonSize.extraSmall,
+                  label: primaryButtonText,
+                  icon: Icons.add,
+                ),
+                const PrimaryButtonWithIcon(
+                  onPressed: null,
+                  label: primaryButtonText,
+                  icon: Icons.add,
+                ),
+                const PrimaryButtonWithIcon(
+                  onPressed: null,
+                  size: ButtonSize.small,
+                  label: primaryButtonText,
+                  icon: Icons.add,
+                ),
+                const PrimaryButtonWithIcon(
+                  onPressed: null,
+                  size: ButtonSize.extraSmall,
+                  label: primaryButtonText,
+                  icon: Icons.add,
+                ),
+              ],
+            ),
+          )),
+    );
+  }
+}
 ```
