@@ -1,4 +1,4 @@
-# 🔥 [WIP] IconButtons
+# IconButtons
 
 ![icon buttons overview](/img/docs/core-components/icon-buttons/icon-buttons-overview.png)
 
@@ -107,15 +107,15 @@ class MyApp extends StatelessWidget {
           body: Center(
             child: Column(
               mainAxisSize: MainAxisSize.min,
-              children: const [
-                ShapeIconButtonWithLabel(
+              children: [
+                const ShapeIconButtonWithLabel(
                   onPressed: null,
                   icon: Icons.add,
                   label: "Add",
                 ),
-                SizedBox(height: 30),
+                const SizedBox(height: 30),
                 ShapeIconButtonWithLabel(
-                  onPressed: null,
+                  onPressed: () {},
                   icon: Icons.add,
                   label: "Add",
                   shape: ButtonShape.rectangle,
