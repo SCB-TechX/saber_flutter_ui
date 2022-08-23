@@ -124,11 +124,10 @@ class ButtonWidgets extends StatelessWidget {
             const SizedBox(
               width: 8,
             ),
-            ShapeIconButton(
-              onPressed: () {},
+            const ShapeIconButton(
+              onPressed: null,
               icon: Icons.add,
               shape: ButtonShape.circle,
-              disabled: true,
             ),
             const SizedBox(
               width: 8,
@@ -138,12 +137,11 @@ class ButtonWidgets extends StatelessWidget {
               icon: Icons.add,
               shape: ButtonShape.rectangle,
             ),
-            ShapeIconButtonWithLabel(
-              onPressed: () {},
+            const ShapeIconButtonWithLabel(
+              onPressed: null,
               label: 'disabled',
               icon: Icons.add,
               shape: ButtonShape.circle,
-              disabled: true,
             ),
             ShapeIconButtonWithLabel(
               onPressed: () {},
