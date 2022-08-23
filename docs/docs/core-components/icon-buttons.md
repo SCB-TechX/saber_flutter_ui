@@ -24,15 +24,6 @@ ShapeIconButton(
 ShapeIconButton(
   onPressed: () {},
   icon: Icons.add,
-  shape: ButtonShape.circle,
-  disabled: true,
-)
-```
-
-```dart
-ShapeIconButton(
-  onPressed: () {},
-  icon: Icons.add,
   shape: ButtonShape.rectangle,
 )
 ```
@@ -44,17 +35,7 @@ ShapeIconButton(
 ```dart
 ShapeIconButtonWithLabel(
   onPressed: () {},
-  label: 'disabled',
-  icon: Icons.add,
-  shape: ButtonShape.circle,
-  disabled: true,
-)
-```
-
-```dart
-ShapeIconButtonWithLabel(
-  onPressed: () {},
-  label: 'label',
+  label: 'Add',
   icon: Icons.add,
   shape: ButtonShape.rectangle,
 )
@@ -62,29 +43,86 @@ ShapeIconButtonWithLabel(
 
 ## Examples
 
+- [ShapeIconButton Example](#shapeiconbutton-1)
+- [ShapeIconButtonWithLabel Example](#shapeiconbuttonwithlabel-1)
+
+### ShapeIconButton
+
 ```dart
-import 'package:component_ui/component_ui.dart';
+import 'package:flutter/material.dart';
+import 'package:travel_wallet_ui/travel_wallet_ui.dart';
 
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  static const String _title = 'IconButtons Code Sample';
+  static const String _title = 'IconButtons Code Example';
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(title: const Text(_title)),
-        body: Center(
-          child: ShapeIconButton(
-            onPressed: () {},
-            icon: Icons.add,
-            shape: ButtonShape.rectangle,
-          ),
-        )
-      ),
+          appBar: AppBar(title: const Text(_title)),
+          body: Center(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const ShapeIconButton(
+                  onPressed: null,
+                  icon: Icons.add,
+                ),
+                const SizedBox(height: 30),
+                ShapeIconButton(
+                  onPressed: () {},
+                  icon: Icons.add,
+                  shape: ButtonShape.rectangle,
+                ),
+              ],
+            ),
+          )),
+    );
+  }
+}
+```
+
+### ShapeIconButtonWithLabel
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:travel_wallet_ui/travel_wallet_ui.dart';
+
+void main() => runApp(const MyApp());
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  static const String _title = 'IconButtons Code Example';
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+          appBar: AppBar(title: const Text(_title)),
+          body: Center(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: const [
+                ShapeIconButtonWithLabel(
+                  onPressed: null,
+                  icon: Icons.add,
+                  label: "Add",
+                ),
+                SizedBox(height: 30),
+                ShapeIconButtonWithLabel(
+                  onPressed: null,
+                  icon: Icons.add,
+                  label: "Add",
+                  shape: ButtonShape.rectangle,
+                ),
+              ],
+            ),
+          )),
     );
   }
 }
