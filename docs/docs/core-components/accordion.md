@@ -1,6 +1,6 @@
-# [WIP] Accordion
+# Accordion
 
-Accordion implementing [ExpansionTile](https://api.flutter.dev/flutter/material/ExpansionTile-class.html).  
+Accordion implementing [ExpansionTile](https://api.flutter.dev/flutter/material/ExpansionTile-class.html).
 To use, import `package:component_ui/component_ui.dart`
 
 ![Accordion](/img/docs/core-components/accordion/accordion.png)

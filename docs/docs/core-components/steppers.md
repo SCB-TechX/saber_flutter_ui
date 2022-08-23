@@ -1,6 +1,8 @@
-# [WIP] Steppers
+# Steppers
 
 ![steppers overview](/img/docs/core-components/steppers/steppers-overview.png)
+
+## Example
 
 ```dart
 import 'package:flutter/material.dart'
