@@ -14,6 +14,7 @@ List of available components
 
 - [`Accordion`](./accordion)
 - [`Card`](./card)
+- [`Hyperlink`](./hyperlink)
 - [`IconButtons`](./icon-buttons)
 - [`LinkButtons`](./link-buttons)
 - [`PrimaryButtons`](./primary-buttons)
