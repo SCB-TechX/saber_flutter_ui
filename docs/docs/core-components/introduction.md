@@ -16,7 +16,6 @@ List of available components
 - [`Card`](./card)
 - [`Hyperlink`](./hyperlink)
 - [`IconButtons`](./icon-buttons)
-- [`LinkButtons`](./link-buttons)
 - [`PrimaryButtons`](./primary-buttons)
 - [`Scaffolds`](./scaffolds)
 - [`SecondaryButtons`](./secondary-buttons)

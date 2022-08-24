@@ -2,11 +2,11 @@
 sidebar_position: 2
 ---
 
-# [WIP] Installation
+# Installation
 
 ## Requirement
 
-This library requires
+This library required
 
 - Dart SDK version `>=2.17.6`
 - Flutter version `>=3.0.4`
