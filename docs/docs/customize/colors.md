@@ -2,4 +2,6 @@
 sidebar_position: 1
 ---
 
-# [WIP] Colors
+# Colors
+
+![colors overview](/img/docs/customize/colors/colors-overview.png)
