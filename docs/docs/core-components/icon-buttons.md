@@ -41,6 +41,13 @@ ShapeIconButtonWithLabel(
 )
 ```
 
+### Button Shapes
+
+You can change a button size by pass the `shape` parameter to the widget
+
+- `circle` (default)
+- `rectangle`
+
 ## Examples
 
 - [ShapeIconButton Example](#shapeiconbutton-1)
