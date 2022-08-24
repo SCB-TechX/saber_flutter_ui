@@ -23,7 +23,7 @@ Basic example for use `TextField`,
         - [`OutlineInputBorder`](inputs#outline-input-border)
     - [`ErrorText`](inputs#error-text)
     - [`HelperText`](inputs#helper-text)
-    - [`HintText`](inputs#hint-text)
+    - [`HintText`](inputs#hintlink-text)
     - [`Suffix`](inputs#suffix)
 
 ### Underline Input Border
@@ -91,7 +91,6 @@ TextField(
     border: OutlineInputBorder(
         borderRadius: BorderRadius.all(Radius.circular(8))),
     labelText: 'Label Text',
-    helperText: 'Message goes here',
     errorText: 'Error Text',
   ),
 )
@@ -105,21 +104,29 @@ TextField(
 TextField(
   decoration: InputDecoration(
     labelText: 'Label Text',
+    helperText: 'Message goes here',
   ),
 )
 ```
 
-### Hint Text
+### Hint/Link Text
 The `hintText` it displays inside the input area to help the user understand what input is required. 
 
 Different from LabelText that when user focus, hintText will disappear.
-The labelText will be shown as hint which is animating to the top when the cursor is getting focused.
+The `labelText` will be shown as hint which is animating to the top when the cursor is getting focused.
 
 ![Input Hint Text](/img/docs/core-components/inputs/example-hint-text.png)
 ```dart
 TextField(
   decoration: InputDecoration(
     hintText: 'Hint Text',
+  ),
+)
+```
+```dart
+TextField(
+  decoration: InputDecoration(
+    labelText: 'Label Text',
   ),
 )
 ```
@@ -145,12 +152,235 @@ TextField(
 ```
 
 ## Dropdown
-- [`UnderlineInputBorder`](inputs#underline-border)
-- [`OutlineInputBorder`](inputs#outline-border)
+A dropdown button lets the user select from a number of items. The button shows the currently selected item as well as an arrow that opens a menu for selecting another item.
 
-### Underline Border
+Basic example for use `DropdownButton`, 
+- InputDecoration
+    - Border
+        - [`UnderlineInputBorder`](inputs#underline-input-border-1)
+        - [`OutlineInputBorder`](inputs#outline-input-border-1)
+    - [`ErrorText`](inputs#error-text-1)
+    - [`HelperText`](inputs#helper-text-1)
+    - [`Hint/Link Text`](inputs#hintlink-text-1)
 
-### Outline Border
+### Underline Input Border
+Default border of `InputDecoration` is `UnderlineInputBorder`, do not need to set border.  
+If you want to set it, use `border: UnderlineInputBorder()`.
+
+![Dropdown Underline Input Border](/img/docs/core-components/inputs/example-dropdown-underline.png)
+```dart
+DropdownButtonFormField(
+  decoration: InputDecoration(
+    labelText: 'Label Text',
+  ),
+  value: selectedValue,
+  onChanged: (String? newValue) {
+    setState(() {
+      selectedValue = newValue!;
+    });
+  },
+  items: items
+      .map<DropdownMenuItem<String>>(
+          (String value) => DropdownMenuItem<String>(
+                value: value,
+                child: Text(value),
+              ))
+      .toList(),
+  icon: const Icon(
+    Icons.keyboard_arrow_down,
+  ),
+)
+```
+
+Dropdown underline border on background.
+
+```dart
+Container(
+  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+  decoration: BoxDecoration(
+      color: Colors.white, borderRadius: BorderRadius.circular(10)
+  ),
+
+  // dropdown below..
+  child: DropdownButton<String>(
+    value: _dropdownValue,
+    onChanged: (String? newValue) {
+      setState(() {
+        _dropdownValue = newValue!;
+      });
+    },
+    items: items
+        .map<DropdownMenuItem<String>>(
+            (String value) => DropdownMenuItem<String>(
+                  value: value,
+                  child: Text(value),
+                ))
+        .toList(),
+    isExpanded: true, //make true to take width of parent widget
+    // underline: Container(), //empty line
+    underline: Container(
+      height: 1,
+      color: SystemColors.disable,
+    ),
+    icon: const Icon(
+      Icons.keyboard_arrow_down,
+    ),
+  )
+)
+```
+
+### Outline Input Border
+Draws a rounded rectangle around an InputDecorator's container.
+Set border of `InputDecoration` to `OutlineInputBorder`. 
+
+![Dropdown Outline Input Border](/img/docs/core-components/inputs/example-dropdown-outline.png)
+```dart
+DropdownButtonFormField(
+  decoration: InputDecoration(
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(8),
+      ),
+      labelText: 'Label Text'),
+  value: selectedValue,
+  onChanged: (String? newValue) {
+    setState(() {
+      selectedValue = newValue!;
+    });
+  },
+  items: items
+      .map<DropdownMenuItem<String>>(
+          (String value) => DropdownMenuItem<String>(
+                value: value,
+                child: Text(value),
+              ))
+      .toList(),
+  icon: const Icon(
+    Icons.keyboard_arrow_down,
+  ),
+)
+```
+
+### Error Text
+This sample shows how to create a TextField with hint text, a red border on all sides, and an error message. To display a red border and error message, provide errorText to the InputDecoration constructor.  
+Use `errorText`, border will become colored red.
+
+![Input Error Text](/img/docs/core-components/inputs/example-dropdown-error-text.png)
+```dart
+DropdownButtonFormField(
+  decoration: InputDecoration(
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(8),
+      ),
+      errorText: 'Message goes here',
+      labelText: 'Label Text'),
+  value: selectedValue,
+  onChanged: (String? newValue) {
+    setState(() {
+      selectedValue = newValue!;
+    });
+  },
+  items: items
+      .map<DropdownMenuItem<String>>(
+          (String value) => DropdownMenuItem<String>(
+                value: value,
+                child: Text(value),
+              ))
+      .toList(),
+  icon: const Icon(
+    Icons.keyboard_arrow_down,
+  ),
+)
+```
+
+### Helper Text
+`helperText` is additional text. It displays the helperText below the input area to help the user understand what input is required.
+
+![Input Helper Text](/img/docs/core-components/inputs/example-dropdown-helper-text.png)
+```dart
+DropdownButtonFormField(
+  decoration: InputDecoration(
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(8),
+      ),
+      labelText: 'Label Text'),
+      helperText: 'Message goes here',
+  value: selectedValue,
+  onChanged: (String? newValue) {
+    setState(() {
+      selectedValue = newValue!;
+    });
+  },
+  items: items
+      .map<DropdownMenuItem<String>>(
+          (String value) => DropdownMenuItem<String>(
+                value: value,
+                child: Text(value),
+              ))
+      .toList(),
+  icon: const Icon(
+    Icons.keyboard_arrow_down,
+  ),
+)
+```
+
+### Hint/Link Text
+The `hintText` it displays inside the input area to help the user understand what input is required. 
+
+Different from LabelText that when user focus, hintText will disappear.
+The `labelText` will be shown as hint which is animating to the top when the cursor is getting focused.
+
+![Input Hint Text](/img/docs/core-components/inputs/example-dropdown-hint-text.png)
+```dart
+DropdownButtonFormField(
+  decoration: InputDecoration(
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(8),
+      ),
+      hintText: 'Hint Text'),
+  value: selectedValue,
+  onChanged: (String? newValue) {
+    setState(() {
+      selectedValue = newValue!;
+    });
+  },
+  items: items
+      .map<DropdownMenuItem<String>>(
+          (String value) => DropdownMenuItem<String>(
+                value: value,
+                child: Text(value),
+              ))
+      .toList(),
+  icon: const Icon(
+    Icons.keyboard_arrow_down,
+  ),
+)
+```
+
+```dart
+DropdownButtonFormField(
+  decoration: InputDecoration(
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(8),
+      ),
+      labelText: 'Label Text'),
+  value: selectedValue,
+  onChanged: (String? newValue) {
+    setState(() {
+      selectedValue = newValue!;
+    });
+  },
+  items: items
+      .map<DropdownMenuItem<String>>(
+          (String value) => DropdownMenuItem<String>(
+                value: value,
+                child: Text(value),
+              ))
+      .toList(),
+  icon: const Icon(
+    Icons.keyboard_arrow_down,
+  ),
+)
+```
 
 ## Radio
 
