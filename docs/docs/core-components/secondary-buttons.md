@@ -1,6 +1,6 @@
 # SecondaryButtons
 
-![secondary buttons overview](/img/docs/core-components/secondary-buttons/secondary-buttons-overview.png)
+<!-- ![secondary buttons overview](/img/docs/core-components/secondary-buttons/secondary-buttons-overview.png) -->
 
 ## SecondaryButtons
 
