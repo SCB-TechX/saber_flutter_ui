@@ -48,6 +48,28 @@ PrimaryButtonWithIcon(
 ),
 ```
 
+### Button Sizes
+
+You can change a button size by pass the `size` parameter to the widget
+
+- `normal` (default)
+- `small`
+- `extraSmall`
+
+```dart
+PrimaryButton(
+  onPressed: () {},
+  size: ButtonSize.small,
+  label: primaryButtonText,
+),
+PrimaryButtonWithIcon(
+  onPressed: () {},
+  size: ButtonSize.extraSmall,
+  label: primaryButtonText,
+  icon: Icons.add,
+),
+```
+
 ## Examples
 
 ### PrimaryButton
