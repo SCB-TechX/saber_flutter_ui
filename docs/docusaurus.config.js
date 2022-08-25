@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
+  title: 'Travel Wallet UI',
   tagline: 'Dinosaurs are cool',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
@@ -16,7 +16,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
+  organizationName: 'scb-techx', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -37,14 +37,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/SCB-Innovation-Lab/travel_wallet_ui/docs',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -57,9 +50,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'Travel Wallet UI',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'SCB TechX Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -70,7 +63,7 @@ const config = {
             label: 'Docs',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/SCB-Innovation-Lab/travel_wallet_ui',
             label: 'GitHub',
             position: 'right',
           },
@@ -86,6 +79,18 @@ const config = {
                 label: 'Getting Started',
                 to: '/docs/getting-started/introduction',
               },
+              {
+                label: 'Core Components',
+                to: '/docs/core-components',
+              },
+              {
+                label: 'Typography',
+                to: '/docs/typography',
+              },
+              {
+                label: 'Customize',
+                to: '/docs/customize',
+              },
             ],
           },
           {
@@ -93,7 +98,7 @@ const config = {
             items: [
               {
                 label: 'Example Pages',
-                to: '/docs/examples',
+                to: '/docs/examples/e-commerce',
               },
             ],
           }
