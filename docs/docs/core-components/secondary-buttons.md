@@ -4,8 +4,8 @@
 
 ## SecondaryButtons
 
-- [`SecondaryButton`](#secondarybutton)
-- [`SecondaryButtonWithIcon`](#secondarybuttonwithicon)
+- [`SecondaryButton`](/docs/core-components/secondary-buttons#secondarybutton)
+- [`SecondaryButtonWithIcon`](/docs/core-components/secondary-buttons#secondarybuttonwithicon)
 
 ### SecondaryButton
 

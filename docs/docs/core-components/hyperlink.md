@@ -1,6 +1,6 @@
 # Hyperlink
 
-- [`Hyperlink`](#hyperlink)
+- [`Hyperlink`](/docs/core-components/hyperlink)
 
 ## Example
 

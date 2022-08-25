@@ -4,8 +4,8 @@
 
 ## PrimaryButtons
 
-- [`PrimaryButton`](#primarybutton)
-- [`PrimaryButtonWithIcon`](#primarybuttonwithicon)
+- [`PrimaryButton`](/docs/core-components/primary-buttons#primarybutton)
+- [`PrimaryButtonWithIcon`](/docs/core-components/primary-buttons#primarybuttonwithicon)
 
 ### PrimaryButton
 

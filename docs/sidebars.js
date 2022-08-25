@@ -42,6 +42,7 @@ const sidebars = {
           ]
         },
         'core-components/icon-buttons',
+        'core-components/primary-buttons',
         'core-components/scaffolds',
         'core-components/secondary-buttons',
         'core-components/steppers',

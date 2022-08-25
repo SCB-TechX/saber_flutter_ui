@@ -4,8 +4,8 @@
 
 ## IconButtons
 
-- [`ShapeIconButton`](#shapeiconbutton)
-- [`ShapeIconButtonWithLabel`](#shapeiconbuttonwithlabel)
+- [`ShapeIconButton`](/docs/core-components/icon-buttons#shapeiconbutton)
+- [`ShapeIconButtonWithLabel`](/docs/core-components/icon-buttons#shapeiconbuttonwithlabel)
 
 ![icon buttons overview](/img/docs/core-components/icon-buttons/icon-buttons-overview.png)
 
@@ -50,8 +50,8 @@ You can change a button size by pass the `shape` parameter to the widget
 
 ## Examples
 
-- [ShapeIconButton Example](#shapeiconbutton-1)
-- [ShapeIconButtonWithLabel Example](#shapeiconbuttonwithlabel-1)
+- [ShapeIconButton Example](/docs/core-components/icon-buttons#shapeiconbutton-1)
+- [ShapeIconButtonWithLabel Example](/docs/core-components/icon-buttons#shapeiconbuttonwithlabel-1)
 
 ### ShapeIconButton
 

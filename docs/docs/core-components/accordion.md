@@ -6,10 +6,10 @@ To use, import `package:component_ui/component_ui.dart`
 ![Accordion](/img/docs/core-components/accordion/accordion.png)
 
 ## Accordion
-- [`Dafalut`](accordion#dafalut)
-- [`Flush`](accordion#flush)
-- [`Subtitle`](accordion#subtitle)
-- [`Trailing`](accordion#trailing)
+- [`Dafalut`](/docs/core-components/accordion#dafalut)
+- [`Flush`](/docs/core-components/accordion#flush)
+- [`Subtitle`](/docs/core-components/accordion#subtitle)
+- [`Trailing`](/docs/core-components/accordion#trailing)
 
 ### Dafalut
 

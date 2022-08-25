@@ -13,12 +13,12 @@ Use InputDecoration objects to text field decoration. The border, labels, icons,
 Basic example for use `TextField`, 
 - InputDecoration
     - Border
-        - [`UnderlineInputBorder`](text-fields#underline-input-border)
-        - [`OutlineInputBorder`](text-fields#outline-input-border)
-    - [`ErrorText`](text-fields#error-text)
-    - [`HelperText`](text-fields#helper-text)
-    - [`HintText`](text-fields#hintlink-text)
-    - [`Suffix`](text-fields#suffix)
+        - [`UnderlineInputBorder`](/docs/core-components/text-fields#underline-input-border)
+        - [`OutlineInputBorder`](/docs/core-components/text-fields#outline-input-border)
+    - [`ErrorText`](/docs/core-components/text-fields#error-text)
+    - [`HelperText`](/docs/core-components/text-fields#helper-text)
+    - [`HintText`](/docs/core-components/text-fields#hintlink-text)
+    - [`Suffix`](/docs/core-components/text-fields#suffix)
 
 ## Text Field
 ### Underline Input Border
@@ -148,8 +148,8 @@ TextField(
 
 ## Example
 
-- [`TextField`](text-fields#text-field-2)
-- [`Search`](text-fields#search)
+- [`TextField`](/docs/core-components/text-fields#text-field-2)
+- [`Search`](/docs/core-components/text-fields#search)
 
 ### Text Field
 This sample shows how to clear a value from a `TextField` via `TextEditingController`.

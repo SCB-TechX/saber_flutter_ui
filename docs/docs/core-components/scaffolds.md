@@ -1,8 +1,8 @@
 # Scaffolds
 ![Example navigation](/img/docs/core-components/scaffolds/navigation.png)
 
-- [`Appbars`](scaffolds#appbars)
-- [`BottomNavigationBar`](scaffolds#bottom-navigation-bar)
+- [`Appbars`](/docs/core-components/scaffolds#appbars)
+- [`BottomNavigationBar`](/docs/core-components/scaffolds#bottom-navigation-bar)
 
 ## Appbars
 You can use [AppBar class](https://api.flutter.dev/flutter/material/AppBar-class.html) that flutter provided. This sample show some properties on appbar.
@@ -47,6 +47,23 @@ AppBar(
   centerTitle: true,
 )
 ```
+
+### Elevation
+Default app bar have an elevation shadow (elevation: 4). You can change elevation to 0 for remove shadow.
+
+![Example Appbar Elevation](/img/docs/core-components/scaffolds/appbar-elevation.png)
+```dart
+AppBar(
+  title: const Text('Title'),
+  actions: const <Widget>[Icon(Icons.more_vert)],
+  leading: const Icon(
+    Icons.chevron_left,
+  ),
+  centerTitle: true,
+  elevation: 0
+)
+```
+
 
 ## Bottom Navigation Bar
 ![Example Bottom Navigation Bar](/img/docs/core-components/scaffolds/bottom-navigation-bar.png)
