@@ -4,7 +4,6 @@ sidebar_position: 2
 
 # Themes
 
-
 ## Themes
 
 We provided 5 different colors and themed

@@ -81,7 +81,7 @@ const config = {
               },
               {
                 label: 'Core Components',
-                to: '/docs/core-components',
+                to: '/docs/core-components/introduction',
               },
               {
                 label: 'Typography',
@@ -89,7 +89,7 @@ const config = {
               },
               {
                 label: 'Customize',
-                to: '/docs/customize',
+                to: '/docs/customize/colors',
               },
             ],
           },
