@@ -31,8 +31,17 @@ const sidebars = {
         'core-components/accordion',
         'core-components/card',
         'core-components/hyperlink',
+        {
+          type: 'category',
+          label: 'Inputs',
+          items: [
+            'core-components/inputs/checkbox',
+            'core-components/inputs/radio',
+            'core-components/inputs/select',
+            'core-components/inputs/text-fields',
+          ]
+        },
         'core-components/icon-buttons',
-        'core-components/inputs',
         'core-components/scaffolds',
         'core-components/secondary-buttons',
         'core-components/steppers',
