@@ -6,9 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Travel Wallet UI',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'Saber Flutter UI (Beta)',
+  tagline: 'Saber Flutter UI is cool',
+  url: 'https://saber-ui.sslabs.sh',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -50,7 +50,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Travel Wallet UI',
+        title: 'Saber Flutter UI (Beta)',
         logo: {
           alt: 'SCB TechX Logo',
           src: 'img/logo.svg',
@@ -103,7 +103,7 @@ const config = {
             ],
           }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} SCB Tech X Co. Made with ❤️ by Innovation Labs`,
       },
       prism: {
         theme: lightCodeTheme,

@@ -1,10 +1,6 @@
----
-sidebar_position: 1
----
-
 # Introduction
 
-Travel Wallet UI provides a set of colors and theme to help developers to build an app.
+Saber Flutter UI provides a set of colors and theme to help developers to build an app.
 
 ```dart
 import 'package:travel_wallet_ui/travel_wallet_ui.dart';
