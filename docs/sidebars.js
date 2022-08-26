@@ -29,6 +29,15 @@ const sidebars = {
       items: [
         'core-components/introduction',
         'core-components/accordion',
+        {
+          type: 'category',
+          label: 'Buttons',
+          items: [
+            'core-components/primary-buttons',
+            'core-components/secondary-buttons',
+            'core-components/icon-buttons',
+          ],
+        },
         'core-components/card',
         'core-components/hyperlink',
         {
@@ -39,12 +48,9 @@ const sidebars = {
             'core-components/inputs/radio',
             'core-components/inputs/select',
             'core-components/inputs/text-fields',
-          ]
+          ],
         },
-        'core-components/icon-buttons',
-        'core-components/primary-buttons',
         'core-components/scaffolds',
-        'core-components/secondary-buttons',
         'core-components/steppers',
         'core-components/other-components',
       ],
@@ -57,11 +63,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Customize',
-      items: [
-        'customize/colors',
-        'customize/fonts',
-        'customize/themes',
-      ],
+      items: ['customize/colors', 'customize/fonts', 'customize/themes'],
     },
 
     {
