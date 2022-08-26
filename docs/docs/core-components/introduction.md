@@ -15,5 +15,10 @@ List of available components
   - [`SecondaryButtons`](./buttons/secondary-buttons)
 - [`Card`](./card)
 - [`Hyperlink`](./hyperlink)
+- `Inputs`
+  - [`Checkbox`](./inputs/checkbox)
+  - [`Radio`](./inputs/radio)
+  - [`Select`](./inputs/select)
+  - [`Text Field`](./inputs/text-fields)
 - [`Scaffolds`](./scaffolds)
 - [Other Components](./other-components.md)
