@@ -1,11 +1,11 @@
 # SecondaryButtons
 
-![secondary buttons overview](/img/docs/core-components/secondary-buttons/secondary-buttons-overview.png)
+![secondary buttons overview](/img/docs/core-components/buttons/secondary-buttons/secondary-buttons-overview.png)
 
 ## SecondaryButtons
 
-- [`SecondaryButton`](/docs/core-components/secondary-buttons#secondarybutton)
-- [`SecondaryButtonWithIcon`](/docs/core-components/secondary-buttons#secondarybuttonwithicon)
+- [`SecondaryButton`](#secondarybutton)
+- [`SecondaryButtonWithIcon`](#secondarybuttonwithicon)
 
 ### SecondaryButton
 

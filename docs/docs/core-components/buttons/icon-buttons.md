@@ -1,13 +1,13 @@
 # IconButtons
 
-![icon buttons overview](/img/docs/core-components/icon-buttons/icon-buttons-overview.png)
+![icon buttons overview](/img/docs/core-components/buttons/icon-buttons/icon-buttons-overview.png)
 
 ## IconButtons
 
-- [`ShapeIconButton`](/docs/core-components/icon-buttons#shapeiconbutton)
-- [`ShapeIconButtonWithLabel`](/docs/core-components/icon-buttons#shapeiconbuttonwithlabel)
+- [`ShapeIconButton`](#shapeiconbutton)
+- [`ShapeIconButtonWithLabel`](#shapeiconbuttonwithlabel)
 
-![icon buttons overview](/img/docs/core-components/icon-buttons/icon-buttons-overview.png)
+![icon buttons overview](/img/docs/core-components/buttons/icon-buttons/icon-buttons-overview.png)
 
 ```dart
 ShapeIconButton(
@@ -18,7 +18,7 @@ ShapeIconButton(
 
 ### ShapeIconButton
 
-![icon buttons default](/img/docs/core-components/icon-buttons/icon-buttons-default.png)
+![icon buttons default](/img/docs/core-components/buttons/icon-buttons/icon-buttons-default.png)
 
 ```dart
 ShapeIconButton(
@@ -30,7 +30,7 @@ ShapeIconButton(
 
 ### ShapeIconButtonWithLabel
 
-![icon buttons with label](/img/docs/core-components/icon-buttons/icon-buttons-with-label.png)
+![icon buttons with label](/img/docs/core-components/buttons/icon-buttons/icon-buttons-with-label.png)
 
 ```dart
 ShapeIconButtonWithLabel(
@@ -50,8 +50,8 @@ You can change a button size by pass the `shape` parameter to the widget
 
 ## Examples
 
-- [ShapeIconButton Example](/docs/core-components/icon-buttons#shapeiconbutton-1)
-- [ShapeIconButtonWithLabel Example](/docs/core-components/icon-buttons#shapeiconbuttonwithlabel-1)
+- [ShapeIconButton Example](#shapeiconbutton-1)
+- [ShapeIconButtonWithLabel Example](#shapeiconbuttonwithlabel-1)
 
 ### ShapeIconButton
 

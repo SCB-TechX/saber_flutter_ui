@@ -1,11 +1,11 @@
 # PrimaryButtons
 
-![primary buttons overview](/img/docs/core-components/primary-buttons/primary-buttons-overview.png)
+![primary buttons overview](/img/docs/core-components/buttons/primary-buttons/primary-buttons-overview.png)
 
 ## PrimaryButtons
 
-- [`PrimaryButton`](/docs/core-components/primary-buttons#primarybutton)
-- [`PrimaryButtonWithIcon`](/docs/core-components/primary-buttons#primarybuttonwithicon)
+- [`PrimaryButton`](#primarybutton)
+- [`PrimaryButtonWithIcon`](#primarybuttonwithicon)
 
 ### PrimaryButton
 

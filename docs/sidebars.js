@@ -33,9 +33,9 @@ const sidebars = {
           type: 'category',
           label: 'Buttons',
           items: [
-            'core-components/primary-buttons',
-            'core-components/secondary-buttons',
-            'core-components/icon-buttons',
+            'core-components/buttons/primary-buttons',
+            'core-components/buttons/secondary-buttons',
+            'core-components/buttons/icon-buttons',
           ],
         },
         'core-components/card',

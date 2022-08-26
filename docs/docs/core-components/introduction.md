@@ -9,10 +9,11 @@ import 'package:travel_wallet_ui/travel_wallet_ui.dart';
 List of available components
 
 - [`Accordion`](./accordion)
+- `Buttons`
+  - [`PrimaryButtons`](./buttons/primary-buttons)
+  - [`IconButtons`](./buttons/icon-buttons)
+  - [`SecondaryButtons`](./buttons/secondary-buttons)
 - [`Card`](./card)
 - [`Hyperlink`](./hyperlink)
-- [`IconButtons`](./icon-buttons)
-- [`PrimaryButtons`](./primary-buttons)
 - [`Scaffolds`](./scaffolds)
-- [`SecondaryButtons`](./secondary-buttons)
 - [Other Components](./other-components.md)
