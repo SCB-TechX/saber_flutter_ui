@@ -1,7 +1,7 @@
 # Select
 
-- [`Dropdown`](/docs/core-components/selects#dropdown)
-- [`DatePicker`](/docs/core-components/selects#date-picker)
+- [`Dropdown`](/docs/core-components/inputs/select#dropdown)
+- [`DatePicker`](/docs/core-components/inputs/select#date-picker)
 
 ## Dropdown
 A dropdown button lets the user select from a number of items. The button shows the currently selected item as well as an arrow that opens a menu for selecting another item.
@@ -9,11 +9,11 @@ A dropdown button lets the user select from a number of items. The button shows 
 Basic example for use `DropdownButton`, 
 - InputDecoration
     - Border
-        - [`UnderlineInputBorder`](/docs/core-components/selects#underline-input-border)
-        - [`OutlineInputBorder`](/docs/core-components/selects#outline-input-border)
-    - [`ErrorText`](/docs/core-components/selects#error-text)
-    - [`HelperText`](/docs/core-components/selects#helper-text)
-    - [`Hint/Link Text`](/docs/core-components/selects#hintlink-text)
+        - [`UnderlineInputBorder`](/docs/core-components/inputs/select#underline-input-border)
+        - [`OutlineInputBorder`](/docs/core-components/inputs/select#outline-input-border)
+    - [`ErrorText`](/docs/core-components/inputs/select#error-text)
+    - [`HelperText`](/docs/core-components/inputs/select#helper-text)
+    - [`Hint/Link Text`](/docs/core-components/inputs/select#hintlink-text)
 
 ### Underline Input Border
 Default border of `InputDecoration` is `UnderlineInputBorder`, do not need to set border.  
@@ -250,8 +250,8 @@ showDatePicker(
 
 ## Example
 
-- [`Dropdown`](/docs/core-components/selects#dropdown-1)
-- [`DatePicker`](/docs/core-components/selects#date-picker-1)
+- [`Dropdown`](/docs/core-components/inputs/select#dropdown-1)
+- [`DatePicker`](/docs/core-components/inputs/select#date-picker-1)
 
 ### Dropdown
 This sample shows a DropdownButton with a outline border, whose value is one of "One", "Two", "Free", or "Four".
