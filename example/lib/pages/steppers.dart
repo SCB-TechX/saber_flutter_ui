@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart'
     show BuildContext, Key, State, StatefulWidget, Text, Widget;
-import 'package:travel_wallet_ui/travel_wallet_ui.dart';
+import 'package:saber_flutter_ui/saber_flutter_ui.dart';
 
 class StepperWidgets extends StatefulWidget {
   const StepperWidgets({Key? key}) : super(key: key);

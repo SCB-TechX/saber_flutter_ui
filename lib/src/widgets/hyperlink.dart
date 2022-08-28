@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:saber_flutter_ui/saber_flutter_ui.dart';
 
 class HyperLink extends StatelessWidget {
   const HyperLink(this.data, {Key? key, required this.onTap}) : super(key: key);
 
-  final VoidCallback onTap;
+  final VoidCallback? onTap;
   final String data;
 
   @override
@@ -13,7 +14,7 @@ class HyperLink extends StatelessWidget {
       child: Text(
         data,
         style: const TextStyle(
-            // color: SystemColors.hyperlink,
+            color: SystemColors.hyperlink,
             decoration: TextDecoration.underline),
       ),
     );

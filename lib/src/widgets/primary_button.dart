@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:travel_wallet_ui/src/widgets/button_style.dart';
+import 'package:saber_flutter_ui/saber_flutter_ui.dart';
 
 class PrimaryButton extends StatelessWidget {
   const PrimaryButton(

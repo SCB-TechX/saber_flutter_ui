@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:travel_wallet_ui/travel_wallet_ui.dart';
+import 'package:saber_flutter_ui/saber_flutter_ui.dart';
 
 void main() {
   group('getButtonShape', () {

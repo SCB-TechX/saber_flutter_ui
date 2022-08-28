@@ -1,4 +1,4 @@
-library travel_wallet_ui;
+library saber_flutter_ui;
 
 export 'src/colors.dart';
 export 'src/typography/typography.dart';
