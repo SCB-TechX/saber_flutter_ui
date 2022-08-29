@@ -1,21 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:travel_wallet_ui/travel_wallet_ui.dart';
+import 'package:saber_flutter_ui/saber_flutter_ui.dart';
 
 enum ButtonShape { circle, rectangle }
 
 class ShapeIconButton extends StatelessWidget {
-  const ShapeIconButton(
-      {Key? key,
-      required this.onPressed,
-      required this.icon,
-      this.shape,
-      this.disabled = false})
-      : super(key: key);
+  const ShapeIconButton({
+    Key? key,
+    required this.onPressed,
+    required this.icon,
+    this.shape,
+  }) : super(key: key);
 
   final VoidCallback? onPressed;
   final IconData icon;
   final ButtonShape? shape;
-  final bool disabled;
 
   ShapeBorder get buttonShape {
     switch (shape) {
@@ -32,35 +30,34 @@ class ShapeIconButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Ink(
       decoration: ShapeDecoration(
-          color:
-              disabled ? SystemColors.disable : Theme.of(context).primaryColor,
+          color: onPressed != null
+              ? Theme.of(context).primaryColor
+              : SystemColors.disable,
           shape: buttonShape),
       child: IconButton(
         icon: Icon(
           icon,
         ),
         color: Theme.of(context).canvasColor,
-        onPressed: disabled ? null : onPressed,
+        onPressed: onPressed,
       ),
     );
   }
 }
 
 class ShapeIconButtonWithLabel extends StatelessWidget {
-  const ShapeIconButtonWithLabel(
-      {Key? key,
-      required this.onPressed,
-      required this.icon,
-      required this.label,
-      this.shape,
-      this.disabled = false})
-      : super(key: key);
+  const ShapeIconButtonWithLabel({
+    Key? key,
+    required this.onPressed,
+    required this.icon,
+    required this.label,
+    this.shape,
+  }) : super(key: key);
 
   final VoidCallback? onPressed;
   final IconData icon;
   final String label;
   final ButtonShape? shape;
-  final bool disabled;
 
   OutlinedBorder get buttonShape {
     switch (shape) {
@@ -76,7 +73,7 @@ class ShapeIconButtonWithLabel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: disabled ? null : onPressed,
+      onPressed: onPressed,
       style: ElevatedButton.styleFrom(
         shape: buttonShape,
         padding: const EdgeInsets.all(16),

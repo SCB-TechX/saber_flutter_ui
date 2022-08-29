@@ -249,6 +249,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.1"
+  saber_flutter_ui:
+    dependency: "direct main"
+    description:
+      path: ".."
+      relative: true
+    source: path
+    version: "0.0.1"
   shelf:
     dependency: transitive
     description:
@@ -352,13 +359,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.4.13"
-  travel_wallet_ui:
-    dependency: "direct main"
-    description:
-      path: ".."
-      relative: true
-    source: path
-    version: "0.0.1"
   typed_data:
     dependency: transitive
     description:

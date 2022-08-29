@@ -1,7 +1,8 @@
-name: travel_wallet_ui
-description: A new Flutter package project.
+name: saber_flutter_ui
+description: UI Toolkit for a Flutter Application
 version: 0.0.1
-homepage:
+homepage: https://example-pet-store.com/newtify
+documentation: https://saber-flutter-ui.sslabs.sh/
 
 environment:
   sdk: '>=2.17.3 <3.0.0'

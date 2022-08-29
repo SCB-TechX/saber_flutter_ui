@@ -1,37 +1,39 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:travel_wallet_ui/travel_wallet_ui.dart';
+
+import 'package:saber_flutter_ui/saber_flutter_ui.dart';
 
 void main() {
-  testWidgets('Hyperlink default styles', (WidgetTester tester) async {
-    await tester.pumpWidget(Material(
-        child: Directionality(
-      textDirection: TextDirection.ltr,
-      child: Center(
-        child: Hyperlink(label: 'link', onTap: () {}),
-      ),
-    )));
+  testWidgets('Hyperlink clicks', (WidgetTester tester) async {
+    ButtonSize size = ButtonSize.normal;
+    MaterialApp materialApp = MaterialApp(
+      theme: ThemeColor.blackTheme,
+      home: Center(
+          child: PrimaryButton(
+        onPressed: () {},
+        label: 'button',
+        size: size,
+      )),
+    );
 
+    await tester.pumpWidget(materialApp);
+
+    Material buttonWidget = tester.widget<Material>(find.descendant(
+      of: find.byType(PrimaryButton),
+      matching: find.byType(Material),
+    ));
+    Padding paddingWidget = tester.widget<Padding>(
+      find.descendant(
+        of: find.byType(PrimaryButton),
+        matching: find.byType(Padding),
+      ),
+    );
     Text textWidget = tester.widget<Text>(find.descendant(
-        of: find.byType(Hyperlink), matching: find.byType(Text)));
-    expect(textWidget.style!.color, SystemColors.hyperlink);
-  });
-
-  testWidgets('Hyperlink onTap', (WidgetTester tester) async {
-    bool wasTapped = false;
-    await tester.pumpWidget(Material(
-        child: Directionality(
-      textDirection: TextDirection.ltr,
-      child: Center(
-        child: Hyperlink(
-            label: 'link',
-            onTap: () {
-              wasTapped = true;
-            }),
-      ),
-    )));
-
-    await tester.tap(find.byType(InkWell));
-    expect(wasTapped, true);
+        of: find.byType(PrimaryButton), matching: find.byType(Text)));
+    // expect(buttonWidget.shape, buttonShape);
+    // expect(paddingWidget.padding, buttonStyle[size]);
+    // expect(textWidget.style!.fontFamily, textStyle[size]!.fontFamily);
+    // expect(textWidget.style!.fontWeight, textStyle[size]!.fontWeight);
+    // expect(textWidget.style!.fontSize, textStyle[size]!.fontSize);
   });
 }

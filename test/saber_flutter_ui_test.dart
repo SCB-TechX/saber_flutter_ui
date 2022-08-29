@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:travel_wallet_ui/travel_wallet_ui.dart';
+import 'package:saber_flutter_ui/saber_flutter_ui.dart';
 
 void main() {
+<<<<<<< HEAD:test/travel_wallet_ui_test.dart
   group('TravelWallet ThemeColor', () {
+=======
+  group('Saber UI themeData', () {
+>>>>>>> feature/docs:test/saber_flutter_ui_test.dart
     test(
         'is defined for blackTheme, blueTheme, greenTheme, yellowTheme, purpleTheme, redTheme',
         () {
