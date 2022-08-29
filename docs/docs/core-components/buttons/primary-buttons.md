@@ -8,6 +8,7 @@
 - [`PrimaryButtonWithIcon`](#primarybuttonwithicon)
 
 ### PrimaryButton
+![example primary buttons](/img/docs/core-components/buttons/primary-buttons/example-primary-button.png)
 
 ```dart
 PrimaryButton(
@@ -27,6 +28,7 @@ PrimaryButton(
 ```
 
 ### PrimaryButtonWithIcon
+![example primary buttons with icon](/img/docs/core-components/buttons/primary-buttons/example-primary-button-with-icon.png)
 
 ```dart
 PrimaryButtonWithIcon(

@@ -146,7 +146,7 @@ TextField(
 )
 ```
 
-## Example
+## Examples
 
 - [`TextField`](/docs/core-components/inputs/text-fields#text-field-2)
 - [`Search`](/docs/core-components/inputs/text-fields#search)

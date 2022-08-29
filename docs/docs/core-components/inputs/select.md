@@ -248,7 +248,7 @@ showDatePicker(
 )
 ```
 
-## Example
+## Examples
 
 - [`Dropdown`](/docs/core-components/inputs/select#dropdown-1)
 - [`DatePicker`](/docs/core-components/inputs/select#date-picker-1)

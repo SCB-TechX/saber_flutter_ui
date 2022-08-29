@@ -8,6 +8,7 @@
 - [`SecondaryButtonWithIcon`](#secondarybuttonwithicon)
 
 ### SecondaryButton
+![example secondary buttons](/img/docs/core-components/buttons/secondary-buttons/example-secondary-button.png)
 
 ```dart
 PrimaryButton(
@@ -27,6 +28,7 @@ PrimaryButton(
 ```
 
 ### SecondaryButtonWithIcon
+![example secondary buttons with icon](/img/docs/core-components/buttons/secondary-buttons/example-secondary-button-with-icon.png)
 
 ```dart
 PrimaryButtonWithIcon(
