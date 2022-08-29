@@ -106,7 +106,7 @@ class ButtonWidgets extends StatelessWidget {
               onPressed: () {},
               label: 'Text Button',
             ),
-            HyperLink('Text', onTap: () {}),
+            Hyperlink(label: 'Text', onTap: () {}),
             LinkButtonWithIcon(
               onPressed: () {},
               label: 'Text Button',
