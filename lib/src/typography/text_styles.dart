@@ -4,14 +4,14 @@ import '../colors.dart';
 
 class BaseTextStyle {
   static const _baseHeaderStyle = TextStyle(
-    package: 'travel_wallet_ui',
+    package: 'saber_flutter_ui',
     fontFamily: Fonts.dmSans,
     fontWeight: BaseFontWeight.bold,
     color: SystemColors.black,
   );
 
   static const _baseTextStyle = TextStyle(
-    package: 'travel_wallet_ui',
+    package: 'saber_flutter_ui',
     fontFamily: Fonts.poppins,
     fontWeight: BaseFontWeight.regular,
   );
