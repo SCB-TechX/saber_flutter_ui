@@ -9,11 +9,13 @@ class ShapeIconButton extends StatelessWidget {
     required this.onPressed,
     required this.icon,
     this.shape,
+    this.color,
   }) : super(key: key);
 
   final VoidCallback? onPressed;
   final IconData icon;
   final ButtonShape? shape;
+  final Color? color;
 
   ShapeBorder get buttonShape {
     switch (shape) {
@@ -30,15 +32,13 @@ class ShapeIconButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Ink(
       decoration: ShapeDecoration(
-          color: onPressed != null
-              ? Theme.of(context).primaryColor
-              : SystemColors.disable,
+          color: onPressed != null ? color : SystemColors.disable,
           shape: buttonShape),
       child: IconButton(
         icon: Icon(
           icon,
         ),
-        color: Theme.of(context).canvasColor,
+        // color: Theme.of(context).canvasColor,
         onPressed: onPressed,
       ),
     );
@@ -52,12 +52,18 @@ class ShapeIconButtonWithLabel extends StatelessWidget {
     required this.icon,
     required this.label,
     this.shape,
+    this.color,
+    this.iconColor,
+    this.textColor,
   }) : super(key: key);
 
   final VoidCallback? onPressed;
   final IconData icon;
   final String label;
   final ButtonShape? shape;
+  final Color? color;
+  final Color? iconColor;
+  final Color? textColor;
 
   OutlinedBorder get buttonShape {
     switch (shape) {
@@ -77,12 +83,17 @@ class ShapeIconButtonWithLabel extends StatelessWidget {
       style: ElevatedButton.styleFrom(
         shape: buttonShape,
         padding: const EdgeInsets.all(16),
+        primary: color,
       ),
       child: Column(
         children: <Widget>[
-          Icon(icon),
+          Icon(
+            icon,
+            color: iconColor,
+          ),
           Text(
             label,
+            style: TextStyle(color: textColor),
           )
         ],
       ),
