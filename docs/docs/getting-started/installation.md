@@ -18,9 +18,10 @@ This library required
 ```jsx title="pubspec.yaml"
 dependencies:
   # ...
-  travel_wallet_ui:
+  saber_flutter_ui:
     git:
-      url: git://github.com/SCB-Innovation-Lab/travel_wallet_ui.git
+      url: git@github.com:SCB-Innovation-Lab/saber_flutter_ui.git
+      # ref: develop // preferred branch
 ```
 
 2. Run `flutter pub get` in the terminal.
