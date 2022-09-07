@@ -1,5 +1,6 @@
 import 'dart:developer';
 
+import 'package:bnpl_app_demo/pages/apply_loan_detail.dart';
 import 'package:bnpl_app_demo/pages/dashboard.dart';
 import 'package:bnpl_app_demo/pages/loans.dart';
 import 'package:bnpl_app_demo/utils/custom_box_decoration.dart';
@@ -282,7 +283,15 @@ class _ProfilePageState extends State<ProfilePage> {
             GestureDetector(
               behavior: HitTestBehavior.opaque,
               onTap: () {
-                log('Services Page');
+                Navigator.pushReplacement(
+                  context,
+                  PageRouteBuilder(
+                    pageBuilder: (context, animation1, animation2) =>
+                        ApplyLoanDetailPage(),
+                    transitionDuration: Duration.zero,
+                    reverseTransitionDuration: Duration.zero,
+                  ),
+                );
               },
               child: Padding(
                 padding: const EdgeInsets.only(top: 15.0),

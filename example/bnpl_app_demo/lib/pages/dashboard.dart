@@ -1,5 +1,6 @@
 import 'dart:developer';
 
+import 'package:bnpl_app_demo/pages/apply_loan_detail.dart';
 import 'package:bnpl_app_demo/pages/loans.dart';
 import 'package:bnpl_app_demo/pages/profile.dart';
 import 'package:bnpl_app_demo/utils/custom_box_decoration.dart';
@@ -179,7 +180,15 @@ class _DashboardPageState extends State<DashboardPage> {
                     const SizedBox(
                       height: 16,
                     ),
-                    Image.asset('assets/images/services.png'),
+                    GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      const ApplyLoanDetailPage()));
+                        },
+                        child: Image.asset('assets/images/services.png')),
                     const SizedBox(
                       height: 16,
                     ),
@@ -263,7 +272,15 @@ class _DashboardPageState extends State<DashboardPage> {
             GestureDetector(
               behavior: HitTestBehavior.opaque,
               onTap: () {
-                log('Services Page');
+                Navigator.pushReplacement(
+                  context,
+                  PageRouteBuilder(
+                    pageBuilder: (context, animation1, animation2) =>
+                        ApplyLoanDetailPage(),
+                    transitionDuration: Duration.zero,
+                    reverseTransitionDuration: Duration.zero,
+                  ),
+                );
               },
               child: Padding(
                 padding: const EdgeInsets.only(top: 15.0),

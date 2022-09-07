@@ -1,13 +1,12 @@
 import 'dart:developer';
 
+import 'package:bnpl_app_demo/pages/apply_loan_detail.dart';
 import 'package:bnpl_app_demo/pages/dashboard.dart';
 import 'package:bnpl_app_demo/pages/profile.dart';
 import 'package:bnpl_app_demo/pages/loan_detail.dart';
 import 'package:bnpl_app_demo/utils/custom_box_decoration.dart';
 import 'package:bnpl_app_demo/utils/custom_icons.dart';
 import 'package:flutter/material.dart';
-import 'package:percent_indicator/percent_indicator.dart';
-import 'package:saber_flutter_ui/saber_flutter_ui.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class LoansPage extends StatefulWidget {
@@ -230,7 +229,15 @@ class _LoansPageState extends State<LoansPage> {
             GestureDetector(
               behavior: HitTestBehavior.opaque,
               onTap: () {
-                log('Services Page');
+                Navigator.pushReplacement(
+                  context,
+                  PageRouteBuilder(
+                    pageBuilder: (context, animation1, animation2) =>
+                        ApplyLoanDetailPage(),
+                    transitionDuration: Duration.zero,
+                    reverseTransitionDuration: Duration.zero,
+                  ),
+                );
               },
               child: Padding(
                 padding: const EdgeInsets.only(top: 15.0),
