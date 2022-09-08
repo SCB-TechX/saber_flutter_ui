@@ -70,9 +70,9 @@ const sidebars = {
       type: 'category',
       label: 'Examples',
       items: [
-        'examples/e-commerce',
-        'examples/finance',
-        'examples/static-page',
+        'examples/bnpl-app',
+        'examples/investment-app',
+        'examples/wallet-app',
       ],
     },
   ],
