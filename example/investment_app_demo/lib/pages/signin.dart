@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:investment_app_demo/pages/register.dart';
 import 'package:saber_flutter_ui/saber_flutter_ui.dart';
 
 class SignInPage extends StatefulWidget {
@@ -9,6 +10,10 @@ class SignInPage extends StatefulWidget {
 }
 
 class _SignInPageState extends State<SignInPage> {
+  final TextEditingController _emailField = TextEditingController();
+  final TextEditingController _passwordField = TextEditingController();
+  bool _passwordVisible = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,9 +24,11 @@ class _SignInPageState extends State<SignInPage> {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Expanded(
+            flex: 2,
             child: Image.asset('assets/images/saber_labs_logo_white.png'),
           ),
           Expanded(
+            flex: 3,
             child: Container(
               decoration: const BoxDecoration(
                   color: Colors.white,
@@ -42,8 +49,9 @@ class _SignInPageState extends State<SignInPage> {
                   const SizedBox(
                     height: 24,
                   ),
-                  const TextField(
-                    decoration: InputDecoration(
+                  TextField(
+                    controller: _emailField,
+                    decoration: const InputDecoration(
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.all(Radius.circular(8))),
                       labelText: 'Email',
@@ -52,11 +60,36 @@ class _SignInPageState extends State<SignInPage> {
                   const SizedBox(
                     height: 16,
                   ),
-                  const TextField(
+                  TextFormField(
+                    keyboardType: TextInputType.text,
+                    controller: _passwordField,
+                    validator: (String? value) {
+                      if (value == null || value.isEmpty) {
+                        return 'Please enter some text';
+                      }
+                      return null;
+                    },
+                    obscureText:
+                        !_passwordVisible, //This will obscure text dynamically
                     decoration: InputDecoration(
-                      border: OutlineInputBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(8))),
                       labelText: 'Password',
+                      border: const OutlineInputBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(8))),
+                      suffix: GestureDetector(
+                        child: Icon(
+                          // Based on passwordVisible state choose the icon
+                          _passwordVisible
+                              ? Icons.visibility
+                              : Icons.visibility_off,
+                          color: Theme.of(context).primaryColorDark,
+                        ),
+                        onTap: () {
+                          // Update the state i.e. toggle the state of passwordVisible variable
+                          setState(() {
+                            _passwordVisible = !_passwordVisible;
+                          });
+                        },
+                      ),
                     ),
                   ),
                   const SizedBox(
@@ -85,7 +118,7 @@ class _SignInPageState extends State<SignInPage> {
                                       context,
                                       MaterialPageRoute(
                                           builder: (context) =>
-                                              const SignInPage()))
+                                              const RegisterPage()))
                                 },
                                 child: const Text('Register Here',
                                     style: TextStyle(
