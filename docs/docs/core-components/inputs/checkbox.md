@@ -1,7 +1,9 @@
 # Checkbox
-![Checkbox button](/img/docs/core-components/inputs/checkbox.png)
+
+![checkbox button](/img/docs/core-components/inputs/checkbox.png)
 
 ## Example
+
 ```dart
 import 'package:flutter/material.dart';
 
