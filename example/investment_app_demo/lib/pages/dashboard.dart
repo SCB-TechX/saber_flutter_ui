@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:investment_app_demo/utils/my_flutter_app_icons.dart';
+import 'package:investment_app_demo/pages/investment.dart';
+import 'package:investment_app_demo/utils/custom_icons.dart';
 import 'package:saber_flutter_ui/saber_flutter_ui.dart';
 
 class DashboardPage extends StatefulWidget {
@@ -207,15 +208,15 @@ class _DashboardPageState extends State<DashboardPage>
           GestureDetector(
             behavior: HitTestBehavior.opaque,
             onTap: () {
-              // Navigator.pushReplacement(
-              //   context,
-              //   PageRouteBuilder(
-              //     pageBuilder: (context, animation1, animation2) =>
-              //         LoansPage(),
-              //     transitionDuration: Duration.zero,
-              //     reverseTransitionDuration: Duration.zero,
-              //   ),
-              // );
+              Navigator.pushReplacement(
+                context,
+                PageRouteBuilder(
+                  pageBuilder: (context, animation1, animation2) =>
+                      const InvestmentPage(),
+                  transitionDuration: Duration.zero,
+                  reverseTransitionDuration: Duration.zero,
+                ),
+              );
             },
             child: Padding(
               padding: const EdgeInsets.only(top: 15.0),

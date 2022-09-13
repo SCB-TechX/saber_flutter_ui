@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:investment_app_demo/pages/dashboard.dart';
 import 'package:investment_app_demo/pages/register.dart';
 import 'package:saber_flutter_ui/saber_flutter_ui.dart';
 
@@ -54,7 +55,7 @@ class _SignInPageState extends State<SignInPage> {
                     decoration: const InputDecoration(
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.all(Radius.circular(8))),
-                      labelText: 'Email',
+                      hintText: 'Email',
                     ),
                   ),
                   const SizedBox(
@@ -72,7 +73,7 @@ class _SignInPageState extends State<SignInPage> {
                     obscureText:
                         !_passwordVisible, //This will obscure text dynamically
                     decoration: InputDecoration(
-                      labelText: 'Password',
+                      hintText: 'Password',
                       border: const OutlineInputBorder(
                           borderRadius: BorderRadius.all(Radius.circular(8))),
                       suffix: GestureDetector(
@@ -98,7 +99,12 @@ class _SignInPageState extends State<SignInPage> {
                   SizedBox(
                     width: double.infinity,
                     child: PrimaryButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const DashboardPage()));
+                      },
                       label: 'Sign in',
                     ),
                   ),
