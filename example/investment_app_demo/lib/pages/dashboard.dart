@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:investment_app_demo/pages/investment.dart';
+import 'package:investment_app_demo/share/widgets/share_bottom_navigation_bar.dart';
 import 'package:investment_app_demo/utils/custom_icons.dart';
 import 'package:saber_flutter_ui/saber_flutter_ui.dart';
 
@@ -157,6 +158,11 @@ class _DashboardPageState extends State<DashboardPage>
                       returnsPercentage: 20,
                       returnsIn: "Returns in 9 months",
                     ),
+                    InvestmentCard(
+                      title: "Propertyless Estate",
+                      returnsPercentage: 20,
+                      returnsIn: "Returns in 9 months",
+                    ),
                   ],
                 ),
               )
@@ -164,7 +170,10 @@ class _DashboardPageState extends State<DashboardPage>
           ),
         ),
       ),
-      bottomNavigationBar: _buildBottomNavigationBar(),
+      bottomNavigationBar: const ShareBottomNavigationBar(
+        currentTab: TabItem.home,
+      ),
+      // bottomNavigationBar: _buildBottomNavigationBar(),
     );
   }
 
