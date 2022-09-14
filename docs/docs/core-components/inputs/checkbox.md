@@ -3,6 +3,7 @@
 ![checkbox button](/img/docs/core-components/inputs/checkbox.png)
 
 ## Example
+Here is an example of `Checkbox` widgets wrapped in Row, `CheckboxListTile` widgets and Checkbox widgets wrapped in `ListTiles`.
 
 ```dart
 import 'package:flutter/material.dart';

@@ -59,7 +59,7 @@ Accordion(
 )
 ```
 
-Pass an `textArrow` argument to add text besides the arrow icon
+Use `textArrow` for add text with arrow icon.
 
 ![Accordion text with arrow](/img/docs/core-components/accordion/accordion-textArrow.png)
 ```dart
@@ -73,7 +73,7 @@ Accordion(
 ## Example
 
 ```dart
-import 'package:component_ui/component_ui.dart';
+import 'package:saber_flutter_ui/saber_flutter_ui.dart';
 
 void main() => runApp(const MyApp());
 

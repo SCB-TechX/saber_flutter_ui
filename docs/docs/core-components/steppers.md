@@ -6,7 +6,7 @@
 
 ```dart
 import 'package:flutter/material.dart' hide Step, Stepper, StepperType;
-import 'package:travel_wallet_ui/travel_wallet_ui.dart'
+import 'package:saber_flutter_ui/saber_flutter_ui.dart'
     show Step, Stepper, StepperType;
 
 void main() => runApp(const MyApp());

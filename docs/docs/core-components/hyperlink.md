@@ -1,14 +1,14 @@
 # Hyperlink
 
-- [`Hyperlink`](/docs/core-components/hyperlink)
-
-## Example
+Hyperlinks are similar to text buttons but without padding and have an underline by default.
 
 ![hyperlink overview](/img/docs/core-components/hyperlink/hyperlink-overview.png)
 
+## Example
+
 ```dart
 import 'package:flutter/material.dart';
-import 'package:travel_wallet_ui/travel_wallet_ui.dart';
+import 'package:saber_flutter_ui/saber_flutter_ui.dart';
 
 void main() => runApp(const MyApp());
 

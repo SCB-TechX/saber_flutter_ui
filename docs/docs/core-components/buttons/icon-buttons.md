@@ -1,4 +1,5 @@
 # IconButtons
+ShapeiconButton developed from an [IconButton](https://api.flutter.dev/flutter/material/IconButton-class.html) and increased the button's background; the two shapes that could change were a circle and a rectangle.
 
 ![icon buttons overview](/img/docs/core-components/buttons/icon-buttons/icon-buttons-overview.png)
 
@@ -57,7 +58,7 @@ You can change a button size by pass the `shape` parameter to the widget
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:travel_wallet_ui/travel_wallet_ui.dart';
+import 'package:saber_flutter_ui/saber_flutter_ui.dart';
 
 void main() => runApp(const MyApp());
 
@@ -97,7 +98,7 @@ class MyApp extends StatelessWidget {
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:travel_wallet_ui/travel_wallet_ui.dart';
+import 'package:saber_flutter_ui/saber_flutter_ui.dart';
 
 void main() => runApp(const MyApp());
 

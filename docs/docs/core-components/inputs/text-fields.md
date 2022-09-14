@@ -154,7 +154,7 @@ TextField(
 ### Text Field
 This sample shows how to clear a value from a `TextField` via `TextEditingController`.
 
-> **_NOTE:_**  `TextEditingController` can also get a value.
+> **_NOTE:_**  `TextEditingController` also can get a value.
 
 ```dart
 import 'package:flutter/material.dart';

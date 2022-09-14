@@ -102,7 +102,7 @@ Scaffold(
 );
 ```
 
-> **_NOTE:_**   `BottomNavigationBar` type เป็น widget ซึ่งหมายความว่าคุณสามารถ custom เองได้หากไม่ต้องการใช้ `BottomNavigationBarItem`.
+> **_NOTE:_**   `BottomNavigationBar` type is a widget, which means you can customize it yourself if you don't want to use `BottomNavigationBarItem`.
 
 ### Bottom AppBar
 ![Example Bottom Bottom AppBar](/img/docs/core-components/scaffolds/bottom-app-bar.png)
