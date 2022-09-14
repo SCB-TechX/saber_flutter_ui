@@ -15,8 +15,8 @@ class SignInPage extends StatefulWidget {
 }
 
 class _SignInPageState extends State<SignInPage> {
-  TextEditingController _emailField = TextEditingController();
-  TextEditingController _passwordField = TextEditingController();
+  final TextEditingController _emailField = TextEditingController();
+  final TextEditingController _passwordField = TextEditingController();
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   bool _passwordVisible = false;
 
@@ -156,7 +156,7 @@ class _SignInPageState extends State<SignInPage> {
                             },
                             child: const Text('Register Here',
                                 style: TextStyle(
-                                    color: const Color(0xff222222),
+                                    color: Color(0xff222222),
                                     fontWeight: FontWeight.w800)),
                           ),
                         )

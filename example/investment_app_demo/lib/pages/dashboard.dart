@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:investment_app_demo/pages/investment.dart';
 import 'package:investment_app_demo/share/widgets/share_bottom_navigation_bar.dart';
-import 'package:investment_app_demo/utils/custom_icons.dart';
 import 'package:saber_flutter_ui/saber_flutter_ui.dart';
 
 class DashboardPage extends StatefulWidget {

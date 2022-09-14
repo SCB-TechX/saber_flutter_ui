@@ -181,7 +181,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                   },
                                   child: const Text('Sign in',
                                       style: TextStyle(
-                                          color: const Color(0xff222222),
+                                          color: Color(0xff222222),
                                           fontWeight: FontWeight.w800)),
                                 ),
                               )

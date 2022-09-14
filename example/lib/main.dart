@@ -40,7 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
+            children: const <Widget>[
               InputWidgets(),
               // ButtonWidgets(),
               // Accordion(title: Text('text'), expandedContent: []),

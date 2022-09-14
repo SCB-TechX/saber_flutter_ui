@@ -1,4 +1,3 @@
-import 'dart:developer';
 
 import 'package:bnpl_app_demo/pages/apply_loan_form.dart';
 import 'package:bnpl_app_demo/pages/dashboard.dart';
@@ -38,7 +37,7 @@ class _ApplyLoanDetailPageState extends State<ApplyLoanDetailPage> {
                 ))
           ],
         ),
-        title: Text("PayLater"),
+        title: const Text("PayLater"),
         foregroundColor: Theme.of(context).primaryColor,
         backgroundColor: Colors.white,
         shadowColor: Colors.transparent,
@@ -121,7 +120,7 @@ class _ApplyLoanDetailPageState extends State<ApplyLoanDetailPage> {
             child: ExpansionTile(
               trailing: Padding(
                 padding: EdgeInsets.only(top: isDueDate ? 24 : 0),
-                child: Icon(
+                child: const Icon(
                   Icons.expand_more,
                   size: 16,
                 ),
@@ -155,11 +154,11 @@ class _ApplyLoanDetailPageState extends State<ApplyLoanDetailPage> {
                               foregroundColor: MaterialStateProperty.all<Color>(
                                   Colors.white),
                               backgroundColor: MaterialStateProperty.all<Color>(
-                                  Color(0xff222222)),
+                                  const Color(0xff222222)),
                             ),
                             onPressed: () {},
-                            child: Text('44 THB'))
-                        : Text('44 THB'),
+                            child: const Text('44 THB'))
+                        : const Text('44 THB'),
                   ],
                 ),
               ),
@@ -175,21 +174,21 @@ class _ApplyLoanDetailPageState extends State<ApplyLoanDetailPage> {
                           children: [
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [Text('Principal'), Text('34 THB')],
+                              children: const [Text('Principal'), Text('34 THB')],
                             ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [Text('Interest'), Text('34 THB')],
+                              children: const [Text('Interest'), Text('34 THB')],
                             ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [Text('Fee'), Text('34 THB')],
+                              children: const [Text('Fee'), Text('34 THB')],
                             ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [Text('Total'), Text('34 THB')],
+                              children: const [Text('Total'), Text('34 THB')],
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 16.0,
                             )
                           ],
@@ -210,17 +209,17 @@ class _ApplyLoanDetailPageState extends State<ApplyLoanDetailPage> {
       top: isSuccess ? 30.0 : 5.0,
       left: 18,
       child: Container(
-          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
           decoration: BoxDecoration(
-            color: isSuccess ? Color(0xffB6F2A1) : Color(0xffFFE9BE),
-            borderRadius: BorderRadius.only(
+            color: isSuccess ? const Color(0xffB6F2A1) : const Color(0xffFFE9BE),
+            borderRadius: const BorderRadius.only(
               topRight: Radius.circular(16),
               bottomRight: Radius.circular(16),
             ),
           ),
           child: Text(
             text,
-            style: TextStyle(
+            style: const TextStyle(
                 color: Color(0xffE19E1C),
                 fontSize: 12,
                 fontWeight: FontWeight.bold),

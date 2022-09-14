@@ -71,7 +71,7 @@ class _DashboardPageState extends State<DashboardPage> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          Text('Your balances'),
+                          const Text('Your balances'),
                           Text(
                             '0.00  THB',
                             style: Theme.of(context).textTheme.headline6,
@@ -143,7 +143,7 @@ class _DashboardPageState extends State<DashboardPage> {
                                 ),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
+                                  children: const [
                                     Text(
                                       'Buy Playstation',
                                       style: TextStyle(
@@ -159,7 +159,7 @@ class _DashboardPageState extends State<DashboardPage> {
                               radius: 25.0,
                               lineWidth: 4.0,
                               percent: 0.80,
-                              center: new Text("80%"),
+                              center: const Text("80%"),
                               progressColor: Theme.of(context).primaryColor,
                             ),
                           ]),
@@ -226,10 +226,10 @@ class _DashboardPageState extends State<DashboardPage> {
                       size: 18,
                       color: Theme.of(context).primaryColor,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 4,
                     ),
-                    Text('Wallet',
+                    const Text('Wallet',
                         style: TextStyle(
                             fontWeight: FontWeight.w600, fontSize: 12))
                   ],
@@ -243,7 +243,7 @@ class _DashboardPageState extends State<DashboardPage> {
                   context,
                   PageRouteBuilder(
                     pageBuilder: (context, animation1, animation2) =>
-                        LoansPage(),
+                        const LoansPage(),
                     transitionDuration: Duration.zero,
                     reverseTransitionDuration: Duration.zero,
                   ),
@@ -258,7 +258,7 @@ class _DashboardPageState extends State<DashboardPage> {
                       size: 18,
                       color: Theme.of(context).disabledColor,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 4,
                     ),
                     Text(
@@ -276,7 +276,7 @@ class _DashboardPageState extends State<DashboardPage> {
                   context,
                   PageRouteBuilder(
                     pageBuilder: (context, animation1, animation2) =>
-                        ApplyLoanDetailPage(),
+                        const ApplyLoanDetailPage(),
                     transitionDuration: Duration.zero,
                     reverseTransitionDuration: Duration.zero,
                   ),
@@ -291,7 +291,7 @@ class _DashboardPageState extends State<DashboardPage> {
                       size: 18,
                       color: Theme.of(context).disabledColor,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 4,
                     ),
                     Text(
@@ -309,7 +309,7 @@ class _DashboardPageState extends State<DashboardPage> {
                   context,
                   PageRouteBuilder(
                     pageBuilder: (context, animation1, animation2) =>
-                        ProfilePage(),
+                        const ProfilePage(),
                     transitionDuration: Duration.zero,
                     reverseTransitionDuration: Duration.zero,
                   ),
@@ -324,7 +324,7 @@ class _DashboardPageState extends State<DashboardPage> {
                       size: 18,
                       color: Theme.of(context).disabledColor,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 4,
                     ),
                     Text(
@@ -346,7 +346,7 @@ class _DashboardPageState extends State<DashboardPage> {
       children: [
         Container(
           decoration: ShapeDecoration(
-              color: Theme.of(context).primaryColor, shape: CircleBorder()),
+              color: Theme.of(context).primaryColor, shape: const CircleBorder()),
           child: IconButton(
             icon: Icon(
               icon,
@@ -363,7 +363,7 @@ class _DashboardPageState extends State<DashboardPage> {
         ),
         Text(
           label,
-          style: TextStyle(fontSize: 12, fontWeight: FontWeight.w500),
+          style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w500),
         )
       ],
     );

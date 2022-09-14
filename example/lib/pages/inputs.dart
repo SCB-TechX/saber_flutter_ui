@@ -13,19 +13,19 @@ class InputWidgets extends StatefulWidget {
 class _InputWidgets extends State<InputWidgets> {
   SingingCharacter? _character = SingingCharacter.lafayette;
   bool _checkboxValue = false;
-  FocusNode myFocusNode = new FocusNode();
+  FocusNode myFocusNode = FocusNode();
   TextEditingController tempTextEditingController = TextEditingController();
   TextEditingController tempTextEditingController1 = TextEditingController();
 
   /// Input
-  TextEditingController _searchController = TextEditingController();
-  TextEditingController _controller = TextEditingController();
+  final TextEditingController _searchController = TextEditingController();
+  final TextEditingController _controller = TextEditingController();
 
   /// Dropdown
   final items = ['One', 'Two', 'Three', 'Four'];
   String _dropdownValue = "One";
 
-  String? selectedValue = null;
+  String? selectedValue;
 
   // This function is triggered when the clear buttion is pressed
   void _clearTextField() {
@@ -47,10 +47,10 @@ class _InputWidgets extends State<InputWidgets> {
             setState(() {});
           },
           decoration: InputDecoration(
-            border: OutlineInputBorder(
+            border: const OutlineInputBorder(
                 borderRadius: BorderRadius.all(Radius.circular(28))),
             hintText: 'Enter a search term',
-            prefixIcon: Icon(Icons.search),
+            prefixIcon: const Icon(Icons.search),
             suffixIcon: _searchController.text.isEmpty
                 ? null
                 : IconButton(
@@ -91,9 +91,9 @@ class _InputWidgets extends State<InputWidgets> {
           controller: _controller,
           decoration: InputDecoration(
             suffix: IconButton(
-              constraints: BoxConstraints(maxHeight: 36),
+              constraints: const BoxConstraints(maxHeight: 36),
               onPressed: _controller.clear,
-              icon: Icon(Icons.clear),
+              icon: const Icon(Icons.clear),
             ),
             labelText: 'Underline Input Border',
           ),
@@ -102,7 +102,7 @@ class _InputWidgets extends State<InputWidgets> {
           height: 16,
         ),
 
-        TextField(
+        const TextField(
           decoration: InputDecoration(
             hintText: 'Underline Input Border',
           ),
@@ -110,7 +110,7 @@ class _InputWidgets extends State<InputWidgets> {
         const SizedBox(
           height: 16,
         ),
-        TextField(
+        const TextField(
           keyboardType: TextInputType.number,
           decoration: InputDecoration(
               labelText: 'Keyboard Number Type', suffixText: 'THB'),
@@ -119,7 +119,7 @@ class _InputWidgets extends State<InputWidgets> {
         const SizedBox(
           height: 16,
         ),
-        TextField(
+        const TextField(
           decoration: InputDecoration(
             border: OutlineInputBorder(
                 borderRadius: BorderRadius.all(Radius.circular(8))),
@@ -131,7 +131,7 @@ class _InputWidgets extends State<InputWidgets> {
         const SizedBox(
           height: 16,
         ),
-        TextField(
+        const TextField(
           decoration: InputDecoration(
               border: OutlineInputBorder(
                   borderRadius: BorderRadius.all(Radius.circular(8))),
@@ -144,11 +144,11 @@ class _InputWidgets extends State<InputWidgets> {
         TextField(
           obscureText: true,
           decoration: InputDecoration(
-              border: OutlineInputBorder(
+              border: const OutlineInputBorder(
                   borderRadius: BorderRadius.all(Radius.circular(8))),
               hintText: 'Password',
               suffixIcon: IconButton(
-                icon: Icon(
+                icon: const Icon(
                   Icons.visibility,
                 ),
                 onPressed: () {},
@@ -157,7 +157,7 @@ class _InputWidgets extends State<InputWidgets> {
         const SizedBox(
           height: 16,
         ),
-        TextField(
+        const TextField(
           decoration: InputDecoration(
             border: OutlineInputBorder(
                 borderRadius: BorderRadius.all(Radius.circular(8))),
@@ -167,7 +167,7 @@ class _InputWidgets extends State<InputWidgets> {
         const SizedBox(
           height: 16,
         ),
-        TextField(
+        const TextField(
           decoration: InputDecoration(
               border: OutlineInputBorder(
                   borderRadius: BorderRadius.all(Radius.circular(8))),
@@ -180,7 +180,7 @@ class _InputWidgets extends State<InputWidgets> {
 
         // Dropdown
         Container(
-            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             decoration: BoxDecoration(
                 color: Colors.white, borderRadius: BorderRadius.circular(10)),
 
@@ -213,7 +213,7 @@ class _InputWidgets extends State<InputWidgets> {
           height: 16,
         ),
         DropdownButtonFormField(
-          decoration: InputDecoration(
+          decoration: const InputDecoration(
             labelText: 'Dropdown Label Text',
           ),
           value: selectedValue,

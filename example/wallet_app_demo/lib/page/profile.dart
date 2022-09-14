@@ -1,7 +1,5 @@
-import 'dart:developer';
 
 import 'package:flutter/material.dart';
-import 'package:saber_flutter_ui/saber_flutter_ui.dart';
 import 'package:wallet_app_demo/page/dashboard.dart';
 import 'package:wallet_app_demo/page/profile_detail.dart';
 import 'package:wallet_app_demo/page/transactions.dart';
@@ -81,12 +79,12 @@ class _ProfilePageState extends State<ProfilePage> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Row(
-                        children: [
+                        children: const [
                           Icon(
                             Icons.person,
                             size: 16,
                           ),
-                          const SizedBox(
+                          SizedBox(
                             width: 16,
                           ),
                           Text('Profile'),
@@ -100,7 +98,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                   builder: (context) =>
                                       const DetailProfilePage()));
                         }),
-                        child: Icon(
+                        child: const Icon(
                           Icons.arrow_forward_ios,
                           size: 12,
                         ),
@@ -114,15 +112,15 @@ class _ProfilePageState extends State<ProfilePage> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Row(
-                        children: [
-                          const Icon(
+                        children: const [
+                          Icon(
                             Icons.confirmation_number,
                             size: 16,
                           ),
-                          const SizedBox(
+                          SizedBox(
                             width: 16,
                           ),
-                          const Text('Coupons'),
+                          Text('Coupons'),
                         ],
                       ),
                       const Icon(
@@ -135,15 +133,15 @@ class _ProfilePageState extends State<ProfilePage> {
                     height: 16,
                   ),
                   Row(
-                    children: [
+                    children: const [
                       Icon(
                         Icons.group_add,
                         size: 16,
                       ),
-                      const SizedBox(
+                      SizedBox(
                         width: 16,
                       ),
-                      const Text('Invite friends'),
+                      Text('Invite friends'),
                     ],
                   ),
                 ]),
@@ -174,12 +172,12 @@ class _ProfilePageState extends State<ProfilePage> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Row(
-                        children: [
+                        children: const [
                           Icon(
                             Icons.settings,
                             size: 16,
                           ),
-                          const SizedBox(
+                          SizedBox(
                             width: 16,
                           ),
                           Text('Setting'),
@@ -219,15 +217,15 @@ class _ProfilePageState extends State<ProfilePage> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Row(
-                        children: [
-                          const Icon(
+                        children: const [
+                          Icon(
                             Icons.verified_user,
                             size: 16,
                           ),
-                          const SizedBox(
+                          SizedBox(
                             width: 16,
                           ),
-                          const Text('Security'),
+                          Text('Security'),
                         ],
                       ),
                       const Icon(
@@ -243,15 +241,15 @@ class _ProfilePageState extends State<ProfilePage> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Row(
-                        children: [
-                          const Icon(
+                        children: const [
+                          Icon(
                             Icons.help_outline,
                             size: 16,
                           ),
-                          const SizedBox(
+                          SizedBox(
                             width: 16,
                           ),
-                          const Text('Help & Support'),
+                          Text('Help & Support'),
                         ],
                       ),
                       const Icon(
@@ -283,7 +281,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   context,
                   PageRouteBuilder(
                     pageBuilder: (context, animation1, animation2) =>
-                        DashboardPage(),
+                        const DashboardPage(),
                     transitionDuration: Duration.zero,
                     reverseTransitionDuration: Duration.zero,
                   ),
@@ -298,7 +296,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       size: 18,
                       color: Theme.of(context).disabledColor,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 4,
                     ),
                     Text(
@@ -316,7 +314,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   context,
                   PageRouteBuilder(
                     pageBuilder: (context, animation1, animation2) =>
-                        TransactionsPage(),
+                        const TransactionsPage(),
                     transitionDuration: Duration.zero,
                     reverseTransitionDuration: Duration.zero,
                   ),
@@ -331,7 +329,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       size: 18,
                       color: Theme.of(context).disabledColor,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 4,
                     ),
                     Text(
@@ -369,7 +367,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       size: 18,
                       color: Theme.of(context).disabledColor,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 4,
                     ),
                     Text(
@@ -387,7 +385,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   context,
                   PageRouteBuilder(
                     pageBuilder: (context, animation1, animation2) =>
-                        ProfilePage(),
+                        const ProfilePage(),
                     transitionDuration: Duration.zero,
                     reverseTransitionDuration: Duration.zero,
                   ),
@@ -402,10 +400,10 @@ class _ProfilePageState extends State<ProfilePage> {
                       size: 18,
                       color: Theme.of(context).primaryColor,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 4,
                     ),
-                    Text('Account',
+                    const Text('Account',
                         style: TextStyle(
                             fontWeight: FontWeight.w600, fontSize: 12))
                   ],

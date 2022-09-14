@@ -36,7 +36,7 @@ class _LoanDetailPageState extends State<LoanDetailPage> {
                   ))
             ],
           ),
-          title: Text("Loan details"),
+          title: const Text("Loan details"),
           foregroundColor: Theme.of(context).primaryColor,
           backgroundColor: Colors.white,
           shadowColor: Colors.transparent,
@@ -47,7 +47,7 @@ class _LoanDetailPageState extends State<LoanDetailPage> {
             Padding(
               padding: const EdgeInsets.all(24.0),
               child: Accordion(
-                  title: Text(
+                  title: const Text(
                     'Saber Travel',
                     style: TextStyle(fontWeight: FontWeight.w600, fontSize: 16),
                   ),
@@ -62,16 +62,16 @@ class _LoanDetailPageState extends State<LoanDetailPage> {
                     ),
                     Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [Text('Loan amount'), Text('4,000 THB')]),
+                        children: const [Text('Loan amount'), Text('4,000 THB')]),
                     Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [Text('APR'), Text('25%')]),
+                        children: const [Text('APR'), Text('25%')]),
                     Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [Text('Cost per month'), Text('816 THB')]),
+                        children: const [Text('Cost per month'), Text('816 THB')]),
                     Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [Text('Number of payments'), Text('6')]),
+                        children: const [Text('Number of payments'), Text('6')]),
                     const SizedBox(
                       height: 16,
                     ),
@@ -89,8 +89,8 @@ class _LoanDetailPageState extends State<LoanDetailPage> {
                     lineHeight: 5.0,
                     percent: 4 / 10,
                     barRadius: const Radius.circular(16),
-                    progressColor: Color(0xff222222),
-                    backgroundColor: Color(0xffF2F2F2),
+                    progressColor: const Color(0xff222222),
+                    backgroundColor: const Color(0xffF2F2F2),
                   ),
                 ),
                 Container(
@@ -136,14 +136,14 @@ class _LoanDetailPageState extends State<LoanDetailPage> {
                   margin: const EdgeInsets.symmetric(horizontal: 24),
                   padding: const EdgeInsets.only(top: 16.0),
                   child: TabBar(
-                    indicatorColor: Color(0xff222222),
+                    indicatorColor: const Color(0xff222222),
                     indicatorWeight: 3.0,
-                    labelColor: Color(0xff222222),
+                    labelColor: const Color(0xff222222),
                     labelStyle: BaseTextStyle.button,
                     labelPadding: const EdgeInsets.only(bottom: 8.0),
-                    unselectedLabelColor: Color(0xff888B8C),
+                    unselectedLabelColor: const Color(0xff888B8C),
                     unselectedLabelStyle: BaseTextStyle.bodyText2,
-                    tabs: [Text('Upcoming'), Text('Paid')],
+                    tabs: const [Text('Upcoming'), Text('Paid')],
                   ),
                 ),
               ],
@@ -195,7 +195,7 @@ class _LoanDetailPageState extends State<LoanDetailPage> {
             child: ExpansionTile(
               trailing: Padding(
                 padding: EdgeInsets.only(top: isDueDate ? 24 : 0),
-                child: Icon(
+                child: const Icon(
                   Icons.expand_more,
                   size: 16,
                 ),
@@ -229,11 +229,11 @@ class _LoanDetailPageState extends State<LoanDetailPage> {
                               foregroundColor: MaterialStateProperty.all<Color>(
                                   Colors.white),
                               backgroundColor: MaterialStateProperty.all<Color>(
-                                  Color(0xff222222)),
+                                  const Color(0xff222222)),
                             ),
                             onPressed: () {},
-                            child: Text('44 THB'))
-                        : Text('44 THB'),
+                            child: const Text('44 THB'))
+                        : const Text('44 THB'),
                   ],
                 ),
               ),
@@ -249,21 +249,21 @@ class _LoanDetailPageState extends State<LoanDetailPage> {
                           children: [
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [Text('Principal'), Text('34 THB')],
+                              children: const [Text('Principal'), Text('34 THB')],
                             ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [Text('Interest'), Text('34 THB')],
+                              children: const [Text('Interest'), Text('34 THB')],
                             ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [Text('Fee'), Text('34 THB')],
+                              children: const [Text('Fee'), Text('34 THB')],
                             ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [Text('Total'), Text('34 THB')],
+                              children: const [Text('Total'), Text('34 THB')],
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 16.0,
                             )
                           ],
@@ -284,17 +284,17 @@ class _LoanDetailPageState extends State<LoanDetailPage> {
       top: isSuccess ? 30.0 : 5.0,
       left: 18,
       child: Container(
-          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
           decoration: BoxDecoration(
-            color: isSuccess ? Color(0xffB6F2A1) : Color(0xffFFE9BE),
-            borderRadius: BorderRadius.only(
+            color: isSuccess ? const Color(0xffB6F2A1) : const Color(0xffFFE9BE),
+            borderRadius: const BorderRadius.only(
               topRight: Radius.circular(16),
               bottomRight: Radius.circular(16),
             ),
           ),
           child: Text(
             text,
-            style: TextStyle(
+            style: const TextStyle(
                 color: Color(0xffE19E1C),
                 fontSize: 12,
                 fontWeight: FontWeight.bold),

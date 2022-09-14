@@ -1,7 +1,5 @@
-import 'dart:developer';
 
 import 'package:flutter/material.dart';
-import 'package:saber_flutter_ui/saber_flutter_ui.dart';
 import 'package:wallet_app_demo/page/dashboard.dart';
 import 'package:wallet_app_demo/page/profile.dart';
 import 'package:wallet_app_demo/utils/custom_icons.dart';
@@ -16,7 +14,7 @@ class TransactionsPage extends StatefulWidget {
 }
 
 class _TransactionsPageState extends State<TransactionsPage> {
-  TextEditingController _controller = TextEditingController();
+  final TextEditingController _controller = TextEditingController();
 
   @override
   void dispose() {
@@ -38,7 +36,7 @@ class _TransactionsPageState extends State<TransactionsPage> {
       length: 3,
       child: Scaffold(
         appBar: AppBar(
-          title: Text("Transactions"),
+          title: const Text("Transactions"),
           foregroundColor: Theme.of(context).primaryColor,
           backgroundColor: Colors.white,
           shadowColor: Colors.transparent,
@@ -69,10 +67,10 @@ class _TransactionsPageState extends State<TransactionsPage> {
                       setState(() {});
                     },
                     decoration: InputDecoration(
-                      border: OutlineInputBorder(
+                      border: const OutlineInputBorder(
                           borderRadius: BorderRadius.all(Radius.circular(28))),
                       hintText: 'Enter a search term',
-                      prefixIcon: Icon(Icons.search),
+                      prefixIcon: const Icon(Icons.search),
                       suffixIcon: _controller.text.isEmpty
                           ? null
                           : IconButton(
@@ -117,7 +115,7 @@ class _TransactionsPageState extends State<TransactionsPage> {
                     context,
                     PageRouteBuilder(
                       pageBuilder: (context, animation1, animation2) =>
-                          DashboardPage(),
+                          const DashboardPage(),
                       transitionDuration: Duration.zero,
                       reverseTransitionDuration: Duration.zero,
                     ),
@@ -132,7 +130,7 @@ class _TransactionsPageState extends State<TransactionsPage> {
                         size: 18,
                         color: Theme.of(context).disabledColor,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 4,
                       ),
                       Text(
@@ -150,7 +148,7 @@ class _TransactionsPageState extends State<TransactionsPage> {
                     context,
                     PageRouteBuilder(
                       pageBuilder: (context, animation1, animation2) =>
-                          TransactionsPage(),
+                          const TransactionsPage(),
                       transitionDuration: Duration.zero,
                       reverseTransitionDuration: Duration.zero,
                     ),
@@ -165,10 +163,10 @@ class _TransactionsPageState extends State<TransactionsPage> {
                         size: 18,
                         color: Theme.of(context).primaryColor,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 4,
                       ),
-                      Text('History',
+                      const Text('History',
                           style: TextStyle(
                               fontWeight: FontWeight.w600, fontSize: 12))
                     ],
@@ -202,7 +200,7 @@ class _TransactionsPageState extends State<TransactionsPage> {
                         size: 18,
                         color: Theme.of(context).disabledColor,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 4,
                       ),
                       Text(
@@ -220,7 +218,7 @@ class _TransactionsPageState extends State<TransactionsPage> {
                     context,
                     PageRouteBuilder(
                       pageBuilder: (context, animation1, animation2) =>
-                          ProfilePage(),
+                          const ProfilePage(),
                       transitionDuration: Duration.zero,
                       reverseTransitionDuration: Duration.zero,
                     ),
@@ -235,7 +233,7 @@ class _TransactionsPageState extends State<TransactionsPage> {
                         size: 18,
                         color: Theme.of(context).disabledColor,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 4,
                       ),
                       Text(
@@ -277,7 +275,7 @@ class _TransactionsPageState extends State<TransactionsPage> {
                 ),
               ),
               const Spacer(),
-              Text('- 500.00 THB')
+              const Text('- 500.00 THB')
             ],
           ),
           const SizedBox(
@@ -303,7 +301,7 @@ class _TransactionsPageState extends State<TransactionsPage> {
                 ),
               ),
               const Spacer(),
-              Text('- 890.00 THB')
+              const Text('- 890.00 THB')
             ],
           ),
           const SizedBox(
@@ -329,7 +327,7 @@ class _TransactionsPageState extends State<TransactionsPage> {
                 ),
               ),
               const Spacer(),
-              Text('- 250.00 THB')
+              const Text('- 250.00 THB')
             ],
           ),
           const SizedBox(
@@ -355,7 +353,7 @@ class _TransactionsPageState extends State<TransactionsPage> {
                 ),
               ),
               const Spacer(),
-              Text('- 89.00 THB')
+              const Text('- 89.00 THB')
             ],
           ),
           const SizedBox(
@@ -381,7 +379,7 @@ class _TransactionsPageState extends State<TransactionsPage> {
                 ),
               ),
               const Spacer(),
-              Text('- 89.00 THB')
+              const Text('- 89.00 THB')
             ],
           ),
           const SizedBox(
@@ -407,7 +405,7 @@ class _TransactionsPageState extends State<TransactionsPage> {
                 ),
               ),
               const Spacer(),
-              Text('- 250.00 THB')
+              const Text('- 250.00 THB')
             ],
           ),
           const SizedBox(
@@ -433,7 +431,7 @@ class _TransactionsPageState extends State<TransactionsPage> {
                 ),
               ),
               const Spacer(),
-              Text('- 990.00 THB')
+              const Text('- 990.00 THB')
             ],
           ),
         ],

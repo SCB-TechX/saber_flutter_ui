@@ -1,7 +1,5 @@
-import 'dart:developer';
 
 import 'package:bnpl_app_demo/pages/apply_loan_status.dart';
-import 'package:bnpl_app_demo/pages/dashboard.dart';
 import 'package:flutter/material.dart';
 import 'package:saber_flutter_ui/saber_flutter_ui.dart';
 
@@ -18,7 +16,7 @@ class ApplyLoanDetailFormPage extends StatefulWidget {
 
 class _ApplyLoanDetailFormPageState extends State<ApplyLoanDetailFormPage> {
   final items = ['Option 1', 'Option 2', 'Option 3', 'Option 4'];
-  String? selectedValue = null;
+  String? selectedValue;
 
   SingingValue? _value = SingingValue.value1;
 
@@ -41,7 +39,7 @@ class _ApplyLoanDetailFormPageState extends State<ApplyLoanDetailFormPage> {
                 ))
           ],
         ),
-        title: Text("Your info"),
+        title: const Text("Your info"),
         foregroundColor: Theme.of(context).primaryColor,
         backgroundColor: Colors.white,
         shadowColor: Colors.transparent,
@@ -172,7 +170,7 @@ class _ApplyLoanDetailFormPageState extends State<ApplyLoanDetailFormPage> {
                       });
                     },
                   ),
-                  Text('I agree with the Terms and Conditions'),
+                  const Text('I agree with the Terms and Conditions'),
                 ],
               ),
               const SizedBox(

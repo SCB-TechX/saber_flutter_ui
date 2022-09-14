@@ -69,7 +69,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                     style:
                                         Theme.of(context).textTheme.subtitle1,
                                   ),
-                                  Text(
+                                  const Text(
                                     '#0234234',
                                   ),
                                 ],
@@ -80,7 +80,7 @@ class _ProfilePageState extends State<ProfilePage> {
                               onPressed: () {
                                 log('Edit Profile');
                               },
-                              icon: Icon(
+                              icon: const Icon(
                                 CustomIcons.edit,
                                 size: 16,
                               ))
@@ -111,12 +111,12 @@ class _ProfilePageState extends State<ProfilePage> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Row(
-                    children: [
+                    children: const [
                       Icon(
                         CustomIcons.profile,
                         size: 16,
                       ),
-                      const SizedBox(
+                      SizedBox(
                         width: 16,
                       ),
                       Text(
@@ -151,12 +151,12 @@ class _ProfilePageState extends State<ProfilePage> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Row(
-                    children: [
+                    children: const [
                       Icon(
                         Icons.settings,
                         size: 16,
                       ),
-                      const SizedBox(
+                      SizedBox(
                         width: 16,
                       ),
                       Text(
@@ -181,12 +181,12 @@ class _ProfilePageState extends State<ProfilePage> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Row(
-                    children: [
+                    children: const [
                       Icon(
                         Icons.help_outline,
                         size: 16,
                       ),
-                      const SizedBox(
+                      SizedBox(
                         width: 16,
                       ),
                       Text(
@@ -221,7 +221,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   context,
                   PageRouteBuilder(
                     pageBuilder: (context, animation1, animation2) =>
-                        DashboardPage(),
+                        const DashboardPage(),
                     transitionDuration: Duration.zero,
                     reverseTransitionDuration: Duration.zero,
                   ),
@@ -236,7 +236,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       size: 18,
                       color: Theme.of(context).disabledColor,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 4,
                     ),
                     Text(
@@ -254,7 +254,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   context,
                   PageRouteBuilder(
                     pageBuilder: (context, animation1, animation2) =>
-                        LoansPage(),
+                        const LoansPage(),
                     transitionDuration: Duration.zero,
                     reverseTransitionDuration: Duration.zero,
                   ),
@@ -269,7 +269,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       size: 18,
                       color: Theme.of(context).disabledColor,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 4,
                     ),
                     Text(
@@ -287,7 +287,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   context,
                   PageRouteBuilder(
                     pageBuilder: (context, animation1, animation2) =>
-                        ApplyLoanDetailPage(),
+                        const ApplyLoanDetailPage(),
                     transitionDuration: Duration.zero,
                     reverseTransitionDuration: Duration.zero,
                   ),
@@ -302,7 +302,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       size: 18,
                       color: Theme.of(context).disabledColor,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 4,
                     ),
                     Text(
@@ -327,10 +327,10 @@ class _ProfilePageState extends State<ProfilePage> {
                       size: 18,
                       color: Theme.of(context).primaryColor,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 4,
                     ),
-                    Text('Profile',
+                    const Text('Profile',
                         style: TextStyle(
                             fontWeight: FontWeight.w600, fontSize: 12))
                   ],

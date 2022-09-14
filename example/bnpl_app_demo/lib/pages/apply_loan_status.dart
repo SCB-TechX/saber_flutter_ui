@@ -1,4 +1,3 @@
-import 'dart:developer';
 
 import 'package:bnpl_app_demo/pages/dashboard.dart';
 import 'package:flutter/material.dart';
@@ -33,7 +32,7 @@ class _ApplyLoanDetailStatusPageState extends State<ApplyLoanDetailStatusPage> {
                 ))
           ],
         ),
-        title: Text("Reviewing"),
+        title: const Text("Reviewing"),
         foregroundColor: Theme.of(context).primaryColor,
         backgroundColor: Colors.white,
         shadowColor: Colors.transparent,
@@ -62,7 +61,7 @@ class _ApplyLoanDetailStatusPageState extends State<ApplyLoanDetailStatusPage> {
             const SizedBox(
               height: 24,
             ),
-            Text(
+            const Text(
                 'This should take no more than 2 minutes. We’ll send you an SMS once your PayLater is approved.',
                 textAlign: TextAlign.center),
             const SizedBox(
@@ -76,7 +75,7 @@ class _ApplyLoanDetailStatusPageState extends State<ApplyLoanDetailStatusPage> {
                         context,
                         PageRouteBuilder(
                           pageBuilder: (context, animation1, animation2) =>
-                              DashboardPage(),
+                              const DashboardPage(),
                           transitionDuration: Duration.zero,
                           reverseTransitionDuration: Duration.zero,
                         ),

@@ -15,9 +15,9 @@ class RegisterPage extends StatefulWidget {
 }
 
 class _RegisterPageState extends State<RegisterPage> {
-  TextEditingController _emailField = TextEditingController();
-  TextEditingController _passwordField = TextEditingController();
-  TextEditingController _confirmPasswordField = TextEditingController();
+  final TextEditingController _emailField = TextEditingController();
+  final TextEditingController _passwordField = TextEditingController();
+  final TextEditingController _confirmPasswordField = TextEditingController();
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   bool _passwordVisible = false;
   bool _confirmPasswordVisible = false;
@@ -203,7 +203,7 @@ class _RegisterPageState extends State<RegisterPage> {
                             },
                             child: const Text('Sign in',
                                 style: TextStyle(
-                                    color: const Color(0xff222222),
+                                    color: Color(0xff222222),
                                     fontWeight: FontWeight.w800)),
                           ),
                         )

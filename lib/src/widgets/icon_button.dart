@@ -82,8 +82,9 @@ class ShapeIconButtonWithLabel extends StatelessWidget {
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
         shape: buttonShape,
+        backgroundColor: color,
         padding: const EdgeInsets.all(16),
-        primary: color,
+        foregroundColor: color,
       ),
       child: Column(
         children: <Widget>[

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:investment_app_demo/share/widgets/share_bottom_navigation_bar.dart';
 import 'package:saber_flutter_ui/saber_flutter_ui.dart';
 

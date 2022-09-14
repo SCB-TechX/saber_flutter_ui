@@ -56,7 +56,7 @@ class _LoansPageState extends State<LoansPage> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
+                        const Text(
                           'Remaining credit',
                           style: TextStyle(
                               fontSize: 14, fontWeight: FontWeight.w600),
@@ -134,7 +134,7 @@ class _LoansPageState extends State<LoansPage> {
                                   Column(
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
-                                    children: [
+                                    children: const [
                                       Text(
                                         'Saber Travel',
                                         style: TextStyle(
@@ -146,7 +146,7 @@ class _LoansPageState extends State<LoansPage> {
                                   ),
                                 ],
                               ),
-                              Text('816 THB')
+                              const Text('816 THB')
                             ]),
                       ),
                     ),
@@ -176,7 +176,7 @@ class _LoansPageState extends State<LoansPage> {
                   context,
                   PageRouteBuilder(
                     pageBuilder: (context, animation1, animation2) =>
-                        DashboardPage(),
+                        const DashboardPage(),
                     transitionDuration: Duration.zero,
                     reverseTransitionDuration: Duration.zero,
                   ),
@@ -191,7 +191,7 @@ class _LoansPageState extends State<LoansPage> {
                       size: 18,
                       color: Theme.of(context).disabledColor,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 4,
                     ),
                     Text(
@@ -216,10 +216,10 @@ class _LoansPageState extends State<LoansPage> {
                       size: 18,
                       color: Theme.of(context).primaryColor,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 4,
                     ),
-                    Text('Loans',
+                    const Text('Loans',
                         style: TextStyle(
                             fontWeight: FontWeight.w600, fontSize: 12))
                   ],
@@ -233,7 +233,7 @@ class _LoansPageState extends State<LoansPage> {
                   context,
                   PageRouteBuilder(
                     pageBuilder: (context, animation1, animation2) =>
-                        ApplyLoanDetailPage(),
+                        const ApplyLoanDetailPage(),
                     transitionDuration: Duration.zero,
                     reverseTransitionDuration: Duration.zero,
                   ),
@@ -248,7 +248,7 @@ class _LoansPageState extends State<LoansPage> {
                       size: 18,
                       color: Theme.of(context).disabledColor,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 4,
                     ),
                     Text(
@@ -266,7 +266,7 @@ class _LoansPageState extends State<LoansPage> {
                   context,
                   PageRouteBuilder(
                     pageBuilder: (context, animation1, animation2) =>
-                        ProfilePage(),
+                        const ProfilePage(),
                     transitionDuration: Duration.zero,
                     reverseTransitionDuration: Duration.zero,
                   ),
@@ -281,7 +281,7 @@ class _LoansPageState extends State<LoansPage> {
                       size: 18,
                       color: Theme.of(context).disabledColor,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 4,
                     ),
                     Text(

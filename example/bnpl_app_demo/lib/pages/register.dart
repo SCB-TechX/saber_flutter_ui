@@ -15,9 +15,9 @@ class RegisterPage extends StatefulWidget {
 }
 
 class _RegisterPageState extends State<RegisterPage> {
-  TextEditingController _emailField = TextEditingController();
-  TextEditingController _passwordField = TextEditingController();
-  TextEditingController _confirmPasswordField = TextEditingController();
+  final TextEditingController _emailField = TextEditingController();
+  final TextEditingController _passwordField = TextEditingController();
+  final TextEditingController _confirmPasswordField = TextEditingController();
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   bool _passwordVisible = false;
   bool _confirmPasswordVisible = false;
@@ -86,7 +86,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   obscureText:
                       !_passwordVisible, //This will obscure text dynamically
                   decoration: InputDecoration(
-                    border: OutlineInputBorder(
+                    border: const OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(8))),
                     hintText: 'Password',
                     suffix: GestureDetector(
@@ -124,7 +124,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   },
                   obscureText: !_confirmPasswordVisible,
                   decoration: InputDecoration(
-                    border: OutlineInputBorder(
+                    border: const OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(8))),
                     hintText: 'Confirm password',
                     suffix: GestureDetector(

@@ -86,10 +86,10 @@ class _OutlineBorderTextFormField extends State<OutlineBorderTextFormField> {
                 });
               },
               child: Container(
-                padding: EdgeInsets.all(2.0),
+                padding: const EdgeInsets.all(2.0),
                 decoration: BoxDecoration(
                     // color: Colors.grey[200],
-                    borderRadius: BorderRadius.all(Radius.circular(
+                    borderRadius: const BorderRadius.all(Radius.circular(
                             8.0) //                 <--- border radius here
                         ),
                     border: Border.all(
@@ -132,13 +132,13 @@ class _OutlineBorderTextFormField extends State<OutlineBorderTextFormField> {
                     //     ? getLabelTextStyle(Colors.red)
                     //     : getLabelTextStyle(Colors.deepPurple),
                     contentPadding:
-                        EdgeInsets.symmetric(vertical: 7, horizontal: 16),
+                        const EdgeInsets.symmetric(vertical: 7, horizontal: 16),
                     // fillColor: Colors.white,
                     // filled: true,
                     enabledBorder: InputBorder.none,
                     errorBorder: InputBorder.none,
                     border: InputBorder.none,
-                    errorStyle: TextStyle(height: 0),
+                    errorStyle: const TextStyle(height: 0),
                     // focusedErrorBorder: InputBorder.none,
                     disabledBorder: InputBorder.none,
                     focusedBorder: InputBorder.none,
@@ -151,7 +151,7 @@ class _OutlineBorderTextFormField extends State<OutlineBorderTextFormField> {
           Visibility(
               visible: isError ? true : false,
               child: Container(
-                  padding: EdgeInsets.only(left: 15.0, top: 2.0),
+                  padding: const EdgeInsets.only(left: 15.0, top: 2.0),
                   child: Text(
                     errorString,
                     // style: getErrorTextFieldStyle(),
@@ -159,6 +159,5 @@ class _OutlineBorderTextFormField extends State<OutlineBorderTextFormField> {
         ],
       ),
     );
-    ;
   }
 }

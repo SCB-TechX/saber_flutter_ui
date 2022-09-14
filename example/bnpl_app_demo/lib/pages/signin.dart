@@ -15,8 +15,8 @@ class SignInPage extends StatefulWidget {
 }
 
 class _SignInPageState extends State<SignInPage> {
-  TextEditingController _emailField = TextEditingController();
-  TextEditingController _passwordField = TextEditingController();
+  final TextEditingController _emailField = TextEditingController();
+  final TextEditingController _passwordField = TextEditingController();
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   bool _passwordVisible = false;
 
@@ -54,7 +54,7 @@ class _SignInPageState extends State<SignInPage> {
                 const SizedBox(height: 8),
                 TextFormField(
                   controller: _emailField,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(8))),
                     hintText: 'E-mail',

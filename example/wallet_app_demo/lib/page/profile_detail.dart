@@ -1,8 +1,5 @@
-import 'dart:developer';
 
 import 'package:flutter/material.dart';
-import 'package:saber_flutter_ui/saber_flutter_ui.dart';
-import 'package:wallet_app_demo/utils/custom_icons.dart';
 
 class DetailProfilePage extends StatefulWidget {
   const DetailProfilePage({
@@ -33,7 +30,7 @@ class _DetailProfilePageState extends State<DetailProfilePage> {
                 ))
           ],
         ),
-        title: Text("Profile"),
+        title: const Text("Profile"),
         foregroundColor: Theme.of(context).primaryColor,
         backgroundColor: Colors.white,
         shadowColor: Colors.transparent,
@@ -64,18 +61,18 @@ class _DetailProfilePageState extends State<DetailProfilePage> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Row(
-                        children: [
+                        children: const [
                           Icon(
                             Icons.account_circle,
                             size: 16,
                           ),
-                          const SizedBox(
+                          SizedBox(
                             width: 16,
                           ),
                           Text('Profile image'),
                         ],
                       ),
-                      Icon(
+                      const Icon(
                         Icons.arrow_forward_ios,
                         size: 12,
                       ),
@@ -88,15 +85,15 @@ class _DetailProfilePageState extends State<DetailProfilePage> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Row(
-                        children: [
-                          const Icon(
+                        children: const [
+                          Icon(
                             Icons.feed,
                             size: 16,
                           ),
-                          const SizedBox(
+                          SizedBox(
                             width: 16,
                           ),
-                          const Text('Personal information'),
+                          Text('Personal information'),
                         ],
                       ),
                       const Icon(
@@ -123,7 +120,7 @@ class _DetailProfilePageState extends State<DetailProfilePage> {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('Phone'),
+                              const Text('Phone'),
                               Text(
                                 '*******333',
                                 style: Theme.of(context).textTheme.caption,
@@ -156,7 +153,7 @@ class _DetailProfilePageState extends State<DetailProfilePage> {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('E-mail'),
+                              const Text('E-mail'),
                               Text(
                                 'sa***@***.com',
                                 style: Theme.of(context).textTheme.caption,

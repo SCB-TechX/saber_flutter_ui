@@ -1,4 +1,3 @@
-import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:saber_flutter_ui/saber_flutter_ui.dart';
@@ -78,7 +77,7 @@ class _DashboardPageState extends State<DashboardPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Text('Your balances'),
+                  const Text('Your balances'),
                   Text(
                     '10,000.00  THB',
                     style: Theme.of(context).textTheme.headline6,
@@ -96,7 +95,7 @@ class _DashboardPageState extends State<DashboardPage> {
               padding: const EdgeInsets.only(top: 24, left: 24, right: 24),
               margin: const EdgeInsets.only(top: 16),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.only(
+                borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(16),
                     topRight: Radius.circular(16)),
                 color: Colors.white,
@@ -124,7 +123,7 @@ class _DashboardPageState extends State<DashboardPage> {
                               PageRouteBuilder(
                                 pageBuilder:
                                     (context, animation1, animation2) =>
-                                        TransactionsPage(),
+                                        const TransactionsPage(),
                                 transitionDuration: Duration.zero,
                                 reverseTransitionDuration: Duration.zero,
                               ),
@@ -163,10 +162,10 @@ class _DashboardPageState extends State<DashboardPage> {
                       size: 18,
                       color: Theme.of(context).primaryColor,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 4,
                     ),
-                    Text('Home',
+                    const Text('Home',
                         style: TextStyle(
                             fontWeight: FontWeight.w600, fontSize: 12))
                   ],
@@ -180,7 +179,7 @@ class _DashboardPageState extends State<DashboardPage> {
                   context,
                   PageRouteBuilder(
                     pageBuilder: (context, animation1, animation2) =>
-                        TransactionsPage(),
+                        const TransactionsPage(),
                     transitionDuration: Duration.zero,
                     reverseTransitionDuration: Duration.zero,
                   ),
@@ -195,7 +194,7 @@ class _DashboardPageState extends State<DashboardPage> {
                       size: 18,
                       color: Theme.of(context).disabledColor,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 4,
                     ),
                     Text(
@@ -233,7 +232,7 @@ class _DashboardPageState extends State<DashboardPage> {
                       size: 18,
                       color: Theme.of(context).disabledColor,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 4,
                     ),
                     Text(
@@ -251,7 +250,7 @@ class _DashboardPageState extends State<DashboardPage> {
                   context,
                   PageRouteBuilder(
                     pageBuilder: (context, animation1, animation2) =>
-                        ProfilePage(),
+                        const ProfilePage(),
                     transitionDuration: Duration.zero,
                     reverseTransitionDuration: Duration.zero,
                   ),
@@ -266,7 +265,7 @@ class _DashboardPageState extends State<DashboardPage> {
                       size: 18,
                       color: Theme.of(context).disabledColor,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 4,
                     ),
                     Text(
@@ -354,7 +353,7 @@ class _DashboardPageState extends State<DashboardPage> {
                 ),
               ),
               const Spacer(),
-              Text('- 500.00 THB')
+              const Text('- 500.00 THB')
             ],
           ),
           const SizedBox(
@@ -380,7 +379,7 @@ class _DashboardPageState extends State<DashboardPage> {
                 ),
               ),
               const Spacer(),
-              Text('- 890.00 THB')
+              const Text('- 890.00 THB')
             ],
           ),
           const SizedBox(
@@ -406,7 +405,7 @@ class _DashboardPageState extends State<DashboardPage> {
                 ),
               ),
               const Spacer(),
-              Text('- 250.00 THB')
+              const Text('- 250.00 THB')
             ],
           ),
           const SizedBox(
@@ -432,7 +431,7 @@ class _DashboardPageState extends State<DashboardPage> {
                 ),
               ),
               const Spacer(),
-              Text('- 89.00 THB')
+              const Text('- 89.00 THB')
             ],
           ),
         ],
