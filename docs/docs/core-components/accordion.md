@@ -1,7 +1,6 @@
 # Accordion
 
-Accordion implementing [ExpansionTile](https://api.flutter.dev/flutter/material/ExpansionTile-class.html).  
-To use, import `package:component_ui/component_ui.dart`
+Accordion is implementing [ExpansionTile](https://api.flutter.dev/flutter/material/ExpansionTile-class.html).
 
 ![Accordion](/img/docs/core-components/accordion/accordion.png)
 
@@ -60,7 +59,7 @@ Accordion(
 )
 ```
 
-ใช้ `textArrow` เพื่อเพิ่มข้อความให้อยู่กับ arrow icon
+Use `textArrow` for add text with arrow icon.
 
 ![Accordion text with arrow](/img/docs/core-components/accordion/accordion-textArrow.png)
 ```dart
@@ -74,7 +73,7 @@ Accordion(
 ## Example
 
 ```dart
-import 'package:component_ui/component_ui.dart';
+import 'package:saber_flutter_ui/saber_flutter_ui.dart';
 
 void main() => runApp(const MyApp());
 

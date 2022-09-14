@@ -1,16 +1,18 @@
-# Card
-การ์ดเหมือนเป็น container ที่เอาไว้ใส่เนื้อหาต่างๆข้างใน เช่น การ์ดสินค้า, อัลบัม, ข้อมูลการติดต่อ และจัด layout ได้หลากหลายตามที่ต้องการ
+# Cards
+Cards are like containers, contain content and actions about a single subject. For example an album, product card, contact details, etc.
 
-คุณสามารถใช้ [Card class](https://api.flutter.dev/flutter/material/Card-class.html) ของ Material ที่มีให้ไว้ได้เลย สามารถปรับได้ทั้ง color, shape, shadow, clipBehavior และอื่นๆ อีก
+You can use [Card class](https://api.flutter.dev/flutter/material/Card-class.html) of Material and custom layout as many as you want.
 
-เบื้องต้นจะแสดงตัวอย่างของการใช้งาน Elevation และ Shape ที่ card class มีให้
+We will show an example of using `Elevation` and `Shape` that card class provides.
 
 ![Card example](/img/docs/core-components/card/card.png)
 
 
 ## Elevation & Shape
-โดย default จะจัดให้มีเงาและความโค้งมนของมุมเล็กน้อย
-หากคุณต้องการนำเงาออกทำได้โดย set elevation เป็น 0
+By default elevation is 1dp and slightly rounded corners.  
+If you needs to remove elevation card, you can set `elevation : 0` or use `shadowColor : Colors.transparent`.
+
+
 
 ![Card example](/img/docs/core-components/card/card-elevation.png)
 
@@ -21,7 +23,7 @@ Card(
 )
 ```
 
-ตัวอย่างแสดงการเปลี่ยน shape เพื่อปรับมุมให้โค้ง `16px` คุณยังสามารถเปลี่ยน shape ของการ์ดได้อีกโดย set shape ด้วย [shapeBorder](https://api.flutter.dev/flutter/painting/ShapeBorder-class.html)
+This sample show change rounded corners to 16px. You can custom shape of card by set shape with [shapeBorder](https://api.flutter.dev/flutter/painting/ShapeBorder-class.html)
 
 ![Card example](/img/docs/core-components/card/example-card-1.png)
 

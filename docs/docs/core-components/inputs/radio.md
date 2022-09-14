@@ -1,7 +1,11 @@
 # Radio
+A radio button allows the user to choose only one option from a predefined set of options. This feature makes it different from a checkbox where we can select more than one option and the unselected state to be restored.
+
 ![Radio button](/img/docs/core-components/inputs/radio.png)
 
 ## Example
+This sample show use `Radio` widgets wrapped in Row, `RadioListTile` widgets and Radio widgets wrapped in `ListTiles`.
+
 ```dart
 import 'package:flutter/material.dart';
 

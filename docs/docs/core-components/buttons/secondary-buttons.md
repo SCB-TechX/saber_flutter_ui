@@ -1,4 +1,5 @@
 # SecondaryButtons
+Secondary button developed from [OutlinedButton](https://api.flutter.dev/flutter/material/OutlinedButton-class.html), usability similar to primary button.
 
 ![secondary buttons overview](/img/docs/core-components/buttons/secondary-buttons/secondary-buttons-overview.png)
 
@@ -78,7 +79,7 @@ PrimaryButtonWithIcon(
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:travel_wallet_ui/travel_wallet_ui.dart';
+import 'package:saber_flutter_ui/saber_flutter_ui.dart';
 
 const primaryButtonText = 'Primary Button';
 
@@ -138,7 +139,7 @@ class MyApp extends StatelessWidget {
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:travel_wallet_ui/travel_wallet_ui.dart';
+import 'package:saber_flutter_ui/saber_flutter_ui.dart';
 
 const primaryButtonText = 'Primary Button';
 

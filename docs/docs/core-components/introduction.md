@@ -3,7 +3,7 @@
 Saber Flutter UI provides a set of colors and theme to help developers to build an app.
 
 ```dart
-import 'package:travel_wallet_ui/travel_wallet_ui.dart';
+import 'package:saber_flutter_ui/saber_flutter_ui.dart';
 ```
 
 List of available components

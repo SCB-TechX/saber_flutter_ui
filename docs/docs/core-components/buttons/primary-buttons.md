@@ -1,4 +1,5 @@
 # PrimaryButtons
+The primary button, derived from [ElevatedButton](https://api.flutter.dev/flutter/material/ElevatedButton-class.html), has rounded corners, padding, and a color that varies depending on the theme. If you need a full width button, use the sizebox widget wrapped around a button. sizebox enforces the child to match its parent size.
 
 ![primary buttons overview](/img/docs/core-components/buttons/primary-buttons/primary-buttons-overview.png)
 
@@ -78,7 +79,7 @@ PrimaryButtonWithIcon(
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:travel_wallet_ui/travel_wallet_ui.dart';
+import 'package:saber_flutter_ui/saber_flutter_ui.dart';
 
 const primaryButtonText = 'Primary Button';
 
@@ -138,7 +139,7 @@ class MyApp extends StatelessWidget {
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:travel_wallet_ui/travel_wallet_ui.dart';
+import 'package:saber_flutter_ui/saber_flutter_ui.dart';
 
 const primaryButtonText = 'Primary Button';
 
