@@ -84,7 +84,7 @@ class _SignInPageState extends State<SignInPage> {
                   obscureText:
                       !_passwordVisible, //This will obscure text dynamically
                   decoration: InputDecoration(
-                    border: OutlineInputBorder(
+                    border: const OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(8))),
                     hintText: 'Password',
                     suffix: GestureDetector(

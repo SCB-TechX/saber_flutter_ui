@@ -274,7 +274,17 @@ class InvestmentCard extends StatelessWidget {
         ),
         Expanded(
           child: PrimaryButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushReplacement(
+                context,
+                PageRouteBuilder(
+                  pageBuilder: (context, animation1, animation2) =>
+                      const InvestmentPage(),
+                  transitionDuration: Duration.zero,
+                  reverseTransitionDuration: Duration.zero,
+                ),
+              );
+            },
             label: 'Instant Invest',
             size: ButtonSize.extraSmall,
           ),

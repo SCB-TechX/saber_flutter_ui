@@ -77,7 +77,7 @@ class _PortfolioPageState extends State<PortfolioPage> {
                 _buildActionButton(
                     icon: Icons.tune, label: "Manage", onPressed: () {}),
                 _buildActionButton(
-                    icon: Icons.show_chart, label: "Invset", onPressed: () {})
+                    icon: Icons.show_chart, label: "Invest", onPressed: () {})
               ],
             ),
             const SizedBox(
