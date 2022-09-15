@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:investment_app_demo/share/widgets/share_bottom_navigation_bar.dart';
+import 'package:investment_app_demo/utils/custom_box_decoration.dart';
 import 'package:saber_flutter_ui/saber_flutter_ui.dart';
 
 class PortfolioPage extends StatefulWidget {
@@ -37,17 +38,7 @@ class _PortfolioPageState extends State<PortfolioPage> {
                 Expanded(
                   child: Container(
                     padding: const EdgeInsets.all(24),
-                    decoration: BoxDecoration(
-                      borderRadius: const BorderRadius.all(Radius.circular(16)),
-                      color: Colors.white,
-                      boxShadow: <BoxShadow>[
-                        BoxShadow(
-                            color: Colors.grey.shade200,
-                            offset: const Offset(2, 4),
-                            blurRadius: 5,
-                            spreadRadius: 2)
-                      ],
-                    ),
+                    decoration: CustomBoxDecoration.build(),
                     child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -84,17 +75,7 @@ class _PortfolioPageState extends State<PortfolioPage> {
             ),
             Container(
               padding: const EdgeInsets.all(24),
-              decoration: BoxDecoration(
-                borderRadius: const BorderRadius.all(Radius.circular(16)),
-                color: Colors.white,
-                boxShadow: <BoxShadow>[
-                  BoxShadow(
-                      color: Colors.grey.shade200,
-                      offset: const Offset(2, 4),
-                      blurRadius: 5,
-                      spreadRadius: 2)
-                ],
-              ),
+              decoration: CustomBoxDecoration.build(),
               child: Row(
                 children: [
                   Text(
@@ -107,7 +88,7 @@ class _PortfolioPageState extends State<PortfolioPage> {
               ),
             ),
             const SizedBox(
-              height: 40,
+              height: 24,
             ),
             Row(
               children: [
