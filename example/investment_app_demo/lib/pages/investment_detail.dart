@@ -47,6 +47,7 @@ class _InvestmentDetailPageState extends State<InvestmentDetailPage> {
                       ],
                     ),
                     child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -80,7 +81,6 @@ class _InvestmentDetailPageState extends State<InvestmentDetailPage> {
                             ]),
                         Expanded(
                           child: Column(
-                            mainAxisAlignment: MainAxisAlignment.end,
                             crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
                               Text('20%',
@@ -105,6 +105,9 @@ class _InvestmentDetailPageState extends State<InvestmentDetailPage> {
                   ),
                 ),
               ],
+            ),
+            SizedBox(
+              height: 24,
             ),
             Container(
               padding: const EdgeInsets.all(16),

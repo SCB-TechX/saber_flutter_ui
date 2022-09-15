@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:investment_app_demo/pages/signin.dart';
 import 'package:investment_app_demo/share/widgets/share_bottom_navigation_bar.dart';
 import 'package:saber_flutter_ui/saber_flutter_ui.dart';
 
@@ -208,12 +209,25 @@ class _AccountPageState extends State<AccountPage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
-                    'Logout',
-                    style: Theme.of(context)
-                        .textTheme
-                        .button
-                        ?.copyWith(color: SystemColors.error),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.pushReplacement(
+                        context,
+                        PageRouteBuilder(
+                          pageBuilder: (context, animation1, animation2) =>
+                              const SignInPage(),
+                          transitionDuration: Duration.zero,
+                          reverseTransitionDuration: Duration.zero,
+                        ),
+                      );
+                    },
+                    child: Text(
+                      'Logout',
+                      style: Theme.of(context)
+                          .textTheme
+                          .button
+                          ?.copyWith(color: SystemColors.error),
+                    ),
                   ),
                 ],
               )

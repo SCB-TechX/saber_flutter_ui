@@ -1,6 +1,7 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
+import 'package:investment_app_demo/pages/dashboard.dart';
 import 'package:investment_app_demo/pages/signin.dart';
 import 'package:saber_flutter_ui/saber_flutter_ui.dart';
 
@@ -64,7 +65,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       TextFormField(
                         controller: _emailField,
                         decoration: const InputDecoration(
-                          labelText: "E-mail",
+                          hintText: "E-mail",
                           border: OutlineInputBorder(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(8))),
@@ -86,23 +87,20 @@ class _RegisterPageState extends State<RegisterPage> {
                           }
                           return null;
                         },
-                        obscureText:
-                            !_passwordVisible, //This will obscure text dynamically
+                        obscureText: !_passwordVisible,
                         decoration: InputDecoration(
-                          labelText: 'Password',
+                          hintText: 'Password',
                           border: const OutlineInputBorder(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(8))),
                           suffix: GestureDetector(
                             child: Icon(
-                              // Based on passwordVisible state choose the icon
                               _passwordVisible
                                   ? Icons.visibility
                                   : Icons.visibility_off,
                               color: Theme.of(context).primaryColorDark,
                             ),
                             onTap: () {
-                              // Update the state i.e. toggle the state of passwordVisible variable
                               setState(() {
                                 _passwordVisible = !_passwordVisible;
                               });
@@ -122,7 +120,7 @@ class _RegisterPageState extends State<RegisterPage> {
                         },
                         obscureText: !_confirmPasswordVisible,
                         decoration: InputDecoration(
-                          labelText: 'Confirm password',
+                          hintText: 'Confirm password',
                           border: const OutlineInputBorder(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(8))),
@@ -148,14 +146,16 @@ class _RegisterPageState extends State<RegisterPage> {
                         child: PrimaryButton(
                           onPressed: () {
                             if (_formKey.currentState!.validate()) {
-                              log(_emailField.text);
-                              log(_passwordField.text);
-                              log(_confirmPasswordField.text);
-
-                              // Navigator.push(
-                              //     context,
-                              //     MaterialPageRoute(
-                              //         builder: (context) => const DashboardPage()));
+                              Navigator.pushReplacement(
+                                context,
+                                PageRouteBuilder(
+                                  pageBuilder:
+                                      (context, animation1, animation2) =>
+                                          const DashboardPage(),
+                                  transitionDuration: Duration.zero,
+                                  reverseTransitionDuration: Duration.zero,
+                                ),
+                              );
                             }
                           },
                           label: 'Create account',
