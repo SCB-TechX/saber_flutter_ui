@@ -1,10 +1,11 @@
 # Accordion
 
-Accordion is implementing [ExpansionTile](https://api.flutter.dev/flutter/material/ExpansionTile-class.html).
+Accordion is implemented using [ExpansionTile](https://api.flutter.dev/flutter/material/ExpansionTile-class.html).
 
 ![Accordion](/img/docs/core-components/accordion/accordion.png)
 
 ## Accordion
+
 - [`Default`](/docs/core-components/accordion#default)
 - [`Flush`](/docs/core-components/accordion#flush)
 - [`Subtitle`](/docs/core-components/accordion#subtitle)

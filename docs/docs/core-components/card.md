@@ -1,18 +1,17 @@
 # Cards
-Cards are like containers, contain content and actions about a single subject. For example an album, product card, contact details, etc.
 
-You can use [Card class](https://api.flutter.dev/flutter/material/Card-class.html) of Material and custom layout as many as you want.
+Cards are like containers that contain content and actions about a single subject. For example an album, product card, contact details, etc.
 
-We will show an example of using `Elevation` and `Shape` that card class provides.
+You can use [Card class](https://api.flutter.dev/flutter/material/Card-class.html) of Material and custom as you desired.
+
+Example below, show an example of using `Elevation` and `Shape` that card class provides.
 
 ![Card example](/img/docs/core-components/card/card.png)
 
-
 ## Elevation & Shape
-By default elevation is 1dp and slightly rounded corners.  
+
+By default elevation is 1dp and slightly rounded corners.
 If you needs to remove elevation card, you can set `elevation : 0` or use `shadowColor : Colors.transparent`.
-
-
 
 ![Card example](/img/docs/core-components/card/card-elevation.png)
 

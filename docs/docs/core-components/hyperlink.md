@@ -1,6 +1,6 @@
 # Hyperlink
 
-Hyperlinks are similar to text buttons but without padding and have an underline by default.
+Hyperlink is similar to [TextButton](https://api.flutter.dev/flutter/material/TextButton-class.html) but without padding and have an underline by default.
 
 ![hyperlink overview](/img/docs/core-components/hyperlink/hyperlink-overview.png)
 

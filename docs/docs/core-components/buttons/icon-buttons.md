@@ -1,5 +1,6 @@
 # IconButtons
-ShapeiconButton developed from an [IconButton](https://api.flutter.dev/flutter/material/IconButton-class.html) and increased the button's background; the two shapes that could change were a circle and a rectangle.
+
+`ShapeIconButton` is developed using [IconButton](https://api.flutter.dev/flutter/material/IconButton-class.html) and increased its button background; two shapes are provided either circle or rectangle.
 
 ![icon buttons overview](/img/docs/core-components/buttons/icon-buttons/icon-buttons-overview.png)
 
@@ -44,7 +45,7 @@ ShapeIconButtonWithLabel(
 
 ### Button Shapes
 
-You can change a button size by pass the `shape` parameter to the widget
+You can change a button size by passing the `shape` parameter to the widget
 
 - `circle` (default)
 - `rectangle`

@@ -65,7 +65,6 @@ const sidebars = {
       label: 'Customize',
       items: ['customize/colors', 'customize/fonts', 'customize/themes'],
     },
-
     {
       type: 'category',
       label: 'Examples',

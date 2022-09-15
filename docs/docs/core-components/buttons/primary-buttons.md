@@ -1,5 +1,6 @@
 # PrimaryButtons
-The primary button, derived from [ElevatedButton](https://api.flutter.dev/flutter/material/ElevatedButton-class.html), has rounded corners, padding, and a color that varies depending on the theme. If you need a full width button, use the sizebox widget wrapped around a button. sizebox enforces the child to match its parent size.
+
+The `PrimaryButton` is derived from [ElevatedButton](https://api.flutter.dev/flutter/material/ElevatedButton-class.html); has rounded corners, padding, and color that varies depending on the theme. If you need a full width button, use the `SizedBox` widget wrapped around a button. `SizedBox` enforces the child to match its parent size.
 
 ![primary buttons overview](/img/docs/core-components/buttons/primary-buttons/primary-buttons-overview.png)
 
@@ -9,6 +10,7 @@ The primary button, derived from [ElevatedButton](https://api.flutter.dev/flutte
 - [`PrimaryButtonWithIcon`](#primarybuttonwithicon)
 
 ### PrimaryButton
+
 ![example primary buttons](/img/docs/core-components/buttons/primary-buttons/example-primary-button.png)
 
 ```dart
