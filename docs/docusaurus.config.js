@@ -97,11 +97,24 @@ const config = {
             title: 'Examples',
             items: [
               {
-                label: 'Example Pages',
-                to: '/docs/examples/e-commerce',
+                label: 'Introduction',
+                to: '/docs/examples/introduction',
+              },
+
+              {
+                label: 'BNPL App',
+                to: '/docs/examples/bnpl-app',
+              },
+              {
+                label: 'Investment App',
+                to: '/docs/examples/investment-app',
+              },
+              {
+                label: 'Wallet App',
+                to: '/docs/examples/wallet-app',
               },
             ],
-          }
+          },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} SCB Tech X Co. Made with ❤️ by Innovation Labs`,
       },

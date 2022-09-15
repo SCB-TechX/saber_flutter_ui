@@ -70,6 +70,7 @@ const sidebars = {
       type: 'category',
       label: 'Examples',
       items: [
+        'examples/introduction',
         'examples/bnpl-app',
         'examples/investment-app',
         'examples/wallet-app',
