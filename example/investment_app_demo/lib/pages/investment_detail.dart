@@ -178,7 +178,7 @@ class _InvestmentDetailPageState extends State<InvestmentDetailPage> {
                   const SizedBox(height: 16),
                   Center(
                     child: Text(
-                      'Learn more aboout the investment >',
+                      'Learn more aboot the investment >',
                       style: Theme.of(context).textTheme.caption?.copyWith(
                           color: const Color(0xFF222222),
                           fontWeight: FontWeight.bold),

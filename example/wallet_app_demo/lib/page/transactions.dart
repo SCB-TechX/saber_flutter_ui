@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:wallet_app_demo/page/dashboard.dart';
 import 'package:wallet_app_demo/page/profile.dart';
@@ -22,7 +21,7 @@ class _TransactionsPageState extends State<TransactionsPage> {
     super.dispose();
   }
 
-  // This function is triggered when the clear buttion is pressed
+  // This function is triggered when the clear button is pressed
   void _clearTextField() {
     // Clear everything in the text field
     _controller.clear();

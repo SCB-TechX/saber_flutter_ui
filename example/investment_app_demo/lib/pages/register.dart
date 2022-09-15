@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:investment_app_demo/pages/dashboard.dart';
 import 'package:investment_app_demo/pages/signin.dart';

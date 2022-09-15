@@ -25,7 +25,6 @@ class _InvestmentPageState extends State<InvestmentPage> {
         foregroundColor: Theme.of(context).primaryColor,
         elevation: 0,
       ),
-      // bottomNavigationBar: _buildBottomNavigationBar(),
       bottomNavigationBar: const ShareBottomNavigationBar(
         currentTab: TabItem.investment,
       ),

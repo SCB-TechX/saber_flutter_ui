@@ -136,28 +136,28 @@ class _DashboardPageState extends State<DashboardPage>
                   crossAxisCount: 2,
                   crossAxisSpacing: 8,
                   mainAxisSpacing: 8,
-                  children: [
-                    InvestmentCard(
+                  children: const [
+                    _InvestmentCard(
                       title: "Propertyless Estate",
                       returnsPercentage: 20,
                       returnsIn: "Returns in 9 months",
                     ),
-                    InvestmentCard(
+                    _InvestmentCard(
                       title: "Cashew Nuts",
                       returnsPercentage: 30,
                       returnsIn: "Returns in 9 months",
                     ),
-                    InvestmentCard(
+                    _InvestmentCard(
                       title: "Convallis",
                       returnsPercentage: 20,
                       returnsIn: "Returns in 9 months",
                     ),
-                    InvestmentCard(
+                    _InvestmentCard(
                       title: "Propertyless Estate",
                       returnsPercentage: 20,
                       returnsIn: "Returns in 9 months",
                     ),
-                    InvestmentCard(
+                    _InvestmentCard(
                       title: "Propertyless Estate",
                       returnsPercentage: 20,
                       returnsIn: "Returns in 9 months",
@@ -226,12 +226,12 @@ class AdvertisementCard extends StatelessWidget {
   }
 }
 
-class InvestmentCard extends StatelessWidget {
-  String title;
-  double returnsPercentage;
-  String returnsIn;
+class _InvestmentCard extends StatelessWidget {
+  final String title;
+  final double returnsPercentage;
+  final String returnsIn;
 
-  InvestmentCard({
+  const _InvestmentCard({
     Key? key,
     required this.title,
     required this.returnsPercentage,

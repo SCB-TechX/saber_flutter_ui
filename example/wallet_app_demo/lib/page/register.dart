@@ -100,20 +100,17 @@ class _RegisterPageState extends State<RegisterPage> {
                         }
                         return null;
                       },
-                      obscureText:
-                          !_passwordVisible, //This will obscure text dynamically
+                      obscureText: !_passwordVisible,
                       decoration: InputDecoration(
-                        labelText: 'Password',
+                        hintText: 'Password',
                         suffix: GestureDetector(
                           child: Icon(
-                            // Based on passwordVisible state choose the icon
                             _passwordVisible
                                 ? Icons.visibility
                                 : Icons.visibility_off,
                             color: Theme.of(context).primaryColorDark,
                           ),
                           onTap: () {
-                            // Update the state i.e. toogle the state of passwordVisible variable
                             setState(() {
                               _passwordVisible = !_passwordVisible;
                             });
