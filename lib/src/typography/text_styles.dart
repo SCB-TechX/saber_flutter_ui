@@ -19,7 +19,7 @@ class BaseTextStyle {
   /// Headline 1 Text Style
   static TextStyle get headline1 {
     return _baseHeaderStyle.copyWith(
-      fontSize: 96,
+      fontSize: 48,
       fontWeight: BaseFontWeight.bold,
     );
   }
@@ -27,7 +27,7 @@ class BaseTextStyle {
   /// Headline 2 Text Style
   static TextStyle get headline2 {
     return _baseHeaderStyle.copyWith(
-      fontSize: 60,
+      fontSize: 40,
       fontWeight: BaseFontWeight.bold,
     );
   }
@@ -35,7 +35,7 @@ class BaseTextStyle {
   /// Headline 3 Text Style
   static TextStyle get headline3 {
     return _baseHeaderStyle.copyWith(
-      fontSize: 48,
+      fontSize: 32,
       fontWeight: BaseFontWeight.bold,
     );
   }
@@ -43,7 +43,7 @@ class BaseTextStyle {
   /// Headline 4 Text Style
   static TextStyle get headline4 {
     return _baseHeaderStyle.copyWith(
-      fontSize: 34,
+      fontSize: 24,
       fontWeight: BaseFontWeight.bold,
     );
   }
@@ -51,7 +51,7 @@ class BaseTextStyle {
   /// Headline 5 Text Style
   static TextStyle get headline5 {
     return _baseHeaderStyle.copyWith(
-      fontSize: 24,
+      fontSize: 20,
       fontWeight: BaseFontWeight.bold,
     );
   }
@@ -59,7 +59,7 @@ class BaseTextStyle {
   /// Headline 6 Text Style
   static TextStyle get headline6 {
     return _baseHeaderStyle.copyWith(
-      fontSize: 20,
+      fontSize: 18,
       fontWeight: BaseFontWeight.bold,
     );
   }
