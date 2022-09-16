@@ -1,6 +1,6 @@
 # Text Field
 
-A text field lets the user enter text, either with hardware keyboard or with an onscreen keyboard.  
+A text field lets the user enter text, either with hardware keyboard or with an onscreen keyboard.
 
 Using a [TextField class](https://api.flutter.dev/flutter/material/TextField-class.html) is an easy way to allow user input. And use a `TextEditingController`, as described [here](https://docs.flutter.dev/cookbook/forms/text-field-changes). This will give you access to the text state.
 
@@ -10,7 +10,7 @@ To use without a Form, pass a GlobalKey to the constructor and use GlobalKey.cur
 
 Use InputDecoration objects to text field decoration. The border, labels, icons, and styles used to decorate a Material Design text field.
 
-Basic example for use `TextField`, 
+Basic example for use `TextField`,
 - InputDecoration
     - Border
         - [`UnderlineInputBorder`](/docs/core-components/inputs/text-fields#underline-input-border)
@@ -21,11 +21,13 @@ Basic example for use `TextField`,
     - [`Suffix`](/docs/core-components/inputs/text-fields#suffix)
 
 ## Text Field
+
 ### Underline Input Border
-Default border of `InputDecoration` is `UnderlineInputBorder`, do not need to set border.  
-If you want to set it, use `border: UnderlineInputBorder()`.
+
+A default border of `InputDecoration` is `UnderlineInputBorder`, you might not need to set a border. If you want to set it just use `border: UnderlineInputBorder()`.
 
 ![Underline Input Border](/img/docs/core-components/inputs/example-underline.png)
+
 ```dart
 TextField(
   decoration: InputDecoration(
@@ -60,10 +62,12 @@ Container(
 ```
 
 ### Outline Input Border
+
 Draws a rounded rectangle around an InputDecorator's container.
-Set border of `InputDecoration` to `OutlineInputBorder`. 
+Set border of `InputDecoration` to `OutlineInputBorder`.
 
 ![Outline Input Border](/img/docs/core-components/inputs/example-outline.png)
+
 ```dart
 TextField(
   decoration: InputDecoration(
@@ -76,10 +80,12 @@ TextField(
 ```
 
 ### Error Text
-This sample shows how to create a TextField with hint text, a red border on all sides, and an error message. To display a red border and error message, provide errorText to the InputDecoration constructor.  
+
+This sample shows how to create a TextField with hint text, a red border on all sides, and an error message. To display a red border and error message, provide errorText to the InputDecoration constructor.
 Use `errorText`, border will become colored red.
 
 ![Input Error Text](/img/docs/core-components/inputs/example-error-text.png)
+
 ```dart
 TextField(
   decoration: InputDecoration(
@@ -92,9 +98,11 @@ TextField(
 ```
 
 ### Helper Text
+
 `helperText` is additional text. It displays the helperText below the input area to help the user understand what input is required.
 
 ![Input Helper Text](/img/docs/core-components/inputs/example-helper-text.png)
+
 ```dart
 TextField(
   decoration: InputDecoration(
@@ -105,12 +113,13 @@ TextField(
 ```
 
 ### Hint/Link Text
-The `hintText` it displays inside the input area to help the user understand what input is required. 
 
-Different from LabelText that when user focus, hintText will disappear.
-The `labelText` will be shown as hint which is animating to the top when the cursor is getting focused.
+The `hintText` displays inside the input area to help the user understand what input is required.
+
+Different from LabelText that when user focus, hintText will disappear. The `labelText` will be shown as hint which is animating to the top when the cursor is getting focused.
 
 ![Input Hint Text](/img/docs/core-components/inputs/example-hint-text.png)
+
 ```dart
 TextField(
   decoration: InputDecoration(
@@ -127,6 +136,7 @@ TextField(
 ```
 
 ### Suffix
+
 This sample shows how to style a TextField with a round border and additional text before and after the input area. It displays "Suffix" after the input area.
 
 > **_NOTE:_**  There are also "Prefix" additional text before the input area.
@@ -152,6 +162,7 @@ TextField(
 - [`Search`](/docs/core-components/inputs/text-fields#search)
 
 ### Text Field
+
 This sample shows how to clear a value from a `TextField` via `TextEditingController`.
 
 > **_NOTE:_**  `TextEditingController` also can get a value.
@@ -222,6 +233,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
 ```
 
 ### Search
+
 This sample shows search box and clear a value.
 
 ![Example search](/img/docs/core-components/inputs/example-search.png)
@@ -306,4 +318,3 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   }
 }
 ```
-

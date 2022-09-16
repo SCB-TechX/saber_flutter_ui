@@ -1,6 +1,6 @@
 # IconButtons
 
-`ShapeIconButton` is developed using [IconButton](https://api.flutter.dev/flutter/material/IconButton-class.html) and increased its button background; two shapes are provided either circle or rectangle.
+The `ShapeIconButton` is developed using [IconButton](https://api.flutter.dev/flutter/material/IconButton-class.html) and increased its button background; two shapes are provided either circle or rectangle.
 
 ![icon buttons overview](/img/docs/core-components/buttons/icon-buttons/icon-buttons-overview.png)
 

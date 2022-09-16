@@ -6,20 +6,21 @@
 ## Dropdown
 A dropdown button lets the user select from a number of items. The button shows the currently selected item as well as an arrow that opens a menu for selecting another item.
 
-Basic example for use `DropdownButton`, 
+Basic example for use `DropdownButton`,
 - InputDecoration
-    - Border
-        - [`UnderlineInputBorder`](/docs/core-components/inputs/select#underline-input-border)
-        - [`OutlineInputBorder`](/docs/core-components/inputs/select#outline-input-border)
-    - [`ErrorText`](/docs/core-components/inputs/select#error-text)
-    - [`HelperText`](/docs/core-components/inputs/select#helper-text)
-    - [`Hint/Link Text`](/docs/core-components/inputs/select#hintlink-text)
+  - Border
+    - [`UnderlineInputBorder`](#underline-input-border)
+    - [`OutlineInputBorder`](#outline-input-border)
+  - [`ErrorText`](#error-text)
+  - [`HelperText`](#helper-text)
+  - [`Hint/Link Text`](#hintlink-text)
 
 ### Underline Input Border
-Default border of `InputDecoration` is `UnderlineInputBorder`, do not need to set border.  
+Default border of `InputDecoration` is `UnderlineInputBorder`, do not need to set border.
 If you want to set it, use `border: UnderlineInputBorder()`.
 
 ![Dropdown Underline Input Border](/img/docs/core-components/inputs/example-dropdown-underline.png)
+
 ```dart
 DropdownButtonFormField(
   decoration: InputDecoration(
@@ -82,11 +83,13 @@ Container(
 ```
 
 ### Outline Input Border
+
 Draws a rounded rectangle around an InputDecorator's container.
-Set border of `InputDecoration` to `OutlineInputBorder`. 
+Set border of `InputDecoration` to `OutlineInputBorder`.
 
 ![Dropdown Outline Input Border](/img/docs/core-components/inputs/example-dropdown-outline.png)
 ```dart
+
 DropdownButtonFormField(
   decoration: InputDecoration(
       border: OutlineInputBorder(
@@ -113,10 +116,12 @@ DropdownButtonFormField(
 ```
 
 ### Error Text
-This sample shows how to create a TextField with hint text, a red border on all sides, and an error message. To display a red border and error message, provide errorText to the InputDecoration constructor.  
+
+This sample shows how to create a TextField with hint text, a red border on all sides, and an error message. To display a red border and error message, provide errorText to the InputDecoration constructor.
 Use `errorText`, border will become colored red.
 
 ![Input Error Text](/img/docs/core-components/inputs/example-dropdown-error-text.png)
+
 ```dart
 DropdownButtonFormField(
   decoration: InputDecoration(
@@ -145,9 +150,11 @@ DropdownButtonFormField(
 ```
 
 ### Helper Text
+
 `helperText` is additional text. It displays the helperText below the input area to help the user understand what input is required.
 
 ![Input Helper Text](/img/docs/core-components/inputs/example-dropdown-helper-text.png)
+
 ```dart
 DropdownButtonFormField(
   decoration: InputDecoration(
@@ -176,12 +183,13 @@ DropdownButtonFormField(
 ```
 
 ### Hint/Link Text
-The `hintText` it displays inside the input area to help the user understand what input is required. 
 
-Different from LabelText that when user focus, hintText will disappear.
-The `labelText` will be shown as hint which is animating to the top when the cursor is getting focused.
+The `hintText` it displays inside the input area to help the user understand what input is required.
+
+Different from LabelText that when user focus, hintText will disappear. The `labelText` will be shown as hint which is animating to the top when the cursor is getting focused.
 
 ![Input Hint Text](/img/docs/core-components/inputs/example-dropdown-hint-text.png)
+
 ```dart
 DropdownButtonFormField(
   decoration: InputDecoration(
@@ -235,6 +243,7 @@ DropdownButtonFormField(
 ```
 
 ## Date Picker
+
 A date picker is a helpful addition to your UI that makes it easy for your app users to select dates from a calendar. Whether you’re adding a date of birth field to a registration form or offering time slots for users to book an appointment, you can use a date picker library to simplify the process.
 
 DatePicker is a material widget in a flutter that lets the user select a date. Since there is no widget available for creating a date picker we will use showDatePicker() function.
@@ -250,10 +259,11 @@ showDatePicker(
 
 ## Examples
 
-- [`Dropdown`](/docs/core-components/inputs/select#dropdown-1)
-- [`DatePicker`](/docs/core-components/inputs/select#date-picker-1)
+- [`Dropdown`](#dropdown-1)
+- [`DatePicker`](#date-picker-1)
 
 ### Dropdown
+
 This sample shows a DropdownButton with a outline border, whose value is one of "One", "Two", "Free", or "Four".
 
 ```dart
@@ -323,6 +333,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
 ```
 
 ### Date Picker
+
 This sample 1 shows a date input with a outline border, when you focus will show date picker for select. And button select date.
 
 First, add Package.

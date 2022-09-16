@@ -1,6 +1,6 @@
 # SecondaryButtons
 
-Secondary button is developed using [OutlinedButton](https://api.flutter.dev/flutter/material/OutlinedButton-class.html), similarly to the [PrimaryButton](./primary-buttons).
+The `SecondaryButton` is developed using [OutlinedButton](https://api.flutter.dev/flutter/material/OutlinedButton-class.html), similarly to the [PrimaryButton](./primary-buttons).
 
 ![secondary buttons overview](/img/docs/core-components/buttons/secondary-buttons/secondary-buttons-overview.png)
 
