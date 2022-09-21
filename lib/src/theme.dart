@@ -1,57 +1,42 @@
 import 'package:flutter/material.dart';
-import 'package:travel_wallet_ui/travel_wallet_ui.dart';
+import 'package:saber_flutter_ui/saber_flutter_ui.dart';
 
-class TravelWalletTheme {
-  static ThemeData get standard {
-    return ThemeData(
-      elevatedButtonTheme: _elevatedButtonTheme,
-      outlinedButtonTheme: _outlinedButtonTheme,
-      textTheme: _textTheme,
-    );
-  }
+class ThemeColor {
+  static ThemeData blackTheme = ThemeData(
+    primarySwatch: Palette.blackThemeShades,
+    textTheme: _textTheme,
+  );
 
-  static ElevatedButtonThemeData get _elevatedButtonTheme {
-    return ElevatedButtonThemeData(
-      style: ElevatedButton.styleFrom(
-        elevation: 0,
-        shape: const RoundedRectangleBorder(
-          borderRadius: BorderRadius.all(Radius.circular(30)),
-        ),
-        padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 32),
-        primary: TravelWalletColors.black,
-        shadowColor: Colors.blueAccent,
-      ),
-    );
-  }
+  static ThemeData blueTheme =
+      ThemeData(primarySwatch: Palette.blueThemeShades, textTheme: _textTheme);
 
-  static OutlinedButtonThemeData get _outlinedButtonTheme {
-    return OutlinedButtonThemeData(
-      style: OutlinedButton.styleFrom(
-        shape: const RoundedRectangleBorder(
-          borderRadius: BorderRadius.all(Radius.circular(30)),
-        ),
-        side: const BorderSide(color: TravelWalletColors.black, width: 1),
-        padding: const EdgeInsets.symmetric(vertical: 16),
-        primary: TravelWalletColors.black,
-      ),
-    );
-  }
+  static ThemeData greenTheme =
+      ThemeData(primarySwatch: Palette.greenThemeShades, textTheme: _textTheme);
+
+  static ThemeData yellowTheme = ThemeData(
+      primarySwatch: Palette.yellowThemeShades, textTheme: _textTheme);
+
+  static ThemeData purpleTheme = ThemeData(
+      primarySwatch: Palette.purpleThemeShades, textTheme: _textTheme);
+
+  static ThemeData redTheme =
+      ThemeData(primarySwatch: Palette.redThemeShades, textTheme: _textTheme);
 
   static TextTheme get _textTheme {
     return TextTheme(
-      headline1: TravelWalletTextStyle.headline1,
-      headline2: TravelWalletTextStyle.headline2,
-      headline3: TravelWalletTextStyle.headline3,
-      headline4: TravelWalletTextStyle.headline4,
-      headline5: TravelWalletTextStyle.headline5,
-      headline6: TravelWalletTextStyle.headline6,
-      subtitle1: TravelWalletTextStyle.subtitle1,
-      subtitle2: TravelWalletTextStyle.subtitle2,
-      bodyText1: TravelWalletTextStyle.bodyText1,
-      bodyText2: TravelWalletTextStyle.bodyText2,
-      caption: TravelWalletTextStyle.caption,
-      overline: TravelWalletTextStyle.overline,
-      button: TravelWalletTextStyle.button,
+      headline1: BaseTextStyle.headline1,
+      headline2: BaseTextStyle.headline2,
+      headline3: BaseTextStyle.headline3,
+      headline4: BaseTextStyle.headline4,
+      headline5: BaseTextStyle.headline5,
+      headline6: BaseTextStyle.headline6,
+      subtitle1: BaseTextStyle.subtitle1,
+      subtitle2: BaseTextStyle.subtitle2,
+      bodyText1: BaseTextStyle.bodyText1,
+      bodyText2: BaseTextStyle.bodyText2,
+      caption: BaseTextStyle.caption,
+      overline: BaseTextStyle.overline,
+      button: BaseTextStyle.button,
     );
   }
 }

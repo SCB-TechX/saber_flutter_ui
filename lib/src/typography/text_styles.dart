@@ -1,68 +1,66 @@
 import 'package:flutter/material.dart';
-import 'package:travel_wallet_ui/src/colors.dart';
+import 'typography.dart';
+import '../colors.dart';
 
-import 'font_weights.dart';
-
-class TravelWalletTextStyle {
+class BaseTextStyle {
   static const _baseHeaderStyle = TextStyle(
-    package: 'travelwallet_ui',
-    fontFamily: 'DMSans',
-    color: TravelWalletColors.black,
-    fontWeight: TravelWalletFontWeight.regular,
+    package: 'saber_flutter_ui',
+    fontFamily: Fonts.dmSans,
+    fontWeight: BaseFontWeight.bold,
+    color: SystemColors.black,
   );
 
   static const _baseTextStyle = TextStyle(
-    package: 'travelwallet_ui',
-    fontFamily: 'Poppins',
-    color: TravelWalletColors.black,
-    fontWeight: TravelWalletFontWeight.regular,
+    package: 'saber_flutter_ui',
+    fontFamily: Fonts.poppins,
+    fontWeight: BaseFontWeight.regular,
   );
 
   /// Headline 1 Text Style
   static TextStyle get headline1 {
     return _baseHeaderStyle.copyWith(
-      fontSize: 96,
-      fontWeight: TravelWalletFontWeight.regular,
+      fontSize: 48,
+      fontWeight: BaseFontWeight.bold,
     );
   }
 
   /// Headline 2 Text Style
   static TextStyle get headline2 {
     return _baseHeaderStyle.copyWith(
-      fontSize: 60,
-      fontWeight: TravelWalletFontWeight.regular,
+      fontSize: 40,
+      fontWeight: BaseFontWeight.bold,
     );
   }
 
   /// Headline 3 Text Style
   static TextStyle get headline3 {
     return _baseHeaderStyle.copyWith(
-      fontSize: 48,
-      fontWeight: TravelWalletFontWeight.regular,
+      fontSize: 32,
+      fontWeight: BaseFontWeight.bold,
     );
   }
 
   /// Headline 4 Text Style
   static TextStyle get headline4 {
     return _baseHeaderStyle.copyWith(
-      fontSize: 34,
-      fontWeight: TravelWalletFontWeight.regular,
+      fontSize: 24,
+      fontWeight: BaseFontWeight.bold,
     );
   }
 
   /// Headline 5 Text Style
   static TextStyle get headline5 {
     return _baseHeaderStyle.copyWith(
-      fontSize: 24,
-      fontWeight: TravelWalletFontWeight.regular,
+      fontSize: 20,
+      fontWeight: BaseFontWeight.bold,
     );
   }
 
   /// Headline 6 Text Style
   static TextStyle get headline6 {
     return _baseHeaderStyle.copyWith(
-      fontSize: 20,
-      fontWeight: TravelWalletFontWeight.regular,
+      fontSize: 18,
+      fontWeight: BaseFontWeight.bold,
     );
   }
 
@@ -70,7 +68,7 @@ class TravelWalletTextStyle {
   static TextStyle get subtitle1 {
     return _baseTextStyle.copyWith(
       fontSize: 16,
-      fontWeight: TravelWalletFontWeight.regular,
+      fontWeight: BaseFontWeight.semiBold,
     );
   }
 
@@ -78,7 +76,7 @@ class TravelWalletTextStyle {
   static TextStyle get subtitle2 {
     return _baseTextStyle.copyWith(
       fontSize: 14,
-      fontWeight: TravelWalletFontWeight.regular,
+      fontWeight: BaseFontWeight.regular,
     );
   }
 
@@ -86,7 +84,7 @@ class TravelWalletTextStyle {
   static TextStyle get bodyText1 {
     return _baseTextStyle.copyWith(
       fontSize: 16,
-      fontWeight: TravelWalletFontWeight.semiBold,
+      fontWeight: BaseFontWeight.regular,
     );
   }
 
@@ -94,7 +92,7 @@ class TravelWalletTextStyle {
   static TextStyle get bodyText2 {
     return _baseTextStyle.copyWith(
       fontSize: 14,
-      fontWeight: TravelWalletFontWeight.semiBold,
+      fontWeight: BaseFontWeight.regular,
     );
   }
 
@@ -102,7 +100,7 @@ class TravelWalletTextStyle {
   static TextStyle get button {
     return _baseTextStyle.copyWith(
       fontSize: 14,
-      fontWeight: TravelWalletFontWeight.semiBold,
+      fontWeight: BaseFontWeight.semiBold,
     );
   }
 
@@ -110,7 +108,7 @@ class TravelWalletTextStyle {
   static TextStyle get caption {
     return _baseTextStyle.copyWith(
       fontSize: 12,
-      fontWeight: TravelWalletFontWeight.semiBold,
+      fontWeight: BaseFontWeight.regular,
     );
   }
 
@@ -118,7 +116,7 @@ class TravelWalletTextStyle {
   static TextStyle get overline {
     return _baseTextStyle.copyWith(
       fontSize: 10,
-      fontWeight: TravelWalletFontWeight.regular,
+      fontWeight: BaseFontWeight.regular,
     );
   }
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-abstract class TravelWalletFontWeight {
+abstract class BaseFontWeight {
   /// FontWeight value of `w900`
   static const FontWeight black = FontWeight.w900;
 
