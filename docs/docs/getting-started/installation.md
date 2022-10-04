@@ -15,9 +15,7 @@ This library required
 dependencies:
   # ...
   saber_flutter_ui:
-    git:
-      url: git@github.com:SCB-Innovation-Lab/saber_flutter_ui.git
-      # ref: develop // preferred branch
+    git: https://github.com/SCB-Innovation-Lab/saber_flutter_ui.git
 ```
 
 2. Run `flutter pub get` in the terminal.
