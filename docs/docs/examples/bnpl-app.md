@@ -15,4 +15,4 @@ This app contains several pages, including:
 
 Icons in this project are generated using [fluttericon.com](https://www.fluttericon.com/), you can add.
 
-Source code is available on [GitHub](https://github.com/SCB-Innovation-Lab/saber_flutter_ui/tree/examples/bnpl_app_demo).
+Source code is available on [GitHub](https://github.com/SCB-Innovation-Lab/saber_flutter_ui/tree/master/examples/bnpl_app_demo).

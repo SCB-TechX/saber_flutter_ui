@@ -11,4 +11,4 @@ This app contains several pages, including:
 - Portfolio
 - Profile
 
-Source code is available on [GitHub](https://github.com/SCB-Innovation-Lab/saber_flutter_ui/tree/examples/investment-app).
+Source code is available on [GitHub](https://github.com/SCB-Innovation-Lab/saber_flutter_ui/tree/master/examples/investment-app).

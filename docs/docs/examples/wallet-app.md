@@ -12,4 +12,4 @@ This app contains several pages, including:
 
 You can custom icon by use [fluttericon.com](https://www.fluttericon.com/) generate fonts for use to IconData.
 
-Source code is available on [GitHub](https://github.com/SCB-Innovation-Lab/saber_flutter_ui/tree/examples/wallet_app_demo).
+Source code is available on [GitHub](https://github.com/SCB-Innovation-Lab/saber_flutter_ui/tree/master/examples/wallet_app_demo).
