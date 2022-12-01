@@ -15,11 +15,11 @@ This library required
 dependencies:
   # ...
   saber_flutter_ui:
-    git: https://github.com/SCB-Innovation-Lab/saber_flutter_ui.git
+    git: https://github.com/SCB-TechX/saber_flutter_ui.git
 
     # or
     git:
-      url: https://github.com/SCB-Innovation-Lab/saber_flutter_ui.git
+      url: https://github.com/SCB-TechX/saber_flutter_ui.git
       # ref: develop // preferred branch
 ```
 

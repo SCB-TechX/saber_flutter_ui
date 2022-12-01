@@ -37,7 +37,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/SCB-Innovation-Lab/saber_flutter_ui/docs',
+            'https://github.com/SCB-TechX/saber_flutter_ui/docs',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -63,7 +63,7 @@ const config = {
             label: 'Docs',
           },
           {
-            href: 'https://github.com/SCB-Innovation-Lab/saber_flutter_ui',
+            href: 'https://github.com/SCB-TechX/saber_flutter_ui',
             label: 'GitHub',
             position: 'right',
           },
